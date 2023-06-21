@@ -141,7 +141,7 @@ if [ "$#" -ne 0 ]; then
 fi
 
 # generate reference documentation
-DOCS_DIR="${WORKING_DIR}/docs";
+DOCS_DIR="${WORKING_DIR}/site";
 if [ -z "$BRANCH" ]; then
   BRANCH="$(cd "${OSCAL_DIR}";git symbolic-ref -q --short HEAD || git describe --tags --exact-match)"
 fi
