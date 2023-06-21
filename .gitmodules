@@ -1,6 +1,0 @@
-[submodule "site/themes/uswds"]
-	path = site/themes/uswds
-	url = https://github.com/usnistgov/hugo-uswds.git
-	branch = master
-	update = rebase
-
