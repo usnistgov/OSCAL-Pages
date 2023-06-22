@@ -42,9 +42,9 @@ jobs:
     name: Build and Push Website
     runs-on: ubuntu-20.04
     env:
-      JAVA_CLASSPATH: ${{ github.workspace}}/lib
-      BUILD_PATH: ./build
-      CICD_PATH: ./build/ci-cd
+      HUGO_VERSION: 0.114.0
+      # BUILD_PATH: ./build
+      # CICD_PATH: ./build/ci-cd
       WORKFLOW_MONITORING_COMMAND_NOA: "echo 'NO TOKEN';curl -s -I  https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       WORKFLOW_MONITORING_COMMAND_GHT: "echo 'GITHUB TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.GITHUB_TOKEN }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       WORKFLOW_MONITORING_COMMAND_ACT: "echo 'ACCESS TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.access_token }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
@@ -79,92 +79,70 @@ jobs:
       uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
       with:
         submodules: recursive
-    - name: Set env
-      run: |
-        echo "SAXON_HOME=${JAVA_CLASSPATH}" >> $GITHUB_ENV
-        echo "CALABASH_HOME=${JAVA_CLASSPATH}" >> $GITHUB_ENV
-    # Setup runtime environment
-    # -------------------------
-    # Java JDK 11
-    - name: Set up JDK
-      uses: actions/setup-java@f0bb91606209742fe3ea40199be2f3ef195ecabf
-      with:
-        java-version: 11
-        distribution: 'temurin'
-        cache: 'maven'
-    - name: Install JDK Deps Saxon and XML Calabash
-      run: |
-        cd "${BUILD_PATH}"
-        mkdir -p "${JAVA_CLASSPATH}"
-        mvn dependency:copy-dependencies -DoutputDirectory="${JAVA_CLASSPATH}"
-    # Build Artifacts
-    # ---------------
-    - name: Generate specification documentation
-      run: |
-        bash "${CICD_PATH}/generate-specification-documentation.sh"
-    - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
-      with:
-        name: specification-docs
-        path: |
-          docs/content/concepts/processing/profile-resolution.html
-        retention-days: 5
+    # https://gohugo.io/hosting-and-deployment/hosting-on-github/
     # Install Hugo
-    - name: Store Hugo Executable in Cache
-      uses: actions/cache@0865c47f36e68161719c5b124609996bb5c40129
-      with:
-        path: /home/runner/go/bin/hugo
-        key: ${{ runner.os }}-hugo-${{ hashFiles(format('{0}/go.sum', env.BUILD_PATH)) }}
-      id: cache-hugo
-    - name: Add Cached Hugo Executable to PATH
-      if: steps.cache-hugo.outputs.cache-hit == 'true'
+    - name: Install Hugo CLI
       run: |
-        echo "/home/runner/go/bin" >> $GITHUB_PATH
-    - name: Setup Golang
-      if: steps.cache-hugo.outputs.cache-hit != 'true'
-      uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923
+        wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+        && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+        - name: Install Dart Sass
+        run: sudo snap install dart-sass
+    - name: Checkout
+      uses: actions/checkout@v3
       with:
-        go-version-file: '${{ env.BUILD_PATH }}/go.mod'
-        cache: true
-        cache-dependency-path: '${{ env.BUILD_PATH }}/go.sum'
-    - name: Install Hugo
-      if: steps.cache-hugo.outputs.cache-hit != 'true'
+        submodules: recursive
+        fetch-depth: 0
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v3
+    - name: Install Node.js dependencies
+      run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+    - name: Build with Hugo
+      env:
+        # For maximum backward compatibility with Hugo modules
+        HUGO_ENVIRONMENT: production
+        HUGO_ENV: production
       run: |
-        cd "${{ env.BUILD_PATH }}"
-        go install -tags "extended" github.com/gohugoio/hugo
-    - name: Run Hugo
-      run: |
-        hugo --config "config.yaml,development-config.yaml" -v --debug --minify
-      working-directory: ${{ github.workspace }}/docs
-    - name: Zip Artifacts for Upload
-      run: |
-        zip ${{ runner.temp }}/metaschema-website.zip -r public/
-      working-directory: ${{ github.workspace }}/docs
-    - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
-      with:
-        name: website
-        path: |
-          ${{ runner.temp }}/metaschema-website.zip
-        retention-days: 5
-    - name: Deploy Website (using access_token)
-      uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
-      if: github.event_name == 'push' && inputs.commit_resources == true && github.ref_name == 'main'
-      with:
-        personal_token: ${{ secrets.access_token }}
-        enable_jekyll: false
-        publish_dir: ./docs/public
-        publish_branch: nist-pages
-        commit_message: Deploying website [ci deploy skip]
-    - name: Deploy Website (using COMMIT_TOKEN)
-      uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
-      if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_resources == 'true' && github.ref_name == 'main'
-      with:
-        personal_token: ${{ secrets.COMMIT_TOKEN }}
-        enable_jekyll: false
-        publish_dir: ./docs/public
-        publish_branch: nist-pages
-        user_name: OSCAL GitHub Actions Bot
-        user_email: oscal@nist.gov
-        commit_message: Deploying website [ci deploy skip]
+        hugo \
+          -v \
+          -s src/ \
+          --config "config.yaml,development-config.yaml" \
+          --gc \
+          --minify \
+          --debug
+
+    # - name: Zip Artifacts for Upload
+    #   run: |
+    #     zip ${{ runner.temp }}/metaschema-website.zip -r public/
+    #   working-directory: ${{ github.workspace }}/docs
+    # - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+    #   with:
+    #     name: website
+    #     path: |
+    #       ${{ runner.temp }}/metaschema-website.zip
+    #     retention-days: 5
+
+
+    # - name: Deploy Website (using access_token)
+    #   uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
+    #   if: github.event_name == 'push' && inputs.commit_resources == true && github.ref_name == 'main'
+    #   with:
+    #     personal_token: ${{ secrets.access_token }}
+    #     enable_jekyll: false
+    #     publish_dir: ./docs/public
+    #     publish_branch: nist-pages
+    #     commit_message: Deploying website [ci deploy skip]
+    # - name: Deploy Website (using COMMIT_TOKEN)
+    #   uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
+    #   if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_resources == 'true' && github.ref_name == 'main'
+    #   with:
+    #     personal_token: ${{ secrets.COMMIT_TOKEN }}
+    #     enable_jekyll: false
+    #     publish_dir: ./docs/public
+    #     publish_branch: nist-pages
+    #     user_name: OSCAL GitHub Actions Bot
+    #     user_email: oscal@nist.gov
+    #     commit_message: Deploying website [ci deploy skip]
     - name: Monitor Workflow Rate Limits
       run: |
         ${{ env.WORKFLOW_MONITORING_COMMAND_NOA }}
