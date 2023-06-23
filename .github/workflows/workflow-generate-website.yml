@@ -104,6 +104,11 @@ jobs:
       uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
       with:
         name: website
+    - name: Check Directory Listing
+      shell: bash
+      run: |
+        find ./
+        ls -ltra
     - name: Check Links
       uses: lycheeverse/lychee-action@76ab977fedbeaeb32029313724a2e56a8a393548
       with:
