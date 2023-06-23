@@ -40,7 +40,7 @@ jobs:
         uses: Compton-NIST/Inspector@5371cfc22caaea059686e2c1c64858141ec385d3
         with:
           artifact_name: docs_ci
-          output_path: build/ci-cd/docs
+          output_path: build/ci-cd/src
           file_prefix: OSCAL
           markdown_name: README.md
       - name: Commit Documentation Result (Documents and Diagrams)
