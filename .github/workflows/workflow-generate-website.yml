@@ -42,6 +42,7 @@ jobs:
       WORKFLOW_MONITORING_COMMAND_GHT: "echo 'GITHUB TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.GITHUB_TOKEN }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       WORKFLOW_MONITORING_COMMAND_ACT: "echo 'ACCESS TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.access_token }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       WORKFLOW_MONITORING_COMMAND_CMT: "echo 'COMMIT TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.COMMIT_TOKEN }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
+      HUGO_VERSION: 0.110.0
     steps:
     - name: Monitor Workflow Rate Limits
       run: |
@@ -50,6 +51,8 @@ jobs:
         ${{ env.WORKFLOW_MONITORING_COMMAND_ACT }}
         ${{ env.WORKFLOW_MONITORING_COMMAND_CMT }}
       id: monitor_rate_limits_before
+    # https://gohugo.io/hosting-and-deployment/hosting-on-github/
+    # Install Hugo
     - name: Install Hugo CLI
       run: |
         wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
