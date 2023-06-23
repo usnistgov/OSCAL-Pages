@@ -114,7 +114,7 @@ jobs:
     # - name: Zip Artifacts for Upload
     #   run: |
     #     zip ${{ runner.temp }}/metaschema-website.zip -r public/
-    #   working-directory: ${{ github.workspace }}/docs
+    #   working-directory: ${{ github.workspace }}/src
     # - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
     #   with:
     #     name: website
@@ -129,7 +129,7 @@ jobs:
     #   with:
     #     personal_token: ${{ secrets.access_token }}
     #     enable_jekyll: false
-    #     publish_dir: ./docs/public
+    #     publish_dir: ./src/public
     #     publish_branch: nist-pages
     #     commit_message: Deploying website [ci deploy skip]
     # - name: Deploy Website (using COMMIT_TOKEN)
@@ -138,7 +138,7 @@ jobs:
     #   with:
     #     personal_token: ${{ secrets.COMMIT_TOKEN }}
     #     enable_jekyll: false
-    #     publish_dir: ./docs/public
+    #     publish_dir: ./src/public
     #     publish_branch: nist-pages
     #     user_name: OSCAL GitHub Actions Bot
     #     user_email: oscal@nist.gov
