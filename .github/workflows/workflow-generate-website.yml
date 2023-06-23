@@ -111,16 +111,16 @@ jobs:
           --minify \
           --debug
 
-    # - name: Zip Artifacts for Upload
-    #   run: |
-    #     zip ${{ runner.temp }}/metaschema-website.zip -r public/
-    #   working-directory: ${{ github.workspace }}/src
-    # - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
-    #   with:
-    #     name: website
-    #     path: |
-    #       ${{ runner.temp }}/metaschema-website.zip
-    #     retention-days: 5
+    - name: Zip Artifacts for Upload
+      run: |
+        zip ${{ runner.temp }}/metaschema-website.zip -r public/
+      working-directory: ${{ github.workspace }}/src
+    - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+      with:
+        name: website
+        path: |
+          ${{ runner.temp }}/metaschema-website.zip
+        retention-days: 5
 
 
     # - name: Deploy Website (using access_token)
