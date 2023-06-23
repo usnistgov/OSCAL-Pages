@@ -80,9 +80,10 @@ jobs:
           --minify \
           --debug
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
-        path: ./public
+        name: website
+        path: ./src/public
     - name: Monitor Workflow Rate Limits
       run: |
         ${{ env.WORKFLOW_MONITORING_COMMAND_NOA }}
