@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
       - name: Create Pull Request with Updates
         run: gh pr create -B main -H auto-ci-docs-update --title 'Update CI Documentation and Diagrams' --body "Automated update from workflow-generate-ci-documentation workflow, due to workflow file changes."
         env:
