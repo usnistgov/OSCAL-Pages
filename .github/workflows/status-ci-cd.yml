@@ -1,4 +1,4 @@
-name: OSCAL CI/CD
+name: OSCAL Pages CI/CD
 on:
   push:
     branches:
