@@ -17,10 +17,6 @@ on:
         description: 'the access token to use for commits'
         required: false
   workflow_dispatch:
-    branches:
-    - main
-    - develop
-    - "release-*"
     inputs:
       commit_resources:
         description: 'commit the resources after generating them. Requires a PAT defined as secrets.COMMIT_TOKEN'
@@ -38,13 +34,10 @@ on:
         default: false
         type: boolean
 jobs:
-  build-and-push-website:
-    name: Build and Push Website
+  build-website:
+    name: Build Website
     runs-on: ubuntu-20.04
     env:
-      HUGO_VERSION: 0.114.0
-      # BUILD_PATH: ./build
-      # CICD_PATH: ./build/ci-cd
       WORKFLOW_MONITORING_COMMAND_NOA: "echo 'NO TOKEN';curl -s -I  https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       WORKFLOW_MONITORING_COMMAND_GHT: "echo 'GITHUB TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.GITHUB_TOKEN }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       WORKFLOW_MONITORING_COMMAND_ACT: "echo 'ACCESS TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.access_token }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
@@ -57,30 +50,6 @@ jobs:
         ${{ env.WORKFLOW_MONITORING_COMMAND_ACT }}
         ${{ env.WORKFLOW_MONITORING_COMMAND_CMT }}
       id: monitor_rate_limits_before
-    # use this for builds triggered from the UI on protected branches
-    - name: Checkout Latest (using COMMIT_TOKEN)
-      if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_resources == 'true'
-      uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
-      with:
-        token: ${{ secrets.COMMIT_TOKEN }}
-        submodules: recursive
-      id: checkout_latest_workflow
-    # use this for builds triggered from other workflows on protected branches
-    - name: Checkout Latest (using access_token)
-      if: github.event_name == 'push' && inputs.commit_resources == true
-      uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
-      with:
-        token: ${{ secrets.access_token }}
-        submodules: recursive
-      id: checkout_latest_push
-    # use this for overything else (i.e., pull requests) where publication is not needed
-    - name: Checkout Latest
-      if: steps.checkout_latest_workflow.conclusion == 'skipped' && steps.checkout_latest_push.conclusion == 'skipped'
-      uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
-      with:
-        submodules: recursive
-    # https://gohugo.io/hosting-and-deployment/hosting-on-github/
-    # Install Hugo
     - name: Install Hugo CLI
       run: |
         wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -110,18 +79,17 @@ jobs:
           --gc \
           --minify \
           --debug
-
-    - name: Zip Artifacts for Upload
-      run: |
-        zip ${{ runner.temp }}/metaschema-website.zip -r public/
-      working-directory: ${{ github.workspace }}/src
-    - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        name: website
-        path: |
-          ${{ runner.temp }}/metaschema-website.zip
-        retention-days: 5
-
+        path: ./public
+    - name: Monitor Workflow Rate Limits
+      run: |
+        ${{ env.WORKFLOW_MONITORING_COMMAND_NOA }}
+        ${{ env.WORKFLOW_MONITORING_COMMAND_GHT }}
+        ${{ env.WORKFLOW_MONITORING_COMMAND_ACT }}
+        ${{ env.WORKFLOW_MONITORING_COMMAND_CMT }}
+      id: monitor_rate_limits_after
 
     # - name: Deploy Website (using access_token)
     #   uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
@@ -143,10 +111,4 @@ jobs:
     #     user_name: OSCAL GitHub Actions Bot
     #     user_email: oscal@nist.gov
     #     commit_message: Deploying website [ci deploy skip]
-    - name: Monitor Workflow Rate Limits
-      run: |
-        ${{ env.WORKFLOW_MONITORING_COMMAND_NOA }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_GHT }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_ACT }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_CMT }}
-      id: monitor_rate_limits_after
+
