@@ -2,7 +2,7 @@ version: '3'
 services:
   hugo:
     image: klakegg/hugo:0.101.0-ext-ubuntu
-    command: server -s /app/src --enableGitInfo=false --verbose --debug
+    command: server -s /app/src --enableGitInfo=false --verbose --debug --minify
     volumes:
       - ".:/app"
     ports:
