@@ -126,13 +126,21 @@ jobs:
       with:
         name: report
         path: ./lychee/out.md
+
+  deploy-website:
+    name: Publish to NIST Page
+    runs-on: ubuntu-20.04
+    needs:
+      - build-website
+      - check-links
+    steps:
     - name: Deploy Website
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         enable_jekyll: false
-        publish_dir: ./src/public
+        publish_dir: ./website/public
         publish_branch: nist-pages
         user_name: OSCAL GitHub Actions Bot
         user_email: oscal@nist.gov
