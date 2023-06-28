@@ -126,7 +126,7 @@ jobs:
       with:
         name: report
         path: ./lychee/out.md
-    - name: Deploy Website (using access_token)
+    - name: Deploy Website
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
       if: github.ref == 'refs/heads/main'
       with:
