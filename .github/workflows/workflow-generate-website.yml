@@ -126,26 +126,14 @@ jobs:
       with:
         name: report
         path: ./lychee/out.md
-
-
-    # - name: Deploy Website (using access_token)
-    #   uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
-    #   if: github.event_name == 'push' && inputs.commit_resources == true && github.ref_name == 'main'
-    #   with:
-    #     personal_token: ${{ secrets.access_token }}
-    #     enable_jekyll: false
-    #     publish_dir: ./src/public
-    #     publish_branch: nist-pages
-    #     commit_message: Deploying website [ci deploy skip]
-    # - name: Deploy Website (using COMMIT_TOKEN)
-    #   uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
-    #   if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_resources == 'true' && github.ref_name == 'main'
-    #   with:
-    #     personal_token: ${{ secrets.COMMIT_TOKEN }}
-    #     enable_jekyll: false
-    #     publish_dir: ./src/public
-    #     publish_branch: nist-pages
-    #     user_name: OSCAL GitHub Actions Bot
-    #     user_email: oscal@nist.gov
-    #     commit_message: Deploying website [ci deploy skip]
-
+    - name: Deploy Website (using access_token)
+      uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        enable_jekyll: false
+        publish_dir: ./src/public
+        publish_branch: nist-pages
+        user_name: OSCAL GitHub Actions Bot
+        user_email: oscal@nist.gov
+        commit_message: Deploying website [ci deploy]
