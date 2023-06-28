@@ -134,6 +134,16 @@ jobs:
       - build-website
       - check-links
     steps:
+    - name: Open Website Artifact
+      uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+      with:
+        name: website
+        path: website
+    - name: Check Directory Listing
+      shell: bash
+      run: |
+        find ./
+        ls -ltra ./
     - name: Deploy Website
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
       if: github.ref == 'refs/heads/main'
