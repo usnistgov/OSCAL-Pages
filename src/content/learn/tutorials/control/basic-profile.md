@@ -393,7 +393,7 @@ This section offers a great deal of in-depth functionality; here we cover only t
 
 ### Setting Parameters
 
-The `set-parameters` directive can be used to modify all aspects of a [parameter](https://pages.nist.gov/OSCAL/reference/latest/catalog/json-reference/#/catalog/controls/params).
+The `set-parameters` directive can be used to modify all aspects of a [parameter](https://pages.nist.gov/OSCAL-Reference/latest/catalog/json-reference/#/catalog/controls/params).
 
 Let's say in our profile we wanted to change the label on the parameter `s1.1.1-prm_2` from our example catalog:
 

@@ -38,6 +38,10 @@ params:
   sidenav:
 #    debug: true
 menu:
+  primary:
+  - name: Reference
+    url: https://pages.nist.gov/OSCAL-Reference/
+    weight: 30
   secondary:
   - name: Github
     url: https://github.com/usnistgov/OSCAL

@@ -4,7 +4,7 @@
 
 This supports the [Open Security Controls Assessment Language (OSCAL) Program](https://github.com/usnistgov/OSCAL) through the [Public NIST Website](https://pages.nist.gov/OSCAL/).
 
-The [OSCAL website](https://www.nist.gov/oscal) provides an overview of the OSCAL project, including an XML and JSON [schema reference](https://pages.nist.gov/OSCAL/reference/), [examples](https://pages.nist.gov/OSCAL/concepts/examples/), and other resources.
+The [OSCAL website](https://www.nist.gov/oscal) provides an overview of the OSCAL project, including an XML and JSON [schema reference](https://pages.nist.gov/OSCAL-Reference/), [examples](https://pages.nist.gov/OSCAL/concepts/examples/), and other resources.
 
 If you are interested in contributing to the development of OSCAL, refer to the [contributor guidance](https://github.com/usnistgov/OSCAL/blob/main/CONTRIBUTING.md) for more information.
 
