@@ -7,7 +7,7 @@ toc:
 
 <br/><br/><br/>
 
-### This page has moved to a new reference website at: 
+### This page has moved to the new OSCAL reference website at: 
 
 # [The OSCAL Reference Page](https://pages.nist.gov/OSCAL-Reference/)
 
