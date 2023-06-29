@@ -128,7 +128,7 @@ jobs:
         path: ./lychee/out.md
 
   deploy-website:
-    name: Publish to NIST Page
+    name: Publish to NIST Pages
     runs-on: ubuntu-20.04
     needs:
       - build-website
