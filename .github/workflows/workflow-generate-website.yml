@@ -187,11 +187,11 @@ jobs:
       #     git config --local user.email "oscal@nist.gov"
       #     git config --local user.name "OSCAL GitHub Actions Bot"
       #     git commit -a -m "Updating website [ci deploy]"
-      # - name: Stage website in OSCAL Project
-      #   uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     repository: usnistgov/OSCAL
-      #     branch: next-pages
-      #     force: true
-      #     directory: '.'
+      - name: Stage website in OSCAL Project
+        uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: usnistgov/OSCAL-DEFINE
+          branch: next-pages
+          force: true
+          directory: '.'
