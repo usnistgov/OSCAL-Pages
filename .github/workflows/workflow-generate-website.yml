@@ -16,6 +16,7 @@ on:
       access_token:
         description: 'the access token to use for commits'
         required: false
+
   workflow_dispatch:
     inputs:
       commit_resources:
@@ -127,8 +128,8 @@ jobs:
         name: report
         path: ./lychee/out.md
 
-  deploy-website:
-    name: Publish to NIST Pages
+  deploy-dev-website:
+    name: Publish Development Version to NIST Pages
     runs-on: ubuntu-20.04
     needs:
       - build-website
@@ -155,3 +156,43 @@ jobs:
         user_name: OSCAL GitHub Actions Bot
         user_email: oscal@nist.gov
         commit_message: Deploying website [ci deploy]
+
+  stage-website:
+    name: Publish Website to OSCAL Branch for NIST Pages
+    runs-on: ubuntu-20.04
+    needs: 
+      - build-website
+      - check-links
+      - deploy-dev-website
+    steps:
+      - name: Checkout
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+        with:
+          ref: nist-pages
+          persist-credentials: false
+          submodules: recursive
+          fetch-depth: 0
+      - name: Open Website Artifact
+        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+        with:
+          name: website
+          path: .
+      - name: Check Directory Listing
+        shell: bash
+        run: |
+          find ./
+          ls -ltra ./
+          git status
+      # - name: Commit files
+      #   run: |
+      #     git config --local user.email "oscal@nist.gov"
+      #     git config --local user.name "OSCAL GitHub Actions Bot"
+      #     git commit -a -m "Updating website [ci deploy]"
+      - name: Stage website in OSCAL Project
+        uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
+        with:
+          github_token: ${{ secrets.access_token }}
+          repository: usnistgov/OSCAL
+          branch: next-pages
+          force: true
+          directory: '.'
