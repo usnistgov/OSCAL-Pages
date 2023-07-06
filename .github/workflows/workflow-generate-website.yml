@@ -152,7 +152,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         enable_jekyll: false
         publish_dir: ./public
-        publish_branch: nist-pages
+        publish_branch: published-pages
         user_name: OSCAL GitHub Actions Bot
         user_email: oscal@nist.gov
         commit_message: Deploying website [ci deploy]
@@ -168,7 +168,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
         with:
-          ref: nist-pages
+          ref: published-pages
           persist-credentials: false
           submodules: recursive
           fetch-depth: 0
@@ -183,11 +183,6 @@ jobs:
           find ./
           ls -ltra ./
           git status
-      # - name: Commit files
-      #   run: |
-      #     git config --local user.email "oscal@nist.gov"
-      #     git config --local user.name "OSCAL GitHub Actions Bot"
-      #     git commit -a -m "Updating website [ci deploy]"
       - name: Stage website in OSCAL Project
         uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
         with:
