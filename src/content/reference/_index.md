@@ -9,6 +9,6 @@ toc:
 
 ### This page has moved to the new OSCAL reference website at: 
 
-# [The OSCAL Reference Page](https://pages.nist.gov/OSCAL-Reference/)
+## [The OSCAL Reference Page](https://pages.nist.gov/OSCAL-Reference/)
 
 <br/><br/><br/>
