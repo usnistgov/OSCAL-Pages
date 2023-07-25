@@ -165,6 +165,6 @@ jobs:
         with:
           github_token: ${{ secrets.COMMIT_TOKEN }}
           repository: usnistgov/OSCAL
-          branch: next-pages
+          branch: nist-pages
           force: true
           directory: '.'
