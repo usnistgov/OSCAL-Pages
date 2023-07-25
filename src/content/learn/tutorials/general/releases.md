@@ -100,7 +100,7 @@ $ ajv validate \
 ### How do I perform XML pipeline operations using a new release?
 
 The OSCAL project provides XML tooling that can be used to validate and convert OSCAL content, as well as to perform operations like [profile resolution](/concepts/processing/profile-resolution/).
-Currently the underlying XML tooling is also used to generate the XML and JSON schemas as well as the [model reference](/reference/) pages.
+Currently the underlying XML tooling is also used to generate the XML and JSON schemas as well as the [model reference](https://pages.nist.gov/OSCAL-Reference/models/latest/) pages.
 
 Relevant changes to the XML tooling are provided as part of the [patch notes](https://github.com/usnistgov/OSCAL/releases/) for a release.
 

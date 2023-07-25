@@ -49,7 +49,7 @@ The examples below illustrate the top-level structure of the OSCAL control catal
 </catalog>
 {{< /highlight >}}
 
-The root of the OSCAL control catalog model is [`<catalog>`](/reference/latest/catalog/xml-reference/#/catalog).
+The root of the OSCAL control catalog model is [`<catalog>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog).
 
 In the example above, the contents of the `<catalog>` element is provided as empty data items. These are included to illustrate the content model of an OSCAL catalog, and we will be covering each element's syntax later in this tutorial.
 
@@ -75,7 +75,7 @@ A `<catalog>` contains:
 }
 {{< /highlight >}}
 
-The root of the OSCAL control catalog model is the [`catalog`](/reference/latest/catalog/json-reference/#/catalog) property.
+The root of the OSCAL control catalog model is the [`catalog`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog) property.
 
 In the example above, the contents of the `catalog` property is provided as empty object properties. These are included to illustrate the content model of an OSCAL catalog, and we will be covering each child property's syntax later in this tutorial.
 
@@ -99,7 +99,7 @@ catalog:
   back-matter:
 {{< /highlight >}}
 
-The root of the OSCAL control catalog model is the [`catalog`](/reference/latest/catalog/json-reference/#/catalog) item.
+The root of the OSCAL control catalog model is the [`catalog`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog) item.
 
 In the example above, the contents of the `catalog` item is provided as keys with empty collections. These are included to illustrate the content model of an OSCAL catalog, and we will be covering their syntax later in this tutorial.
 
@@ -152,7 +152,7 @@ All of these data items can be represented as follows:
 
 Breaking this down line-by-line you will notice the following:
 
-- Line 1: The [`<metadata>`](/reference/latest/catalog/xml-reference/#/catalog/metadata) element, which contains the document's metadata.
+- Line 1: The [`<metadata>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata) element, which contains the document's metadata.
 - Line 2: The document's title (i.e., `Sample Security Catalog`) is provided using `<title>` element. The document's title is a mandatory field for an OSCAL Catalog.
 - Line 3: The date when the document was published (i.e., `2020-02-02T11:01:04.736-04:00`) is provided using `<published>` element. This date is provided using the [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format with a required timezone. The published date is not a mandatory field for an OSCAL Catalog.
 - Line 4: The date when the document was last modified (i.e., `2020-12-18T16:23:23.811-05:00`) is provided using `<last-modified>` element. This date is provided using the [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format with a required timezone. The last modified date is a mandatory field for an OSCAL Catalog.
@@ -174,7 +174,7 @@ Breaking this down line-by-line you will notice the following:
 
 Breaking this down line-by-line you will notice the following:
 
-- Line 2: The [`metadata`](/reference/latest/catalog/json-reference/#/catalog/metadata) property, who's value is an object which contains properties representing the document's metadata.
+- Line 2: The [`metadata`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata) property, who's value is an object which contains properties representing the document's metadata.
 - Line 3: The document's title (i.e., `Sample Security Catalog`) is provided using `title` property. The document's title is a mandatory field for an OSCAL catalog.
 - Line 4: The date when the document was published (i.e., `2020-02-02T11:01:04.736-04:00`) is provided using the `published` property. This date is provided using the [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format with a required timezone. The published date is not a mandatory field for an OSCAL Catalog.
 - Line 5: The date when the document was last modified (i.e., `2020-12-18T16:23:23.811-05:00`) is provided using the `last-modified` property. This date is provided using the [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format with a required timezone. The last modified date is a mandatory field for an OSCAL Catalog.
@@ -193,7 +193,7 @@ metadata:
 
 Breaking this down line-by-line you will notice the following:
 
-- Line 1: The [`metadata`](/reference/latest/catalog/json-reference/#/catalog/metadata) block, who's value is a mapping of keys representing the document's metadata.
+- Line 1: The [`metadata`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata) block, who's value is a mapping of keys representing the document's metadata.
 - Line 2: The document's title (i.e., `Sample Security Catalog`) is provided using `title` key. The document's title is a mandatory field for an OSCAL Catalog.
 - Line 3: The date when the document was published (i.e., `2020-02-02T11:01:04.736-04:00`) is provided using the `published` key. This date is provided using the [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format with a required timezone. The published date is not a mandatory field for an OSCAL Catalog.
 - Line 4: The date when the document was last modified (i.e., `2020-12-18T16:23:23.811-05:00`) is provided using the `last-modified` key. This date is provided using the [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format with a required timezone. The last modified date is a mandatory field for an OSCAL Catalog.
@@ -250,7 +250,7 @@ The first section in the example catalog is represented in an OSCAL catalog as f
 Breaking this down line-by-line you will notice the following:
 
 - Line 1 declares a new group using the `<group>` element. The `@id` attribute defines the group's required unique identifier `s1`. A group's unique identifier must be unique within the document. An identifier in OSCAL is a string that may not contain spaces or colons.
-- Line 2 provides the group's title using the `<title>` element. A title can be simple text or can include [html markup](/reference/datatypes/#markup-line).
+- Line 2 provides the group's title using the `<title>` element. A title can be simple text or can include [html markup](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line).
 - Line 3 defines a property of the group using the `<prop>` element. This property element has a `@name="label`, which defines the name of the property (i.e. `label`), and textual content `1`, which defines the property's value. A property with the name `label` provides the text label that can be prepended to the title when formatting the content for human readability.
 
    In OSCAL, properties are commonly used constructs that allow for arbitrary name/value data to be defined. This name/value data helps to describe the containing element. Most major XML elements within OSCAL allow for properties to be defined. Names, like identifiers, are strings that may not contain spaces or colons.
@@ -259,7 +259,7 @@ Breaking this down line-by-line you will notice the following:
 - Lines 7 thru 10 define the sub-section's objective using a `<part>` element and child content. A part requires:
   - a unique identifier specified by the `@id` attribute, which identifies the part.
   - a name specified by the `@name` attribute, which identifies the type of the part. The name `objective` is used to indicate that the part represents an objective.
-  - A sequence of child HTML [prose block elements](/reference/datatypes/#markup-multiline). In this example, the `<p>` element is used to represent a paragraph of text. The prose model allows for other [structural markup](/reference/datatypes/#markup-line) to be included within each block, to indicate emphasis (italics), importance (bold), etc.
+  - A sequence of child HTML [prose block elements](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline). In this example, the `<p>` element is used to represent a paragraph of text. The prose model allows for other [structural markup](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line) to be included within each block, to indicate emphasis (italics), importance (bold), etc.
 
     While not illustrated here, a `<part>` element can also include child parts to denote a hierarchy of text. This will be covered in a future tutorial.
 {{% /tab %}}
@@ -295,7 +295,7 @@ Breaking this down line-by-line you will notice the following:
 
 - Line 2 declares a new group using a group object in the `groups` array.
 - Line 3 where the `id` property defines the group's required unique identifier `s1`. A group's unique identifier must be unique within the document. An identifier in OSCAL is a string that may not contain spaces or colons.
-- Line 4 provides the group's title using the `title` property. A title can be simple text or can include [Markdown](/reference/datatypes/#markup-line).
+- Line 4 provides the group's title using the `title` property. A title can be simple text or can include [Markdown](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line).
 - Lines 5 thru 8 define an array of properties for the group using the `properties` property.
   - On line 6 the property's name `label` is provided using the `name` JSON property. A property with the name `label` provides the text label that can be prepended to the title when formatting the content for human readability.
   - On line 7 the property's value `1` is provided using the `value` JSON property.
@@ -306,9 +306,9 @@ Breaking this down line-by-line you will notice the following:
 - Lines 16 thru 20 define the sub-section's objective using the `parts` property and associated array of objects. In this case we have a single part object. A part requires:
   - a unique identifier specified by the `id` property (line 17), which identifies the part.
   - a name specified by the `name` property (line 18), which identifies the type of the part. The name `objective` is used to indicate that the part represents an objective.
-  - A string of Markdown [prose](/reference/datatypes/#markup-multiline) content (line 19) contained by the `prose` property. In Markdown double newlines are used to delineate different paragraphs of text. These newlines are escaped in JSON, since all string content needs to be on a single line.
+  - A string of Markdown [prose](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline) content (line 19) contained by the `prose` property. In Markdown double newlines are used to delineate different paragraphs of text. These newlines are escaped in JSON, since all string content needs to be on a single line.
 
-    The OSCAL prose model allows for other [structural markup](/reference/datatypes/#markup-line) to be included within Markdown text, to indicate emphasis (italics), importance (bold), etc.
+    The OSCAL prose model allows for other [structural markup](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line) to be included within Markdown text, to indicate emphasis (italics), importance (bold), etc.
 
     While not illustrated here, a `part` can also include child parts to denote a hierarchy of text. This will be covered in a future tutorial.
 {{% /tab %}}
@@ -339,7 +339,7 @@ Breaking this down line-by-line you will notice the following:
 
 - Line 1 declares a list of group items using the `groups` key.
 - Line 2 starts a new group item and the `id` key defines the group's required unique identifier `s1`. A group's unique identifier must be unique within the document. An identifier in OSCAL is a string that may not contain spaces or colons.
-- Line 3 provides the group's title using the `title` key. A title can be simple text or can include [Markdown](/reference/datatypes/#markup-line).
+- Line 3 provides the group's title using the `title` key. A title can be simple text or can include [Markdown](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line).
 - Lines 4 thru 6 define a list of properties for the group using the `properties` key.
   - Line 5 starts a new property item and the `name` key provides the name `label` for the property. A property with the name `label` provides the text label that can be prepended to the title when formatting the content for human readability.
   - On line 6 the key `value` provides the property's value `1`.
@@ -350,9 +350,9 @@ Breaking this down line-by-line you will notice the following:
 - Lines 13 thru 18 define the sub-section's objective using the `parts` property and associated array of objects. In this case we have a single part object. A part requires:
   - a unique identifier specified by the `id` property (line 17), which identifies the part.
   - a name specified by the `name` property (line 18), which identifies the type of the part. The name `objective` is used to indicate that the part represents an objective.
-  - A string of Markdown [prose](/reference/datatypes/#markup-multiline) content (lines 17 and 18) contained by the `prose` key. In Markdown double newlines are used to delineate different paragraphs of text. Since multiline strings are supported in YAML, YAML markdown is more natural to write, as compared to JSON Markdown where character like `\n` need to be escaped.
+  - A string of Markdown [prose](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline) content (lines 17 and 18) contained by the `prose` key. In Markdown double newlines are used to delineate different paragraphs of text. Since multiline strings are supported in YAML, YAML markdown is more natural to write, as compared to JSON Markdown where character like `\n` need to be escaped.
 
-    The OSCAL prose model allows for other [structural markup](/reference/datatypes/#markup-line) to be included within Markdown text, to indicate emphasis (italics), importance (bold), etc.
+    The OSCAL prose model allows for other [structural markup](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line) to be included within Markdown text, to indicate emphasis (italics), importance (bold), etc.
 
     While not illustrated here, a `part` can also include child parts to denote a hierarchy of text. This will be covered in a future tutorial.
 {{% /tab %}}
@@ -533,7 +533,7 @@ Another required piece of information for a control is the control's title provi
 
 While optional in the OSCAL model, the need often exists to provide a section or control label that is used to identify the control within its source document. Using the `<prop>` element, an OSCAL property with the name `label` is used to provide the section number label value. This is illustrated on line 3.
 
-Finally, a control must have a set of control statements. Shown on lines 4 thru 6, a `<part>` element with the name `statement` provides the required statement text using [HTML markup](/reference/datatypes/#markup-multiline). This uses the same part structure we reviewed earlier in this tutorial for defining text within a group. This part is also assigning the identifier `s1.1.1_stm` using the `@id` attribute. This identifier can be used to reference the specific statement in the OSCAL catalog.
+Finally, a control must have a set of control statements. Shown on lines 4 thru 6, a `<part>` element with the name `statement` provides the required statement text using [HTML markup](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline). This uses the same part structure we reviewed earlier in this tutorial for defining text within a group. This part is also assigning the identifier `s1.1.1_stm` using the `@id` attribute. This identifier can be used to reference the specific statement in the OSCAL catalog.
 {{% /tab %}}
 {{% tab %}}
 {{< highlight json "linenos=table" >}}
@@ -560,7 +560,7 @@ Another required piece of information for a control is the control's title provi
 
 While optional in the OSCAL model, the need often exists to provide a section or control label that is used to identify the control within its source document. The `properties` JSON property provides an array of OSCAL property objects. An OSCAL property with the name `label` is used to provide the section number label value. This is illustrated on lines 5 thru 8.
 
-Finally, a control must have a set of control statements. Shown on lines 9 thru 13, the `parts` property allows an array of part JSON objects to be provided. a part object with the name `statement` provides the required statement text using [Markdown text](/reference/datatypes/#markup-multiline). This uses the same part structure we reviewed earlier in this tutorial for defining text within a group. This part is also assigning the identifier `s1.1.1_stm` using the `id` property. This identifier can be used to reference the specific statement in the OSCAL catalog.
+Finally, a control must have a set of control statements. Shown on lines 9 thru 13, the `parts` property allows an array of part JSON objects to be provided. a part object with the name `statement` provides the required statement text using [Markdown text](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline). This uses the same part structure we reviewed earlier in this tutorial for defining text within a group. This part is also assigning the identifier `s1.1.1_stm` using the `id` property. This identifier can be used to reference the specific statement in the OSCAL catalog.
 {{% /tab %}}
 {{% tab %}}
 {{< highlight yaml "linenos=table" >}}
@@ -583,7 +583,7 @@ Another required piece of information for a control is the control's title provi
 
 While optional in the OSCAL model, the need often exists to provide a section or control label that is used to identify the control within its source document. The `properties` key provides an array of OSCAL property items. An OSCAL property is defined on lines 5 thru 6, with a name `label` and the value `1.1.1` to provide the section number label value.
 
-Finally, a control must have a set of control statements. Shown on lines 8 thru 10, a list of parts identified using the `parts` key allows a list of part YAML items to be provided. a part object with the name `statement` provides the required statement text using [Markdown text](/reference/datatypes/#markup-multiline). This uses the same part structure we reviewed earlier in this tutorial for defining text within a group. This part is also assigning the identifier `s1.1.1_stm` using the `id` property. This identifier can be used to reference the specific statement in the OSCAL catalog.
+Finally, a control must have a set of control statements. Shown on lines 8 thru 10, a list of parts identified using the `parts` key allows a list of part YAML items to be provided. a part object with the name `statement` provides the required statement text using [Markdown text](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline). This uses the same part structure we reviewed earlier in this tutorial for defining text within a group. This part is also assigning the identifier `s1.1.1_stm` using the `id` property. This identifier can be used to reference the specific statement in the OSCAL catalog.
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -1434,5 +1434,5 @@ For more information you can review the [OSCAL catalog model documentation][cata
 [catalog-docs]: /concepts/layer/control/
 [catalog-definition]: /concepts/terminology/#catalog
 [catalog-prose-sample]: {{< param "contentRepoPath" >}}/examples/catalog/basic-catalog.md
-[oscal-markup-line]: /reference/datatypes/#markup-line
-[oscal-markup-multiline]: /reference/datatypes/#markup-multiline
+[oscal-markup-line]: https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line
+[oscal-markup-multiline]: https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline

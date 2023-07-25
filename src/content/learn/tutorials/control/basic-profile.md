@@ -49,7 +49,7 @@ The examples below illustrate the top-level structure of the OSCAL profile model
 </profile>
 ```
 
-The root of the OSCAL profile model is [`<profile>`](/reference/latest/profile/xml-reference/#/profile).
+The root of the OSCAL profile model is [`<profile>`](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-reference/#/profile).
 
 In the example above, the contents of the `<profile>` element is provided as empty data items. These are included to illustrate the content model of an OSCAL profile, and we will be covering each element's syntax later in this tutorial.
 
@@ -77,7 +77,7 @@ A `<profile>` contains:
 }
 ```
 
-The root of the OSCAL profile model is [`profile`](/reference/latest/profile/xml-reference/#/profile).
+The root of the OSCAL profile model is [`profile`](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-reference/#/profile).
 
 In the example above, the contents of the `profile` object are provided as empty data items. These are included to illustrate the content model of an OSCAL profile, and we will be covering each element's syntax later in this tutorial.
 
@@ -103,7 +103,7 @@ profile:
   back-matter: ~
 ```
 
-The root of the OSCAL profile model is [`profile`](/reference/latest/profile/xml-reference/#/profile).
+The root of the OSCAL profile model is [`profile`](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-reference/#/profile).
 
 In the example above, the contents of the `profile` object are provided as empty data items. These are included to illustrate the content model of an OSCAL profile, and we will be covering each element's syntax later in this tutorial.
 
@@ -1394,5 +1394,5 @@ For more information you can review the [OSCAL profile model documentation][prof
 [metadata-tutorial]: /learn/tutorials/general/metadata/
 [profile-docs]: /concepts/layer/profile/
 [baseline-definition]: /concepts/terminology/#baseline
-[oscal-markup-line]: /reference/datatypes/#markup-line
-[oscal-markup-multiline]: /reference/datatypes/#markup-multiline
+[oscal-markup-line]: https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line
+[oscal-markup-multiline]: https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-multiline

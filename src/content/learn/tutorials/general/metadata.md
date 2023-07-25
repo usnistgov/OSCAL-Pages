@@ -48,7 +48,7 @@ For our example we have generated the UUID `c3da6d1d-c20c-4c7c-ae73-4010167a186b
 <catalog uuid="c3da6d1d-c20c-4c7c-ae73-4010167a186b">
 {{< /highlight >}}
 
-An OSCAL document's UUID is provided by the `@uuid` attribute, based on the [uuid](/reference/datatypes/#uuid) datatype, on the document's root element. In this example, the root element is `catalog`.
+An OSCAL document's UUID is provided by the `@uuid` attribute, based on the [uuid](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uuid) datatype, on the document's root element. In this example, the root element is `catalog`.
 
 {{% /tab %}}
 {{% tab %}}
@@ -60,7 +60,7 @@ An OSCAL document's UUID is provided by the `@uuid` attribute, based on the [uui
 }
 {{< /highlight >}}
 
-An OSCAL document's UUID is provided by the `uuid` property, based on the [uuid](/reference/datatypes/#uuid) datatype, on the document's top-level object. In this example, the top-level object is identified by the property `catalog`.
+An OSCAL document's UUID is provided by the `uuid` property, based on the [uuid](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uuid) datatype, on the document's top-level object. In this example, the top-level object is identified by the property `catalog`.
 
 {{% /tab %}}
 {{% tab %}}
@@ -71,7 +71,7 @@ catalog:
 
 {{< /highlight >}}
 
-An OSCAL document's UUID is provided by the `uuid` key, based on the [uuid](/reference/datatypes/#uuid) datatype, at the document's top-level. In this example, the top-level key is named `catalog`.
+An OSCAL document's UUID is provided by the `uuid` key, based on the [uuid](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uuid) datatype, at the document's top-level. In this example, the top-level key is named `catalog`.
 {{% /tab %}}
 {{% /tabs %}}
 
@@ -83,7 +83,7 @@ As with all parts of OSCAL, the metadata section can be represented in XML, JSON
 
 ## Metadata Fields
 
-The OSCAL metaschema reference ([XML](/reference/latest/complete/xml-definitions/#/assembly/oscal-metadata/metadata) | [JSON/YAML](/reference/latest/complete/json-definitions/#/assembly/oscal-metadata/metadata)) provides a comprehensive listing of the metadata section's data fields.  Below is the high-level structure of the metadata section in XML, JSON, and YAML followed by a listing of each field's purpose.
+The OSCAL metaschema reference ([XML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-definitions/#/assembly/oscal-metadata/metadata) | [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-definitions/#/assembly/oscal-metadata/metadata)) provides a comprehensive listing of the metadata section's data fields.  Below is the high-level structure of the metadata section in XML, JSON, and YAML followed by a listing of each field's purpose.
 
 {{< tabs XML JSON YAML >}}
 {{% tab %}}
@@ -110,20 +110,20 @@ The OSCAL metaschema reference ([XML](/reference/latest/complete/xml-definitions
 
 Element definitions:
 
-- [`<title>`](/reference/latest/complete/xml-reference/#/catalog/metadata/title) (required) - A human-readable title for the document instance, expressed as [markup content](/reference/datatypes/#markup-line).
-- [`<published>`](/reference/latest/complete/xml-reference/#/catalog/metadata/published) (optional) - The date and time that this document instance was originally published, expressed as a [datetime-with-timezone](/reference/datatypes/#datetime-with-timezone).
-- [`<last-modified>`](/reference/latest/complete/xml-reference/#/catalog/metadata/last-modified) (required) - The date and time that this document instance was last modified, expressed as a [datetime-with-timezone](/reference/datatypes/#datetime-with-timezone). If any part of the document is changed, this value should be updated to the current date and time.
-- [`<version>`](/reference/latest/complete/xml-reference/#/catalog/metadata/version) (required) - A [string](/reference/datatypes/#string) that provides the version of the document instance. If any part of the document is changed, this version value should be incremented according to the versioning scheme used.
-- [`<oscal-version>`](/reference/latest/complete/xml-reference/#/catalog/metadata/oscal-version) (required) - The version of OSCAL that this document instance is considered [valid](/concepts/validation/) against, expressed as a [string](/reference/datatypes/#string).
-- [`<revisions>`](/reference/latest/complete/xml-reference/#/catalog/metadata/revisions/revision) (zero to many) - A list of revisions providing a history of changes to the document.
-- [`<document-id>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/document-id) (zero to many) - A unique ID that identifies a document, and ties all separate instances of the document into a single document series. The `@scheme` attribute provides a URI to identify the scheme used to generate the ID. See the later [section](#using-the-document-id) for more information and usage guidance.
-- [`<prop>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/prop) (zero to many) - Represents some arbitrary "property" of the document. This flexible element provides an extension point for adding additional metadata. See the later [section](#props) for more information and usage guidance.
-- [`<link>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/link) (zero to many) - Provides a resolvable URI (the `@href` attribute) for some resource. The purpose of the link is given with the `@rel` attribute, and its media type through the `@media-type` attribute. See the later [section](#links) for more information and usage guidance.
-- [`<role>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/role) (zero to many) - Defines a function or duty assumed or expected to be assumed by a party (i.e., person or organization) in a specific situation.
-- [`<location>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/location) (zero to many) - A location, with associated metadata that can be referenced.
-- [`<party>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/party) (zero to many) - A responsible entity which is either a person or an organization that can be referenced.
-- [`<responsible-party>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/responsible-party) (zero to many) - A reference to a set of organizations or persons that have responsibility for performing a referenced role in the context of the containing object.
-- [`<remarks>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/remarks) (optional) - Markup formatted text consisting of notes for human readers of the content.
+- [`<title>`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-reference/#/catalog/metadata/title) (required) - A human-readable title for the document instance, expressed as [markup content](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line).
+- [`<published>`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-reference/#/catalog/metadata/published) (optional) - The date and time that this document instance was originally published, expressed as a [datetime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone).
+- [`<last-modified>`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-reference/#/catalog/metadata/last-modified) (required) - The date and time that this document instance was last modified, expressed as a [datetime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone). If any part of the document is changed, this value should be updated to the current date and time.
+- [`<version>`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-reference/#/catalog/metadata/version) (required) - A [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) that provides the version of the document instance. If any part of the document is changed, this version value should be incremented according to the versioning scheme used.
+- [`<oscal-version>`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-reference/#/catalog/metadata/oscal-version) (required) - The version of OSCAL that this document instance is considered [valid](/concepts/validation/) against, expressed as a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string).
+- [`<revisions>`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-reference/#/catalog/metadata/revisions/revision) (zero to many) - A list of revisions providing a history of changes to the document.
+- [`<document-id>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/document-id) (zero to many) - A unique ID that identifies a document, and ties all separate instances of the document into a single document series. The `@scheme` attribute provides a URI to identify the scheme used to generate the ID. See the later [section](#using-the-document-id) for more information and usage guidance.
+- [`<prop>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/prop) (zero to many) - Represents some arbitrary "property" of the document. This flexible element provides an extension point for adding additional metadata. See the later [section](#props) for more information and usage guidance.
+- [`<link>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/link) (zero to many) - Provides a resolvable URI (the `@href` attribute) for some resource. The purpose of the link is given with the `@rel` attribute, and its media type through the `@media-type` attribute. See the later [section](#links) for more information and usage guidance.
+- [`<role>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/role) (zero to many) - Defines a function or duty assumed or expected to be assumed by a party (i.e., person or organization) in a specific situation.
+- [`<location>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/location) (zero to many) - A location, with associated metadata that can be referenced.
+- [`<party>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/party) (zero to many) - A responsible entity which is either a person or an organization that can be referenced.
+- [`<responsible-party>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/responsible-party) (zero to many) - A reference to a set of organizations or persons that have responsibility for performing a referenced role in the context of the containing object.
+- [`<remarks>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/remarks) (optional) - Markup formatted text consisting of notes for human readers of the content.
 
 {{% /tab %}}
 {{% tab %}}
@@ -180,20 +180,20 @@ Note that in JSON, any objects that may appear multiple times are contained in a
 
 Field definitions:
 
-- [`title`](/reference/latest/complete/json-reference/#/catalog/metadata/title) (required) - A human-readable title for the document, expressed as [Markdown content](/reference/datatypes/#markup-line).
-- [`published`](/reference/latest/complete/json-reference/#/catalog/metadata/published) (optional) - The date and time that this document was originally published, expressed as a [datetime-with-timezone](/reference/datatypes/#datetime-with-timezone).
-- [`last-modified`](/reference/latest/complete/json-reference/#/catalog/metadata/last-modified) (required) - The date and time that this document instance was last modified, expressed as a [datetime-with-timezone](/reference/datatypes/#datetime-with-timezone). If any part of the document is changed, this value should be updated to the current date and time.
-- [`version`](/reference/latest/complete/json-reference/#/catalog/metadata/version) (required) - A [string](/reference/datatypes/#string) that provides the version of the document instance. If any part of the document is changed, this version value should be incremented according to the versioning scheme used.
-- [`oscal-version`](/reference/latest/complete/json-reference/#/catalog/metadata/oscal-version) (required) - The version of OSCAL that this document instance is considered [valid](/concepts/validation/) against, expressed as a [string](/reference/datatypes/#string).
-- [`revisions`](/reference/latest/complete/json-reference/#/catalog/metadata/revisions) (optional) - A list of revisions providing a history of changes to the document.
-- [`document-ids`](/reference/latest/catalog/json-reference/#/catalog/metadata/document-id) (optional, zero to many) - A set of unique IDs that identifies a document, tying all separate instances of the document into a single document series. The `scheme` property defines the identification scheme used based on a URI associated with the scheme used to generate the ID. See the later [section](#using-the-document-id) for more information and usage guidance.
-- [`props`](/reference/latest/catalog/json-reference/#/catalog/metadata/props) (optional, zero to many) - Represents some arbitrary "property" of the document. This flexible element provides an extension point for adding additional metadata. See the later [section](#props) for more information and usage guidance.
-- [`links`](/reference/latest/catalog/json-reference/#/catalog/metadata/links) (optional, zero to many) - Provides a resolvable URI (the `href` property) to some resource. The purpose of the link is given with the `rel` attribute, and its media type through the `media-type` property.  See the later [section](#links) for more information and usage guidance.
-- [`roles`](/reference/latest/catalog/json-reference/#/catalog/metadata/roles) (optional, zero to many) - Defines a function or duty assumed or expected to be assumed by a party (i.e., person or organization) in a specific situation.
-- [`locations`](/reference/latest/catalog/json-reference/#/catalog/metadata/locations) (optional, zero to many) - A location, with associated metadata that can be referenced.
-- [`parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/parties) (optional, zero to many) - A responsible entity which is either a person or an organization that can be referenced.
-- [`responsible-parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) (optional, zero to many) - A reference to a set of organizations or persons that have responsibility for performing a referenced role in the context of the containing object.
-- [`remarks`](/reference/latest/catalog/json-reference/#/catalog/metadata/remarks) (optional) - Markup formatted text consisting of notes for human readers of the content.
+- [`title`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/title) (required) - A human-readable title for the document, expressed as [Markdown content](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line).
+- [`published`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/published) (optional) - The date and time that this document was originally published, expressed as a [datetime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone).
+- [`last-modified`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/last-modified) (required) - The date and time that this document instance was last modified, expressed as a [datetime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone). If any part of the document is changed, this value should be updated to the current date and time.
+- [`version`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/version) (required) - A [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) that provides the version of the document instance. If any part of the document is changed, this version value should be incremented according to the versioning scheme used.
+- [`oscal-version`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/oscal-version) (required) - The version of OSCAL that this document instance is considered [valid](/concepts/validation/) against, expressed as a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string).
+- [`revisions`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/revisions) (optional) - A list of revisions providing a history of changes to the document.
+- [`document-ids`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/document-id) (optional, zero to many) - A set of unique IDs that identifies a document, tying all separate instances of the document into a single document series. The `scheme` property defines the identification scheme used based on a URI associated with the scheme used to generate the ID. See the later [section](#using-the-document-id) for more information and usage guidance.
+- [`props`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/props) (optional, zero to many) - Represents some arbitrary "property" of the document. This flexible element provides an extension point for adding additional metadata. See the later [section](#props) for more information and usage guidance.
+- [`links`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/links) (optional, zero to many) - Provides a resolvable URI (the `href` property) to some resource. The purpose of the link is given with the `rel` attribute, and its media type through the `media-type` property.  See the later [section](#links) for more information and usage guidance.
+- [`roles`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/roles) (optional, zero to many) - Defines a function or duty assumed or expected to be assumed by a party (i.e., person or organization) in a specific situation.
+- [`locations`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/locations) (optional, zero to many) - A location, with associated metadata that can be referenced.
+- [`parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/parties) (optional, zero to many) - A responsible entity which is either a person or an organization that can be referenced.
+- [`responsible-parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) (optional, zero to many) - A reference to a set of organizations or persons that have responsibility for performing a referenced role in the context of the containing object.
+- [`remarks`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/remarks) (optional) - Markup formatted text consisting of notes for human readers of the content.
 
 {{% /tab %}}
 {{% tab %}}
@@ -240,20 +240,20 @@ Note that in YAML, any objects that may appear multiple times are contained in a
 
 Field definitions:
 
-- [`title`](/reference/latest/complete/json-reference/#/catalog/metadata/title) (required) - A human-readable title for the document, expressed as [Markdown content](/reference/datatypes/#markup-line).
-- [`published`](/reference/latest/complete/json-reference/#/catalog/metadata/published) (optional) - The date and time that this document was originally published, expressed as a [datetime-with-timezone](/reference/datatypes/#datetime-with-timezone).
-- [`last-modified`](/reference/latest/complete/json-reference/#/catalog/metadata/last-modified) (required) - The date and time that this document instance was last modified, expressed as a [datetime-with-timezone](/reference/datatypes/#datetime-with-timezone). If any part of the document is changed, this value should be updated to the current date and time.
-- [`version`](/reference/latest/complete/json-reference/#/catalog/metadata/version) (required) - A [string](/reference/datatypes/#string) that provides the version of the document instance. If any part of the document is changed, this version value should be incremented according to the versioning scheme used.
-- [`oscal-version`](/reference/latest/complete/json-reference/#/catalog/metadata/oscal-version) (required) - The version of OSCAL that this document instance is considered [valid](/concepts/validation/) against, expressed as a [string](/reference/datatypes/#string).
-- [`revisions`](/reference/latest/complete/json-reference/#/catalog/metadata/revisions) (zero to many) - A list of revisions providing a history of changes to the document.
-- [`document-ids`](/reference/latest/catalog/json-reference/#/catalog/metadata/document-id) (zero to many) - A unique ID that identifies a document, and ties all separate instances of the document into one document series. The `@scheme` attribute provides a URI to identify the scheme used to generate the ID. See the later [section](#using-the-document-id) for more information and usage guidance.
-- [`props`](/reference/latest/catalog/json-reference/#/catalog/metadata/props) (zero to many) - Represents some arbitrary "property" of the document. This flexible element provides an extension point for adding additional metadata. See the later [section](#props) for more information and usage guidance.
-- [`links`](/reference/latest/catalog/json-reference/#/catalog/metadata/links) (zero to many) - Provides a resolvable URI (the `href` property) to some resource. The purpose of the link is given with the `rel` attribute, and its media type through the `media-type` property.  See the later [section](#links) for more information and usage guidance.
-- [`roles`](/reference/latest/catalog/json-reference/#/catalog/metadata/roles) (zero to many) - Defines a function or duty assumed or expected to be assumed by a party (i.e., person or organization) in a specific situation.
-- [`locations`](/reference/latest/catalog/json-reference/#/catalog/metadata/locations) (zero to many) - A location, with associated metadata that can be referenced.
-- [`parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/parties) (zero to many) - A responsible entity which is either a person or an organization that can be referenced.
-- [`responsible-parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) (zero to many) - A reference to a set of organizations or persons that have responsibility for performing a referenced role in the context of the containing object.
-- [`remarks`](/reference/latest/catalog/json-reference/#/catalog/metadata/remarks) (optional) - Markup formatted text consisting of notes for human readers of the content.
+- [`title`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/title) (required) - A human-readable title for the document, expressed as [Markdown content](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line).
+- [`published`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/published) (optional) - The date and time that this document was originally published, expressed as a [datetime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone).
+- [`last-modified`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/last-modified) (required) - The date and time that this document instance was last modified, expressed as a [datetime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone). If any part of the document is changed, this value should be updated to the current date and time.
+- [`version`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/version) (required) - A [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) that provides the version of the document instance. If any part of the document is changed, this version value should be incremented according to the versioning scheme used.
+- [`oscal-version`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/oscal-version) (required) - The version of OSCAL that this document instance is considered [valid](/concepts/validation/) against, expressed as a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string).
+- [`revisions`](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-reference/#/catalog/metadata/revisions) (zero to many) - A list of revisions providing a history of changes to the document.
+- [`document-ids`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/document-id) (zero to many) - A unique ID that identifies a document, and ties all separate instances of the document into one document series. The `@scheme` attribute provides a URI to identify the scheme used to generate the ID. See the later [section](#using-the-document-id) for more information and usage guidance.
+- [`props`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/props) (zero to many) - Represents some arbitrary "property" of the document. This flexible element provides an extension point for adding additional metadata. See the later [section](#props) for more information and usage guidance.
+- [`links`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/links) (zero to many) - Provides a resolvable URI (the `href` property) to some resource. The purpose of the link is given with the `rel` attribute, and its media type through the `media-type` property.  See the later [section](#links) for more information and usage guidance.
+- [`roles`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/roles) (zero to many) - Defines a function or duty assumed or expected to be assumed by a party (i.e., person or organization) in a specific situation.
+- [`locations`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/locations) (zero to many) - A location, with associated metadata that can be referenced.
+- [`parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/parties) (zero to many) - A responsible entity which is either a person or an organization that can be referenced.
+- [`responsible-parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) (zero to many) - A reference to a set of organizations or persons that have responsibility for performing a referenced role in the context of the containing object.
+- [`remarks`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/remarks) (optional) - Markup formatted text consisting of notes for human readers of the content.
 
 {{% /tab %}}
 {{% /tabs %}}
@@ -302,7 +302,7 @@ title: Example OSCAL Catalog
 
 As you can see, the title is expressed in a very similar way across the different formats.
 
-Next, we have the published and last modified date/time fields that represent when the document was published for the first time and most recently changed respectively. These field values are expressed using the OSCAL [dataTime-with-timezone](/reference/datatypes/#datetime-with-timezone) data type, which requires that the time zone offset is included to provide a localized time. By providing a localized timezone, the local time in any timezone can be calculated when using this information.
+Next, we have the published and last modified date/time fields that represent when the document was published for the first time and most recently changed respectively. These field values are expressed using the OSCAL [dataTime-with-timezone](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#datetime-with-timezone) data type, which requires that the time zone offset is included to provide a localized time. By providing a localized timezone, the local time in any timezone can be calculated when using this information.
 
 Lets look at a scenario where an OSCAL document was:
 - published on January 1st, 2021 at "midnight" or 12:00AM with a time offset of 5 hours from Coordinated Universal Time (UTC)
@@ -480,7 +480,7 @@ In the following example, we illustrate how to include a document identifier usi
 
 In the above example, OSCAL we add a `<document-id>` to track the "Document Series" identified by the DOI `10.1000/182`.
 
-The DOI System is indicated using the `@scheme` attribute value `http://www.doi.org/`, which is standardized in OSCAL ([XML](/reference/latest/complete/xml-definitions/#/field/oscal-metadata/document-id/scheme), [JSON/YAML](/reference/latest/complete/json-definitions/#/field/oscal-metadata/document-id/scheme)). A scheme is required to be a [URI](/reference/datatypes/#uri).
+The DOI System is indicated using the `@scheme` attribute value `http://www.doi.org/`, which is standardized in OSCAL ([XML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-definitions/#/field/oscal-metadata/document-id/scheme), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-definitions/#/field/oscal-metadata/document-id/scheme)). A scheme is required to be a [URI](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri).
 {{% /tab %}}
 {{% tab %}}
 {{< highlight json "linenos=table" >}}
@@ -506,7 +506,7 @@ The DOI System is indicated using the `@scheme` attribute value `http://www.doi.
 
 In the above example, OSCAL we add an object to the `document-ids` array to track the "Document Series" identified by the DOI `10.1000/182`.
 
-The DOI System is indicated using the `scheme` property value `http://www.doi.org/`, which is standardized in OSCAL ([XML](/reference/latest/complete/xml-definitions/#/field/oscal-metadata/document-id/scheme), [JSON/YAML](/reference/latest/complete/json-definitions/#/field/oscal-metadata/document-id/scheme)). A scheme is required to be a [URI](/reference/datatypes/#uri).
+The DOI System is indicated using the `scheme` property value `http://www.doi.org/`, which is standardized in OSCAL ([XML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-definitions/#/field/oscal-metadata/document-id/scheme), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-definitions/#/field/oscal-metadata/document-id/scheme)). A scheme is required to be a [URI](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri).
 {{% /tab %}}
 {{% tab %}}
 {{< highlight yaml "linenos=table" >}}
@@ -526,7 +526,7 @@ catalog:
 
 In the above example, OSCAL we add an object to the `document-ids` list to track the "Document Series" identified by the DOI `10.1000/182`.
 
-The DOI System is indicated using the `scheme` property value `http://www.doi.org/`, which is standardized in OSCAL ([XML](/reference/latest/complete/xml-definitions/#/field/oscal-metadata/document-id/scheme), [JSON/YAML](/reference/latest/complete/json-definitions/#/field/oscal-metadata/document-id/scheme)). A scheme is required to be a [URI](/reference/datatypes/#uri).
+The DOI System is indicated using the `scheme` property value `http://www.doi.org/`, which is standardized in OSCAL ([XML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-definitions/#/field/oscal-metadata/document-id/scheme), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-definitions/#/field/oscal-metadata/document-id/scheme)). A scheme is required to be a [URI](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri).
 {{% /tab %}}
 {{% /tabs %}}
 
@@ -645,7 +645,7 @@ The remainder of this tutorial will briefly cover the other optional fields insi
 
 {{< tabs XML JSON YAML >}}
 {{% tab %}}
-- [`<role>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/role) - Roles define some function or purpose that is to be assigned to some entity later in the document. Role elements have an `id` attribute with a [Token](/reference/datatypes/#token) that is used to reference the role elsewhere in the OSCAL document. A number of pre-defined roles exist in OSCAL, but differ depending on context.
+- [`<role>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/role) - Roles define some function or purpose that is to be assigned to some entity later in the document. Role elements have an `id` attribute with a [Token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) that is used to reference the role elsewhere in the OSCAL document. A number of pre-defined roles exist in OSCAL, but differ depending on context.
 
   In the metadata section they are as follows:
 
@@ -657,17 +657,17 @@ The remainder of this tutorial will briefly cover the other optional fields insi
 
   Other roles can be locally defined by the content creator.
 
-- [`<location>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/location) - Geographic data associated with a street, mailing, or email address, or phone number. Locations have a `@uuid` attribute that allow them to be referenced elsewhere in the OSCAL document. Includes elements to describe a variety of data describing the location in question.
+- [`<location>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/location) - Geographic data associated with a street, mailing, or email address, or phone number. Locations have a `@uuid` attribute that allow them to be referenced elsewhere in the OSCAL document. Includes elements to describe a variety of data describing the location in question.
 
-- [`<party>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/party) - Defines some entity, either a person or an organization. Has a `@uuid` attribute that allows for references to this party elsewhere in the OSCAL document. Includes elements to describe a variety of data describing the party in question, including a location uuid.
+- [`<party>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/party) - Defines some entity, either a person or an organization. Has a `@uuid` attribute that allows for references to this party elsewhere in the OSCAL document. Includes elements to describe a variety of data describing the party in question, including a location uuid.
 
-- [`<responsible-party>`](/reference/latest/catalog/xml-reference/#/catalog/metadata/responsible-party) - Explicitly declares a party that is responsible for a given role relative to the document. The `@role-id` attribute references the role that the party is fulfilling, and is either a custom role locally defined or one of the core-defined roles; see the `<role>` section above for details. Uses a party's uuid to link the given role to the given party.
+- [`<responsible-party>`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/responsible-party) - Explicitly declares a party that is responsible for a given role relative to the document. The `@role-id` attribute references the role that the party is fulfilling, and is either a custom role locally defined or one of the core-defined roles; see the `<role>` section above for details. Uses a party's uuid to link the given role to the given party.
 
-- [`<remarks>`]((/reference/latest/catalog/xml-reference/#/catalog/metadata/remarks)) - [markup-multiline](/reference/datatypes/#markup-data-types) formatted text providing notes and comments regarding the document.
+- [`<remarks>`]((https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/xml-reference/#/catalog/metadata/remarks)) - [markup-multiline](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-data-types) formatted text providing notes and comments regarding the document.
 {{% /tab %}}
 {{% tab %}}
 
-- [`roles`](/reference/latest/catalog/json-reference/#/catalog/metadata/roles) - An array of Role objects. Roles define some function or purpose that is to be assigned to some entity later in the document. Role objects have an `id` field with a [Token](/reference/datatypes/#token) that is used to reference the role elsewhere in the OSCAL document. A number of pre-defined roles exist in OSCAL, but differ depending on context.
+- [`roles`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/roles) - An array of Role objects. Roles define some function or purpose that is to be assigned to some entity later in the document. Role objects have an `id` field with a [Token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) that is used to reference the role elsewhere in the OSCAL document. A number of pre-defined roles exist in OSCAL, but differ depending on context.
 
   In the metadata section they are as follows:
 
@@ -679,17 +679,17 @@ The remainder of this tutorial will briefly cover the other optional fields insi
 
   Other roles can be locally defined by the content creator.
 
-- [`locations`](/reference/latest/catalog/json-reference/#/catalog/metadata/locations) - An array of location objects. Geographic data associated with a street, mailing, or email address, or phone number.  Locations have a `uuid` field that allow them to be referenced elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the location in question.
+- [`locations`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/locations) - An array of location objects. Geographic data associated with a street, mailing, or email address, or phone number.  Locations have a `uuid` field that allow them to be referenced elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the location in question.
 
-- [`parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/parties) - An array of party objects. Defines some entity, either a person or an organization. Has a `uuid` field that allows for references to this party elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the party in question, including a location uuid.
+- [`parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/parties) - An array of party objects. Defines some entity, either a person or an organization. Has a `uuid` field that allows for references to this party elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the party in question, including a location uuid.
 
-- [`responsible-parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) - An array of responsible-party objects. Explicitly declares a party that is responsible for this a given role. The `role-id` field references the role that the party is fulfilling, and is either a custom role locally defined or one of the core-defined roles; see the `roles` section above for details. Uses a party's uuid to link the given role to the given party.
+- [`responsible-parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) - An array of responsible-party objects. Explicitly declares a party that is responsible for this a given role. The `role-id` field references the role that the party is fulfilling, and is either a custom role locally defined or one of the core-defined roles; see the `roles` section above for details. Uses a party's uuid to link the given role to the given party.
 
-- [`remarks`](/reference/latest/catalog/json-reference/#/catalog/metadata/remarks) - [markup-multiline](/reference/datatypes/#markup-data-types) formatted text providing notes and comments regarding the document.
+- [`remarks`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/remarks) - [markup-multiline](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-data-types) formatted text providing notes and comments regarding the document.
 {{% /tab %}}
 
 {{% tab %}}
-- [`roles`](/reference/latest/catalog/json-reference/#/catalog/metadata/roles) - Roles define some function or purpose that is to be assigned to some entity later in the document. Role objects have an `id` field with a [Token](/reference/datatypes/#token) that is used to reference the role elsewhere in the OSCAL document. A number of pre-defined roles exist in OSCAL, but differ depending on context.
+- [`roles`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/roles) - Roles define some function or purpose that is to be assigned to some entity later in the document. Role objects have an `id` field with a [Token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) that is used to reference the role elsewhere in the OSCAL document. A number of pre-defined roles exist in OSCAL, but differ depending on context.
 
   In the metadata section they are as follows:
 
@@ -701,13 +701,13 @@ The remainder of this tutorial will briefly cover the other optional fields insi
 
   Other roles can be locally defined by the content creator.
 
-- [`locations`](/reference/latest/catalog/json-reference/#/catalog/metadata/locations) - Geographic data associated with a street, mailing, or email address, or phone number.  Locations have a `uuid` field that allow them to be referenced elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the location in question.
+- [`locations`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/locations) - Geographic data associated with a street, mailing, or email address, or phone number.  Locations have a `uuid` field that allow them to be referenced elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the location in question.
 
-- [`parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/parties) - Defines some entity, either a person or an organization. Has a `uuid` field that allows for references to this party elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the party in question, including a location uuid.
+- [`parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/parties) - Defines some entity, either a person or an organization. Has a `uuid` field that allows for references to this party elsewhere in the OSCAL document. Includes fields to describe a variety of data describing the party in question, including a location uuid.
 
-- [`responsible-parties`](/reference/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) - Explicitly declares a party that is responsible for a given role. The `role-id` field references the role that the party is fulfilling, and is either a custom role locally defined or one of the core-defined roles; see the `role` section above for details. Uses a party's uuid to link the given role to the given party.
+- [`responsible-parties`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/responsible-parties) - Explicitly declares a party that is responsible for a given role. The `role-id` field references the role that the party is fulfilling, and is either a custom role locally defined or one of the core-defined roles; see the `role` section above for details. Uses a party's uuid to link the given role to the given party.
 
-- [`remarks`](/reference/latest/catalog/json-reference/#/catalog/metadata/remarks) - [markup-multiline](/reference/datatypes/#markup-data-types) formatted text providing notes and comments regarding the document.
+- [`remarks`](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/json-reference/#/catalog/metadata/remarks) - [markup-multiline](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-data-types) formatted text providing notes and comments regarding the document.
 {{% /tab %}}
 {{% /tabs %}}
 
