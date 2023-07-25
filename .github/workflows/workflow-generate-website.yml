@@ -127,7 +127,7 @@ jobs:
         ls -ltra ./
     - name: Stage Content
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
-      if: github.ref == 'refs/heads/main' || inputs.publish_website == true
+      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || inputs.publish_website == true)
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         enable_jekyll: false
@@ -161,10 +161,10 @@ jobs:
           git status
       - name: Stage website in OSCAL Project
         uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
-        if: github.ref == 'refs/heads/main' || inputs.publish_website == true
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || inputs.publish_website == true)
         with:
           github_token: ${{ secrets.COMMIT_TOKEN }}
           repository: usnistgov/OSCAL
-          branch: next-pages
+          branch: nist-pages
           force: true
           directory: '.'
