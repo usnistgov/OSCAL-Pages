@@ -2,15 +2,10 @@ name: Generate Website
 on:
   workflow_call:
     inputs:
-      commit_resources:
-        description: 'commit the resources after generating them. Requires the access_token to be passed'
+      publish_website:
+        description: 'Commit and publish the website. Requires the access_token to be passed'
         required: false
         default: false
-        type: boolean
-      bad_links_fail_build:
-        description: 'a boolean flag that determines if bad links found by the link checker fail fast and stop a complete build'
-        required: false
-        default: true
         type: boolean
     secrets:
       access_token:
@@ -19,40 +14,20 @@ on:
 
   workflow_dispatch:
     inputs:
-      commit_resources:
-        description: 'commit the resources after generating them. Requires a PAT defined as secrets.COMMIT_TOKEN'
+      publish_website:
+        description: 'Commit and publish the website. Requires a PAT defined as secrets.COMMIT_TOKEN'
         required: true
         default: false
         type: boolean
-      bad_links_fail_build:
-        description: 'a boolean flag that determines if bad links found by the link checker fail fast and stop a complete build'
-        required: false
-        default: true
-        type: boolean
-      create_issue:
-        description: 'create new GitHub issue if broken links found'
-        required: false
-        default: false
-        type: boolean
+
 jobs:
   build-website:
     name: Build Website
     runs-on: ubuntu-20.04
     env:
-      WORKFLOW_MONITORING_COMMAND_NOA: "echo 'NO TOKEN';curl -s -I  https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
-      WORKFLOW_MONITORING_COMMAND_GHT: "echo 'GITHUB TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.GITHUB_TOKEN }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
-      WORKFLOW_MONITORING_COMMAND_ACT: "echo 'ACCESS TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.access_token }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
-      WORKFLOW_MONITORING_COMMAND_CMT: "echo 'COMMIT TOKEN';curl -s -I -H \"Authorization: token ${{ secrets.COMMIT_TOKEN }}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/users/${{ github.actor }} | grep -E \"x-ratelimit-remaining|x-ratelimit-limit|x-ratelimit-used|^HTTP\""
       HUGO_VERSION: 0.110.0
       HUGO_CHECKSUM: "969eeabb570e9d674d374de37a9d4c8799edf91a9a4dd9115dd714d559b5ad46"
     steps:
-    - name: Monitor Workflow Rate Limits
-      run: |
-        ${{ env.WORKFLOW_MONITORING_COMMAND_NOA }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_GHT }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_ACT }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_CMT }}
-      id: monitor_rate_limits_before
     # https://gohugo.io/hosting-and-deployment/hosting-on-github/
     # Install Hugo
     - name: Install Hugo CLI
@@ -87,13 +62,7 @@ jobs:
       with:
         name: website
         path: ./src/public
-    - name: Monitor Workflow Rate Limits
-      run: |
-        ${{ env.WORKFLOW_MONITORING_COMMAND_NOA }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_GHT }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_ACT }}
-        ${{ env.WORKFLOW_MONITORING_COMMAND_CMT }}
-      id: monitor_rate_limits_after
+
     
   check-links:
     name: Check Links
@@ -128,8 +97,9 @@ jobs:
         name: report
         path: ./lychee/out.md
 
-  deploy-dev-website:
-    name: Publish Development Version to NIST Pages
+
+  stage-content:
+    name: Publish Content to published-pages Branch
     runs-on: ubuntu-20.04
     needs:
       - build-website
@@ -145,9 +115,9 @@ jobs:
       run: |
         find ./
         ls -ltra ./
-    - name: Deploy Website
+    - name: Stage Content
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main' || inputs.publish_website == true
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         enable_jekyll: false
@@ -155,28 +125,24 @@ jobs:
         publish_branch: published-pages
         user_name: OSCAL GitHub Actions Bot
         user_email: oscal@nist.gov
-        commit_message: Deploying website [ci deploy]
+        commit_message: Staging website content [ci deploy]
 
-  stage-website:
+
+  publish-website:
     name: Publish Website to OSCAL Branch for NIST Pages
     runs-on: ubuntu-20.04
     needs: 
       - build-website
       - check-links
-      - deploy-dev-website
+      - stage-content
     steps:
-      - name: Checkout
+      - name: Checkout published-pages
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
         with:
           ref: published-pages
           persist-credentials: false
           submodules: recursive
           fetch-depth: 0
-      - name: Open Website Artifact
-        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
-        with:
-          name: website
-          path: .
       - name: Check Directory Listing
         shell: bash
         run: |
@@ -185,6 +151,7 @@ jobs:
           git status
       - name: Stage website in OSCAL Project
         uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
+        if: github.ref == 'refs/heads/main' || inputs.publish_website == true
         with:
           github_token: ${{ secrets.access_token }}
           repository: usnistgov/OSCAL
