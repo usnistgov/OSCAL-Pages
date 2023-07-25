@@ -1,5 +1,5 @@
 ---
-title: "OSCAL"
+title: "OSCAL - Open Security Controls Assessment Language"
 ---
 {{% usa-hero image="/automation-hero.png" calloutText="Automated" calloutAltText="Control-Based Assessment" buttonURL="/about/" buttonText="Learn More" %}}
 Supporting Control-Based<br/>
