@@ -7,6 +7,10 @@ on:
         required: false
         default: false
         type: boolean
+    secrets:
+      access_token:
+        description: 'the access token to use for commits'
+        required: false
 
   workflow_dispatch:
     inputs:
