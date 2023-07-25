@@ -15,14 +15,13 @@ on:
   workflow_dispatch:
 jobs:
   validate-website:
-    if: github.event_name == 'pull_request'
     uses: ./.github/workflows/workflow-generate-website.yml
     with:
-      commit_resources: false
+      publish_website: false
   push-website:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     uses: ./.github/workflows/workflow-generate-website.yml
     with:
-      commit_resources: true
+      publish_website: true
     secrets:
       access_token: ${{ secrets.COMMIT_TOKEN }}
