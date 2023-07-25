@@ -14,7 +14,7 @@ This tutorial describes the mechanisms for extending basic OSCAL models. Before 
 
 - Have some familiarity with the [XML](https://www.w3.org/standards/xml/core), [JSON](https://www.json.org/), or [YAML](https://yaml.org/spec/) formats.
 - Review the [OSCAL Layers and Models](/concepts/layer/) documentation.
-- Review the latest [OSCAL Reference](/reference/latest/complete/).
+- Review the latest [OSCAL Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/).
 
 ## What are the OSCAL Extension Mechanisms?
 
@@ -46,10 +46,10 @@ A property in OSCAL XML is represented using the `<prop>` element, which can be 
 
 Below is a description of each attribute of the `<prop>` element.
 
-- `@name` (Required) - The *name* of the OSCAL property that must be a [token](/reference/datatypes/#token) data type.
-- `@ns` (Optional) - The *namespace* of the OSCAL property that must be a [universal resource identifier (URI)](/reference/datatypes/#uri) formatted according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
-- `@value` (Required) - The *value* of the OSCAL property that must be a [string](/reference/datatypes/#string) value.
-- `@class` (Optional) - The *class* of the OSCAL property that must be a [string](/reference/datatypes/#string) value, which can be used to further qualify the property's value.
+- `@name` (Required) - The *name* of the OSCAL property that must be a [token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) data type.
+- `@ns` (Optional) - The *namespace* of the OSCAL property that must be a [universal resource identifier (URI)](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri) formatted according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
+- `@value` (Required) - The *value* of the OSCAL property that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value.
+- `@class` (Optional) - The *class* of the OSCAL property that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value, which can be used to further qualify the property's value.
 {{% /tab %}}
 {{% tab %}}
 {{< highlight json "linenos=table" >}}
@@ -69,10 +69,10 @@ A listing of properties in OSCAL JSON are represented using the `props` object a
 
 Each *property* object can have the following JSON property names.
 
-- `name` (Required) - The *name* of the OSCAL property that must be a [token](/reference/datatypes/#token) data type.
-- `ns` (Optional) - The *namespace* of the OSCAL property that must be a [universal resource identifier (URI)](/reference/datatypes/#uri) formatted according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
-- `value` (Required) - The *value* of the OSCAL property that must be a [string](/reference/datatypes/#string) value.
-- `class` (Optional) - The *class* of the OSCAL property  that must be a [string](/reference/datatypes/#string) value, which can be used to further qualify the value that must be a [string](/reference/datatypes/#string) value, which can be used to further qualify the property's value.
+- `name` (Required) - The *name* of the OSCAL property that must be a [token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) data type.
+- `ns` (Optional) - The *namespace* of the OSCAL property that must be a [universal resource identifier (URI)](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri) formatted according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
+- `value` (Required) - The *value* of the OSCAL property that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value.
+- `class` (Optional) - The *class* of the OSCAL property  that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value, which can be used to further qualify the value that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value, which can be used to further qualify the property's value.
 {{% /tab %}}
 {{% tab %}}
 {{< highlight yaml "linenos=table" >}}
@@ -87,10 +87,10 @@ A `props` list in YAML contains individual OSCAL property items.
 
 Each property item can have the following keys:
 
-- `name` (Required) - The *name* of the OSCAL property that must be a [token](/reference/datatypes/#token) data type.
-- `ns` (Optional) - The *namespace* of the OSCAL property that must be a [universal resource identifier (URI)](/reference/datatypes/#uri) formatted according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
-- `value` (Required) - The *value* of the OSCAL property that must be a [string](/reference/datatypes/#string) value.
-- `class` (Optional) - The *class* of the OSCAL property  that must be a [string](/reference/datatypes/#string) value, which can be used to further qualify the value that must be a [string](/reference/datatypes/#string) value, which can be used to further qualify the property's value.
+- `name` (Required) - The *name* of the OSCAL property that must be a [token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) data type.
+- `ns` (Optional) - The *namespace* of the OSCAL property that must be a [universal resource identifier (URI)](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri) formatted according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986).
+- `value` (Required) - The *value* of the OSCAL property that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value.
+- `class` (Optional) - The *class* of the OSCAL property  that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value, which can be used to further qualify the value that must be a [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) value, which can be used to further qualify the property's value.
 {{% /tab %}}
 {{% /tabs %}}
 
@@ -118,9 +118,9 @@ For example, the property name "marking" might identify some information sensiti
 
 In OSCAL, many data fields have pre-defined names defined in the OSCAL namespace `http://csrc.nist.gov/ns/oscal`, which is the default value for the namespace when no namespace is provided. These pre-defined property names provided for standardized naming of properties, which can be recognized by multiple consumers to have a consistent meaning. The namespace can be omitted when using a property name pre-defined by OSCAL.
 
-For example, the OSCAL SSP model's system characteristics data field has a pre-defined property name `data-center` \[[XML](/reference/latest/system-security-plan/xml-reference/#/system-security-plan/system-characteristics/prop)\] \[[JSON/YAML](/reference/latest/system-security-plan/json-reference/#/system-security-plan/system-characteristics/props)\].
+For example, the OSCAL SSP model's system characteristics data field has a pre-defined property name `data-center` \[[XML](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/xml-reference/#/system-security-plan/system-characteristics/prop)\] \[[JSON/YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/json-reference/#/system-security-plan/system-characteristics/props)\].
 
-OSCAL content authors need to determine whether to use a pre-defined property name in a given situation or to define their own name in their own namespace. To view existing property names, review the model index \[[XML](/reference/latest/complete/xml-index/#/prop)\] \[[JSON/YAML](/reference/latest/complete/json-index/#/props)\].
+OSCAL content authors need to determine whether to use a pre-defined property name in a given situation or to define their own name in their own namespace. To view existing property names, review the model index \[[XML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/xml-index/#/prop)\] \[[JSON/YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/complete/json-index/#/props)\].
   
 New pre-defined names will be added to OSCAL over time as needed. To suggest or request the addition of a new pre-defined name in the OSCAL namespace, please [open an issue](https://github.com/usnistgov/OSCAL/issues/new?assignees=&labels=User+Story%2Cenhancement&template=feature_request.yaml) in the OSCAL GitHub repository.
 
@@ -169,7 +169,7 @@ The [Metadata Tutorial](../metadata/) provides in-depth description and walk-thr
 </system-security-plan>
 {{< /highlight >}}  
 
-The `@name` attribute is set to "type" which is an OSCAL pre-defined property for locations. The `@value` attribute is set to "data-center" which is an [OSCAL pre-defined](/reference/latest/system-security-plan/xml-reference/#/system-security-plan/metadata/location) value for location "type" properties. The `@class` attribute in this case is used to indicate a subclass of data-center, and is set to one of the appropriate [OSCAL pre-defined](/reference/latest/system-security-plan/xml-reference/#/system-security-plan/metadata/location) values for data center location class.
+The `@name` attribute is set to "type" which is an OSCAL pre-defined property for locations. The `@value` attribute is set to "data-center" which is an [OSCAL pre-defined](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/xml-reference/#/system-security-plan/metadata/location) value for location "type" properties. The `@class` attribute in this case is used to indicate a subclass of data-center, and is set to one of the appropriate [OSCAL pre-defined](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/xml-reference/#/system-security-plan/metadata/location) values for data center location class.
 
 Note that in this example, the `@ns` attribute is omitted because we are using a pre-defined property name in the OSCAL namespace.
 {{% /tab %}}
@@ -212,7 +212,7 @@ Note that in this example, the `@ns` attribute is omitted because we are using a
 }
 {{< /highlight >}}
 
-In the `props` object array, the prop object's `name` property is set to "type" which is an OSCAL pre-defined property for locations. The `value` property is set to "data-center" which is an [OSCAL pre-defined](/reference/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) value for location "type" properties. The `class` JSON property in this case is used to indicate a subclass of data-center, and is set to one of the appropriate [OSCAL pre-defined](/reference/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) values for data center location class.
+In the `props` object array, the prop object's `name` property is set to "type" which is an OSCAL pre-defined property for locations. The `value` property is set to "data-center" which is an [OSCAL pre-defined](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) value for location "type" properties. The `class` JSON property in this case is used to indicate a subclass of data-center, and is set to one of the appropriate [OSCAL pre-defined](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) values for data center location class.
 
 Note that in this example, the `ns` JSON property is omitted because we are using a pre-defined property name in the OSCAL namespace.
 {{% /tab %}}
@@ -241,7 +241,7 @@ system-security-plan:
   system-implementation: ...
 {{< /highlight >}}
 
-In the `props` list, the item's `name` key is set to "type" which is an OSCAL pre-defined property for locations. The `value` key is set to "data-center" which is an [OSCAL pre-defined](/reference/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) value for location "type" properties. The `class` key in this case is used to indicate a subclass of data-center, and is set to one of the appropriate [OSCAL pre-defined](/reference/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) values for data center location class.
+In the `props` list, the item's `name` key is set to "type" which is an OSCAL pre-defined property for locations. The `value` key is set to "data-center" which is an [OSCAL pre-defined](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) value for location "type" properties. The `class` key in this case is used to indicate a subclass of data-center, and is set to one of the appropriate [OSCAL pre-defined](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/json-reference/#/system-security-plan/metadata/locations) values for data center location class.
 
 Note that in this example, the `ns` key is omitted because we are using a standard OSCAL defined `prop` object.
 {{% /tab %}}
@@ -501,10 +501,10 @@ Here is a nominal example of a link in OSCAL.
 {{< /highlight >}} 
 
 Below is description of `<link>` attributes and sub-element:
-- `@href` (Required) - The `@href` attribute, or "hypertext reference", is a required, [resolvable URL reference](/reference/datatypes/#uri-reference) to a resource. This can either be an internet resource or a fragment that points to a back matter resource in the same document.
-- `@rel` (Optional) - The `@rel` attribute is a [token](/reference/datatypes/#token) datatype that can be used to describe the link&#39;s purpose.  Some OSCAL links may have pre-defined `@rel` values (e.g., reference), but generally, OSCAL content authors can specify any token value for a `@rel` attribute.
-- `@media-type` (Optional) - The `@media-type` attribute can be used to provide the consumer of the OSCAL content a hint about the type of data referenced in the link. Supported media types are defined by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/media-types/media-types.xhtml).  The `@media-type` attribute accepts [string](/reference/datatypes/#string) values.
-- `<text>` (Optional) - Finally, the `<text>` sub-element can be used for as a textual label for the `<link>` and accepts [markup-line](/reference/datatypes/#markup-line) datatype. The subsequent sections demonstrate the proper use of links.
+- `@href` (Required) - The `@href` attribute, or "hypertext reference", is a required, [resolvable URL reference](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri-reference) to a resource. This can either be an internet resource or a fragment that points to a back matter resource in the same document.
+- `@rel` (Optional) - The `@rel` attribute is a [token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) datatype that can be used to describe the link&#39;s purpose.  Some OSCAL links may have pre-defined `@rel` values (e.g., reference), but generally, OSCAL content authors can specify any token value for a `@rel` attribute.
+- `@media-type` (Optional) - The `@media-type` attribute can be used to provide the consumer of the OSCAL content a hint about the type of data referenced in the link. Supported media types are defined by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/media-types/media-types.xhtml).  The `@media-type` attribute accepts [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) values.
+- `<text>` (Optional) - Finally, the `<text>` sub-element can be used for as a textual label for the `<link>` and accepts [markup-line](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line) datatype. The subsequent sections demonstrate the proper use of links.
 {{% /tab %}}
 {{% tab %}}
 {{< highlight json "linenos=table" >}}
@@ -522,10 +522,10 @@ Below is description of `<link>` attributes and sub-element:
 The `links` object array represents a collection of links.
 
 Below is description of properties of a link object:
-- `href` (Required) - The `href` property, or "hypertext reference", is a required, [resolvable URL reference](/reference/datatypes/#uri-reference) to a resource. This can either be an internet resource or a fragment that points to a back matter resource in the same document.
-- `rel` (Optional) - The `rel` property is a [token](/reference/datatypes/#token) datatype that can be used to describe the link&#39;s purpose.  Some OSCAL link properties may have pre-defined `rel` values (e.g., reference), but generally, OSCAL content authors can specify any token value for a `rel` property.  
-- `media-type` (Optional) - The `media-type` property can be used to provide the consumer of the OSCAL content a hint about the type of data referenced in the link. Supported media types are as defined by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/media-types/media-types.xhtml).  The `media-type` property accepts [string](/reference/datatypes/#string) values.
-- `text` (Optional) - Finally, the `text` property can be used for as a textual label for the `link` and accepts [markup-line](/reference/datatypes/#markup-line) datatype. The subsequent sections demonstrate the proper use of links.
+- `href` (Required) - The `href` property, or "hypertext reference", is a required, [resolvable URL reference](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri-reference) to a resource. This can either be an internet resource or a fragment that points to a back matter resource in the same document.
+- `rel` (Optional) - The `rel` property is a [token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) datatype that can be used to describe the link&#39;s purpose.  Some OSCAL link properties may have pre-defined `rel` values (e.g., reference), but generally, OSCAL content authors can specify any token value for a `rel` property.  
+- `media-type` (Optional) - The `media-type` property can be used to provide the consumer of the OSCAL content a hint about the type of data referenced in the link. Supported media types are as defined by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/media-types/media-types.xhtml).  The `media-type` property accepts [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) values.
+- `text` (Optional) - Finally, the `text` property can be used for as a textual label for the `link` and accepts [markup-line](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line) datatype. The subsequent sections demonstrate the proper use of links.
 {{% /tab %}}
 {{% tab %}}
 {{< highlight yaml "linenos=table" >}}
@@ -539,10 +539,10 @@ links:
 The `links` list contains individual link items.
 
 Below is description of `links` key-values:
-- `href` (Required) - The `href` key, or "hypertext reference", is a required, [resolvable URL reference](/reference/datatypes/#uri-reference) to a resource. This can either be an internet resource or a fragment that points to a back matter resource in the same document.
-- `rel` (Optional) - The `rel` key is a [token](/reference/datatypes/#token) datatype that can be used to describe the link&#39;s purpose.  Some OSCAL link properties may have pre-defined `rel` values (e.g., reference), but generally, OSCAL content authors can specify any token value for a `rel` key.
-- `media-type` (Optional) - The `media-type` key can be used to provide the consumer of the OSCAL content a hint about the type of data referenced in the link. Supported media types are as defined by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/media-types/media-types.xhtml).  The `media-type` key accepts [string](/reference/datatypes/#string) values.
-- `text` (Optional) - Finally, the `text` key can be used for as a textual label for the `link` and accepts [markup-line](/reference/datatypes/#markup-line) datatype. The subsequent sections demonstrate the proper use of links.
+- `href` (Required) - The `href` key, or "hypertext reference", is a required, [resolvable URL reference](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uri-reference) to a resource. This can either be an internet resource or a fragment that points to a back matter resource in the same document.
+- `rel` (Optional) - The `rel` key is a [token](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) datatype that can be used to describe the link&#39;s purpose.  Some OSCAL link properties may have pre-defined `rel` values (e.g., reference), but generally, OSCAL content authors can specify any token value for a `rel` key.
+- `media-type` (Optional) - The `media-type` key can be used to provide the consumer of the OSCAL content a hint about the type of data referenced in the link. Supported media types are as defined by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/media-types/media-types.xhtml).  The `media-type` key accepts [string](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#string) values.
+- `text` (Optional) - Finally, the `text` key can be used for as a textual label for the `link` and accepts [markup-line](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#markup-line) datatype. The subsequent sections demonstrate the proper use of links.
 {{% /tab %}}
 {{% /tabs %}}
 
