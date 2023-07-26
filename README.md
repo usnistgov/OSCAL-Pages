@@ -56,3 +56,16 @@ docker-compose up
 ```
 
 You can use CTRL+C to stop the server.
+
+# How this Works
+
+- The `develop` branch is where all content is merged and PR'd for publication.
+- Once content is ready for release, the `develop` branch will be merged into `main` with a PR.
+- When this occurs the workflow will begin the publication process.
+- The static site generator (`hugo`) will generate the website.
+- Rendered content will be placed into the `published-pages` branch.
+- The content from `published-pages` will be copied (pushed) to the OSCAL project `nist-pages` branch.
+- The site will update.
+
+There is a `nist-pages` branch in OSCAL-Pages, but we are not using this since it will 
+publish a site at https://pages.nist.gov/OSCAL-Pages.  Since redirects are not supported, we cross push to the OSCAL repository directly.
