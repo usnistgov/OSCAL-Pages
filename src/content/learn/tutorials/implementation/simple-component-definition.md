@@ -541,7 +541,7 @@ and [YAML]({{< param "contentRepoPath" >}}/examples/component-definition/yaml/ex
 <component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
     uuid="a7ba800c-a432-44cd-9075-0862cd66da6b"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/master/xml/schema/oscal_component_schema.xsd">
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.0/oscal_component_schema.xsd">
   <metadata>
     <title>MongoDB Component Definition Example</title>
     <last-modified>2001-08-26T23:11:47Z</last-modified>
