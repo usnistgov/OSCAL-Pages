@@ -231,5 +231,4 @@ This allows developers to use their preferred format. A tool designed for one fo
 
 Currently, converters are available to convert XML-based OSCAL files to JSON and JSON-based OSCAL files to XML.
 
-- [XML to JSON converters](https://github.com/usnistgov/OSCAL/tree/main/json/convert) ([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/json#converting-oscal-xml-content-to-json))
-- [JSON to XML converters](https://github.com/usnistgov/OSCAL/tree/main/xml/convert) ([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/xml#converting-oscal-json-content-to-xml))
+For more details on converter usage, see the build and usage instructions on the [tools page](../../tools/_index.md#data-conversion).
