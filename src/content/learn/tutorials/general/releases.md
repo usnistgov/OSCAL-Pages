@@ -37,14 +37,14 @@ For example, a release for version 1.0.0 would be tagged `v1.0.0`.
 To test a specific release, [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and checkout the release's associated tag.
 Be sure to [clone the repository with submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#_cloning_submodules).
 
-As an example, to test the [OSCAL 1.1.0 pre-release](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0), you could clone the repository directly at the release tag:
+As an example, to test the [OSCAL 1.1.0 release](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0), you could clone the repository directly at the release tag:
 
 {{% callout note %}}Checking out a repository on a tag may yield a warning about being in a "detached HEAD" state, for more details, see the [Git documentation](https://git-scm.com/docs/git-checkout#_detached_head){{% /callout %}}
 
 ```sh
 # Clone the OSCAL repository with submodules at the 1.1.0 release
 # Note: this will create a sparse commit, and Git will warn you about being in a "detached head" state.
-# Alternatively clone the repository wi
+# Alternatively clone the repository with the default branch, and subsequently checkout a branch with the `release-` prefix or tag accordingly.
 git clone --recurse-submodules https://github.com/usnistgov/OSCAL.git --branch v1.1.0
 cd OSCAL
 ```
@@ -80,7 +80,7 @@ For more details see ["How do I test downstream tooling?"](#how-do-i-test-downst
 
 To obtain XML Schemas (XSDs) from a release, first follow the build instructions located in [`/build/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build) or download the assets directly from the [corresponding GitHub release](https://github.com/usnistgov/OSCAL/releases).
 
-XML OSCAL content can be validated using many tools that support XML Schema (XSD) files.
+OSCAL XML content can be validated using many tools that support XML Schema (XSD) files.
 As an example, a piece of OSCAL content can be validated against a schema using [`libxml2`](https://gitlab.gnome.org/GNOME/libxml2)'s [`xmllint`](https://gnome.pages.gitlab.gnome.org/libxml2/xmllint.html):
 
 ```sh
@@ -95,7 +95,7 @@ $ xmllint --noout \
 
 To obtain JSON schemas from a release, first follow the build instructions located in [`/build/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build) or download the assets directly from the [corresponding GitHub release](https://github.com/usnistgov/OSCAL/releases).
 
-JSON and YAML OSCAL content can be validated using many tools that support [JSON Schema](http://json-schema.org/implementations.html).
+OSCAL JSON and YAML content can be validated using many tools that support [JSON Schema](http://json-schema.org/implementations.html).
 As an example, a piece of OSCAL content can be validated against a schema using the [AJV CLI](https://github.com/ajv-validator/ajv-cli):
 
 ```sh
