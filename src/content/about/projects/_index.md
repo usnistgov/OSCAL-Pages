@@ -68,7 +68,7 @@ Repository: https://github.com/usnistgov/OSCAL-Pages
 
 ### OSCAL-Reference
 
-OSCAL-Reference contains the source code for web page templates and supporting automation to generate reference documentation from each model for each released version in the [OSCAL repository](#oscal). Although presented in a unified website with content from the source code in the [OSCAL-Pages repository](#oscal-pages), it is is managed separately for ease of maintenance and deployment.
+OSCAL-Reference contains the source code for web page templates and supporting automation to generate reference documentation from each model for each released version in the [OSCAL repository](#oscal). Although presented in a unified website with content from the source code in the [OSCAL-Pages repository](#oscal-pages), it is managed separately for ease of maintenance and deployment.
 
 Repository: https://github.com/usnistgov/OSCAL-Reference
 
