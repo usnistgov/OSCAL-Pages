@@ -52,8 +52,8 @@ These projects provide the central functionality and documentation of the OSCAL 
 
 ### OSCAL
 
-The OSCAL repository is core repository in the OSCAL project. It contains:
-- The [Metaschema](#Metaschema) model module definitions that define OSCAL itself
+The OSCAL repository is the core repository in the OSCAL project. It contains:
+- The [Metaschema](#metaschema) modules that define the OSCAL models
 - Artifacts published with every release, including:
     - XML and JSON schemas for all models
     - XML transformation pipelines for XML/JSON conversion
@@ -62,19 +62,19 @@ Repository: https://github.com/usnistgov/OSCAL
 
 ### OSCAL-Pages
 
-OSCAL-Pages is the repository that contains the source code to the content site for the overall project. This content includes background information about OSCAL tutorials, other educational material, news, and event information. Additionally, this repository includes processing specifications for certain models, such as [profile resolution](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/). The source code for the generated reference documentation is not managed here, but in a separate repository for ease of maintenance and deployment.
+OSCAL-Pages is the repository that contains the source code to the content site for the overall project. This content includes OSCAL tutorials, other educational material, news, and event information. Additionally, this repository also includes processing specifications for certain models, such as [profile resolution](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/). The source code for the generated reference documentation is not managed here, but in a separate repository for ease of maintenance and deployment.
 
 Repository: https://github.com/usnistgov/OSCAL-Pages
 
 ### OSCAL-Reference
 
-OSCAL-Reference contains the source to source code for web page templates and supporting automation to generate reference documentation from each model programmatically from the Metaschema module definitions in the [OSCAL repository](#oscal). Although presented in a unified website with content from the source code in the [OSCAL-Pages repository](#oscal-pages), it is is managed separately for ease of maintenance and deployment.
+OSCAL-Reference contains the source code for web page templates and supporting automation to generate reference documentation from each model for each released version in the [OSCAL repository](#oscal). Although presented in a unified website with content from the source code in the [OSCAL-Pages repository](#oscal-pages), it is is managed separately for ease of maintenance and deployment.
 
 Repository: https://github.com/usnistgov/OSCAL-Reference
 
 ### `liboscal-java`
 
-The liboscal-java repository contains a suite of Java libraries based on [metaschema-java](#Metaschema-Java) that implement common OSCAL operations such as reading/writing artifacts, profile resolution, and validation.
+The liboscal-java repository contains a suite of Java libraries based on [metaschema-java](#metaschema-java) that implement common OSCAL operations such as reading/writing artifacts, profile resolution, and validation.
 
 Repository: https://github.com/usnistgov/liboscal-java
 
@@ -84,7 +84,7 @@ The oscal-cli repository provides an easy-to-use command-line interface (CLI) ba
 
 Repository: https://github.com/usnistgov/oscal-cli
 
-### OSCAL-content
+### OSCAL-Content
 
 The OSCAL content repository provides a library of official NIST-maintained OSCAL examples in XML, JSON, and YAML.
 
