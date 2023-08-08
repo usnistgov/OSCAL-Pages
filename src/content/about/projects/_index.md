@@ -14,19 +14,24 @@ Where components use code defined in other components, these repositories form a
 graph TD
     subgraph "NIST-Maintained OSCAL Dependencies"
         metaschema((Metaschema))
+        metaschema-xslt((Metaschema XSLT))
         metaschema-java
         hugo-uswds
         
         metaschema-java-->|submodules|metaschema
+        metaschema-xslt-->|submodules|metaschema
         metaschema-->|submodules|hugo-uswds
     end
 
     subgraph "OSCAL Core Projects"
+        oscal-pages((OSCAL-Pages))
+        oscal-reference((OSCAL-Reference))
         oscal((OSCAL));
         liboscal-java
         oscal-cli(oscal-cli)
         oscal-content
 
+        oscal-reference--->|submodules|oscal
         oscal-cli-.->|depends on|liboscal-java-->|submodules|oscal
         oscal-content-->|submodules|oscal
     end
@@ -36,8 +41,8 @@ graph TD
         oscal-deep-diff(OSCAL-Deep-Diff)
     end
     
-    oscal-->|submodules|metaschema
-    oscal-->|submodules|hugo-uswds
+    oscal-->|submodules|metaschema-xslt
+    oscal-pages-->|submodules|hugo-uswds
     liboscal-java-.->|depends on|metaschema-java
 {{</mermaid>}}
 
@@ -47,28 +52,39 @@ These projects provide the central functionality and documentation of the OSCAL 
 
 ### OSCAL
 
-The OSCAL repository is the largest and most complex repository in the OSCAL project. It contains:
-- The [Metaschema](#Metaschema) model definitions that define OSCAL
-- The OSCAL website along with all tutorials and model documentation
-- Informal specifications for operations on OSCAL models (such as [profile resolution](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/))
-- XML and JSON schemas for all models
-- XML transformation pipelines for xml/json conversion
+The OSCAL repository is the core repository in the OSCAL project. It contains:
+- The [Metaschema](#metaschema) modules that define the OSCAL models
+- Artifacts published with every release, including:
+    - XML and JSON schemas for all models
+    - XML transformation pipelines for XML/JSON conversion
 
 Repository: https://github.com/usnistgov/OSCAL
 
+### OSCAL-Pages
+
+OSCAL-Pages is the repository that contains the source code to the content site for the overall project. This content includes OSCAL tutorials, other educational material, news, and event information. Additionally, this repository also includes processing specifications for certain models, such as [profile resolution](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/). The source code for the generated reference documentation is not managed here, but in a separate repository for ease of maintenance and deployment.
+
+Repository: https://github.com/usnistgov/OSCAL-Pages
+
+### OSCAL-Reference
+
+OSCAL-Reference contains the source code for web page templates and supporting automation to generate reference documentation from each model for each released version in the [OSCAL repository](#oscal). Although presented in a unified website with content from the source code in the [OSCAL-Pages repository](#oscal-pages), it is managed separately for ease of maintenance and deployment.
+
+Repository: https://github.com/usnistgov/OSCAL-Reference
+
 ### `liboscal-java`
 
-`liboscal-java` is a suite of Java libraries based on [Metaschema-Java](#Metaschema-Java) that implement common OSCAL operations such as reading/writing artifacts, profile resolution, and validation.
+The liboscal-java repository contains a suite of Java libraries based on [metaschema-java](#metaschema-java) that implement common OSCAL operations such as reading/writing artifacts, profile resolution, and validation.
 
 Repository: https://github.com/usnistgov/liboscal-java
 
 ### OSCAL-CLI
 
-OSCAL-CLI provides an easy-to-use command-line interface (CLI) based on [`liboscal-java`](#liboscal-java). 
+The oscal-cli repository provides an easy-to-use command-line interface (CLI) based on [`liboscal-java`](#liboscal-java). 
 
 Repository: https://github.com/usnistgov/oscal-cli
 
-### OSCAL-content
+### OSCAL-Content
 
 The OSCAL content repository provides a library of official NIST-maintained OSCAL examples in XML, JSON, and YAML.
 
@@ -80,15 +96,21 @@ These NIST projects underpin the OSCAL project, but are governed separately, out
 
 ### Metaschema
 
-Metaschema is the modeling language that OSCAL uses to define all models. This repository documents Metaschema and provides XML pipelines used by OSCAL to perform various operations, like generation of model documentation, schemas, and content converters.
+Metaschema is the modeling language that OSCAL uses to define all models. This repository contains the Metaschema specification, tutorials, and test cases.
 
 Repository: https://github.com/usnistgov/metaschema
 
 ### Metaschema-Java
 
-Metaschema-Java is the Java implementation of Metaschema, providing the toolchain used by [`liboscal-java`](#liboscal-java) to parse and validate OSCAL artifacts.
+The metaschema-java repository contains the Java implementation of Metaschema, providing the toolchain used by [`liboscal-java`](#liboscal-java) to parse and validate OSCAL artifacts as defined in the Metaschema modeling language.
 
 Repository: https://github.com/usnistgov/metaschema-java
+
+### Metaschema XSLT
+
+The metaschema-xslt repository contains the XSLT implementation of Metaschema to parse and validate OSCAL artifacts as defined in its modeling language. It publishes XML-based pipelines (XSLT and XProc) to perform various operations for OSCAL, like generation of model documentation, schemas, and content converters.
+
+Repository: https://github.com/usnistgov/metaschema-xslt
 
 ### Hugo-USWDS
 
