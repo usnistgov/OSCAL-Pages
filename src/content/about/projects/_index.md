@@ -42,7 +42,7 @@ graph TD
     end
     
     oscal-->|submodules|metaschema-xslt
-    oscal-pages-->|submodules|hugo-uswds
+    oscal-pages-->|vendors|hugo-uswds
     liboscal-java-.->|depends on|metaschema-java
 {{</mermaid>}}
 
