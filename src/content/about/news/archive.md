@@ -1,7 +1,7 @@
 ---
-title: News
-heading: OSCAL News
-description: News items relating to the OSCAL project.
+title: News Archive
+heading: OSCAL News Archive
+description: Archive of older news items relating to the OSCAL project
 toc:
   enabled: true
 ---
