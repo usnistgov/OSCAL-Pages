@@ -1,6 +1,6 @@
 ---
 title: OSCAL Resources
-heading: OSCAL Reference
+heading: OSCAL Resources
 menu:
   primary:
     name: Resources
