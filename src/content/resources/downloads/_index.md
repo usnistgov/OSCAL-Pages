@@ -1,13 +1,8 @@
 ---
 title: "Downloads"
-menu:
-  primary:
-    name: Downloads
-    weight: 40
-toc:
-  enabled: true
+
 aliases:
-  - /resources/
+ # - /resources/
   - /downloads/other-resources/
 ---
 
