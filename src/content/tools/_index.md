@@ -21,11 +21,15 @@ The following types of tools are developed by NIST OSCAL team:
 
 In order to support data interchange and semantic interoperability in this heterogeneous environment, the OSCAL project publishes some basic software components along with the OSCAL specifications, to help serve as reference points or "scaffolding" for developers and for partners in data exchange.
 
-See the OSCAL  [XML](https://github.com/usnistgov/OSCAL/tree/main/xml) and [JSON/YAML](https://github.com/usnistgov/OSCAL/tree/main/json) resource pages in the project repository for more details.
+See the [OSCAL build resource page](https://github.com/usnistgov/OSCAL/blob/main/build/README.md) in the project repository for more details.
 
 ### Validation
 
-OSCAL can be formally *validated* to help confirm its correctness and fitness for processing. Validation of any OSCAL content instance can be accomplished by applying the appropriate schema for the respective format. For example, a System Security Plan (SSP) represented in OSCAL XML can be validated against the [SSP XML Schema](https://github.com/usnistgov/OSCAL/blob/main/xml/schema/oscal_ssp_schema.xsd), which defines (in machinable form) the validation rules for OSCAL SSPs in XML. Validation operations are based entirely on non-proprietary, standardized processes available in multiple tool implementations, by reference to open, publicly available schemas, located in the [OSCAL repository](https://github.com/usnistgov/OSCAL/) for [XML](https://github.com/usnistgov/OSCAL/tree/main/xml/schema) and [JSON/YAML](https://github.com/usnistgov/OSCAL/tree/main/json/schema) respectively.
+OSCAL can be formally *validated* to help confirm its correctness and fitness for processing.
+Validation of any OSCAL content instance can be accomplished by applying the appropriate schema for the respective format.
+For example, a System Security Plan (SSP) represented in OSCAL XML can be validated against the [SSP XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_ssp_schema.xsd), which defines (in machine-readable form) the validation rules for OSCAL SSPs in XML.
+Validation operations are based entirely on non-proprietary, standardized processes available in multiple tool implementations, by reference to open, publicly available schemas, located in the [OSCAL repository](https://github.com/usnistgov/OSCAL/) for XML and JSON/YAML respectively.
+For details on how to use and obtain OSCAL schemas, see the [OSCAL repository build resource](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#schemas)
 
 YAML developers should take note that the JSON Schemas can be applied to YAML content instances.
 
@@ -37,10 +41,7 @@ Because OSCAL can be XML, JSON or YAML, it is sometimes useful to convert OSCAL 
 
 Additionally, OSCAL applications such as those listed below, when reading and writing OSCAL, may themselves support more than one syntax. Check the features of your processor in case you do not need a standalone tool for data conversion.
 
-Details on acquiring and running the converters:
-
-- converting *into* JSON - [XML to JSON](https://github.com/usnistgov/OSCAL/tree/main/json)
-- converting *into* XML - [JSON to XML](https://github.com/usnistgov/OSCAL/tree/main/xml)
+For details on how to use and obtain OSCAL converters, see the [OSCAL repository build resource](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)
  
 ## NIST's OSCAL Application Frameworks, Tools and Libraries
 
@@ -51,4 +52,4 @@ Valid OSCAL is open-ended in application. Some of the tools described provide va
 | [OSCAL Deep Diff](https://github.com/usnistgov/oscal-deep-diff) | A Typescript-based CLI application and library that produces machine readable and human-consumable comparisons of JSON OSCAL artifacts. | open source |
 | [OSCAL Java Library](https://github.com/usnistgov/liboscal-java) | A Java-based programming API for reading and writing content conformant to the OSCAL XML, JSON, and YAML based models. | open source |
 | [XSLT Tooling](https://github.com/usnistgov/oscal-tools/tree/main/xslt) | A variety of Extensible Stylesheet Language (XSL) Transformations (XSLT), Cascading Style Sheets (CSS), and related utilities for authoring, converting, and publishing OSCAL content in various forms. | open source |
-| [OSCAL Java CLI](https://github.com/usnistgov/oscal-cli) | An OSCAL Java command-line tool able to validate OSCAL content and metaschema for well formatting, to convert such content between the OSCAL XML, JSON and YAML formats, to resolve OSCAL profiles, and to generateXML and JSON schemas from a Metachema model definition. | open source |
+| [OSCAL Java CLI](https://github.com/usnistgov/oscal-cli) | An OSCAL Java command-line tool able to validate OSCAL content and metaschema for well formatting, to convert such content between the OSCAL XML, JSON and YAML formats, to resolve OSCAL profiles, and to generateXML and JSON schemas from Metaschema module(s). | open source |

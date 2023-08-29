@@ -37,11 +37,15 @@ For example, a release for version 1.0.0 would be tagged `v1.0.0`.
 To test a specific release, [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and checkout the release's associated tag.
 Be sure to [clone the repository with submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#_cloning_submodules).
 
-As an example, to test the [OSCAL 1.0.5 pre-release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.5), you could clone the repository directly at the release tag:
+As an example, to test the [OSCAL 1.1.0 release](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0), you could clone the repository directly at the release tag:
+
+{{% callout note %}}Checking out a repository on a tag may yield a warning about being in a "detached HEAD" state, for more details, see the [Git documentation](https://git-scm.com/docs/git-checkout#_detached_head){{% /callout %}}
 
 ```sh
-# Clone the OSCAL repository with submodules at the 1.0.5 release
-git clone --recurse-submodules https://github.com/usnistgov/OSCAL.git --branch v1.0.5
+# Clone the OSCAL repository with submodules at the 1.1.0 release
+# Note: this will create a sparse commit, and Git will warn you about being in a "detached head" state.
+# Alternatively clone the repository with the default branch, and subsequently checkout a branch with the `release-` prefix or tag accordingly.
+git clone --recurse-submodules https://github.com/usnistgov/OSCAL.git --branch v1.1.0
 cd OSCAL
 ```
 
@@ -52,8 +56,8 @@ Or you could checkout the tag on an existing copy of the repository:
 cd path/to/OSCAL
 # Fetch the newest changes to the repository from GitHub
 git fetch --all
-# Checkout the "v1.0.5" tag
-git checkout v1.0.5
+# Checkout the "v1.1.0" tag
+git checkout v1.1.0
 ```
 
 ### How do I validate existing content against a new release?
@@ -68,17 +72,20 @@ These constraints can be validated using downstream tools, such as the [OSCAL CL
 Accompanying pre-releases for these tools may be created as appropriate.
 For more details see ["How do I test downstream tooling?"](#how-do-i-test-downstream-oscal-tooling).
 
+{{% callout warning %}}Starting with [release 1.1.0](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0), build artifacts (schemas, converters) are now distributed as part of a release and are no longer tracked within the OSCAL Git repository.{{% /callout %}}
+
 #### Validating XML OSCAL content
 
 {{<callout>}}We appreciate the community using [example content from NIST](https://github.com/usnistgov/oscal-content/blob/main/examples/) and others, but we strongly encourage the community to test validation against real-world, production-grade data.{{</callout>}}
-XML OSCAL content can be validated using many tools that support XML Schema (XSD) files.
-Schemas are located in the OSCAL repository at the path [`/xml/schema`](https://github.com/usnistgov/OSCAL/tree/main/xml/schema).
 
+To obtain XML Schemas (XSDs) from a release, first follow the build instructions located in [`/build/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build) or download the assets directly from the [corresponding GitHub release](https://github.com/usnistgov/OSCAL/releases).
+
+OSCAL XML content can be validated using many tools that support XML Schema (XSD) files.
 As an example, a piece of OSCAL content can be validated against a schema using [`libxml2`](https://gitlab.gnome.org/GNOME/libxml2)'s [`xmllint`](https://gnome.pages.gitlab.gnome.org/libxml2/xmllint.html):
 
 ```sh
 $ xmllint --noout \
-  --schema OSCAL/xml/schema/oscal_complete_schema.xsd \
+  --schema OSCAL/build/generated/oscal_complete_schema.xsd \
   example_oscal_content.xml
 ```
 
@@ -86,14 +93,14 @@ $ xmllint --noout \
 
 {{<callout>}}We appreciate the community using [example content from NIST](https://github.com/usnistgov/oscal-content/blob/main/examples/) and others, but we strongly encourage the community to test validation against real-world, production-grade data.{{</callout>}}
 
-JSON and YAML OSCAL content can be validated using many tools that support [JSON Schema](http://json-schema.org/implementations.html).
-Schemas are located in the OSCAL repository at the path [`/json/schema/`](https://github.com/usnistgov/OSCAL/tree/main/json/schema).
+To obtain JSON schemas from a release, first follow the build instructions located in [`/build/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build) or download the assets directly from the [corresponding GitHub release](https://github.com/usnistgov/OSCAL/releases).
 
+OSCAL JSON and YAML content can be validated using many tools that support [JSON Schema](http://json-schema.org/implementations.html).
 As an example, a piece of OSCAL content can be validated against a schema using the [AJV CLI](https://github.com/ajv-validator/ajv-cli):
 
 ```sh
 $ ajv validate \
-  -s OSCAL/json/schema/oscal_complete_schema.json \
+  -s OSCAL/build/generated/oscal_complete_schema.json \
   -d example_oscal_content.json
 ```
 
@@ -104,21 +111,19 @@ Currently the underlying XML tooling is also used to generate the XML and JSON s
 
 Relevant changes to the XML tooling are provided as part of the [patch notes](https://github.com/usnistgov/OSCAL/releases/) for a release.
 
-To use the XML tools from a release, first follow the environment setup instructions located in [`/build/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build) and [`/build/ci-cd/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build/ci-cd).
-The [Docker](https://www.docker.com/) container definition (located in [`/build/Dockerfile`](https://github.com/usnistgov/OSCAL/blob/main/build/Dockerfile)) provides a simple way to replicate the build environment reproducibly.
+To use the XML tools from a release, first follow the build instructions located in [`/build/README.md`](https://github.com/usnistgov/OSCAL/tree/main/build) or download the assets directly from the [corresponding GitHub release](https://github.com/usnistgov/OSCAL/releases).
 
 #### Conversion
 
 {{<callout>}}We appreciate the community using [example content from NIST](https://github.com/usnistgov/oscal-content/blob/main/examples/) and others, but we strongly encourage the community to test content conversion against real-world, production-grade data.{{</callout>}}
 
-Detailed instructions for performing OSCAL content conversion from XML to JSON are located at [`/json/README.md`](https://github.com/usnistgov/OSCAL/tree/main/json).
-Detailed instructions for performing OSCAL content conversion from JSON to XML are located at [`/xml/README.md`](https://github.com/usnistgov/OSCAL/tree/main/xml).
+Detailed instructions for performing OSCAL content conversion from XML to JSON and back are located at [`/build/README.md`](https://github.com/usnistgov/OSCAL/blob/main/build/README.md)
 
 #### Profile Resolution
 
 {{<callout>}}We appreciate the community using [example content from NIST](https://github.com/usnistgov/oscal-content/blob/main/examples/) and others, but we strongly encourage the community to test profile resolution against real-world, production-grade data.{{</callout>}}
 
-Detailed instructions for performing profile resolution are located at [`/src/utils/util/resolver-pipeline/readme.md`](https://github.com/usnistgov/OSCAL/tree/main/src/utils/util/resolver-pipeline).
+Detailed instructions for performing profile resolution are located at [`/src/utils/resolver-pipeline/readme.md`](https://github.com/usnistgov/OSCAL/tree/main/src/utils/resolver-pipeline).
 
 ### How do I test downstream OSCAL tooling?
 
