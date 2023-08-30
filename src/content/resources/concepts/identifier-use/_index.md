@@ -9,6 +9,8 @@ sidenav:
   focusrenderdepth: 2
   activerenderdepth: 2
   inactiverenderdepth: 2
+aliases:
+  - /concepts/identifier-use/
 ---
 
 This page reviews important concepts to be aware of when declaring or referencing identifiers in OSCAL models, with in-depth explanations of identifier uniqueness and scope.  

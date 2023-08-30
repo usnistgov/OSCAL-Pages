@@ -3,7 +3,7 @@ title: "Downloads"
 toc:
   enabled: true
 aliases:
-  - /resources/
+  - /downloads/
   - /downloads/other-resources/
 ---
 

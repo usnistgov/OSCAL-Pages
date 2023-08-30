@@ -3,6 +3,8 @@ title: Examples
 heading: OSCAL Examples
 toc:
   enabled: true
+aliases:
+  - /examples/
 ---
  
 To facilitate the OSCAL adoption in ways that allow the adopters to take full advange of OSCAL abilities of representing the security data and the automation of the security assessment and of the risk management with a maximum return on investment (ROI), the NIST OSCAL team published basic examples of OSCAL content instances in the NIST's OSCAL-content repository, the [examples](https://github.com/usnistgov/oscal-content/tree/main/examples) directory.

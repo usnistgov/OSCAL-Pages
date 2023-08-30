@@ -3,6 +3,8 @@ title: OSCAL Reference
 heading: OSCAL Reference (Moved)
 toc:
   enabled: false
+aliases:
+  - /reference/
 ---
 
 <br/><br/><br/>

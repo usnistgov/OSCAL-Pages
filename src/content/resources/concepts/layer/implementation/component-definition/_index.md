@@ -9,6 +9,7 @@ aliases:
   - /docs/model/component/
   - /documentation/schema/component/
   - /documentation/schema/implementation-layer/component/
+    - /concepts/layer/implementation/component/
 ---
 
 | Component Schema | Component Converters | Reference |

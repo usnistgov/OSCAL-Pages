@@ -6,6 +6,7 @@ aliases: []
 suppresstopiclist: true
 aliases:
 - /concepts/layer/validation/
+- /concepts/validation/
 ---
 
 ## Who is this document for?

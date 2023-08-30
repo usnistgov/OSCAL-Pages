@@ -11,6 +11,7 @@ aliases:
   - /documentation/schema/catalog/
   - /documentation/schema/catalog-layer/catalog/
   - /documentation/schema/catalog-layer/catalog/examples/
+  - /concepts/layer/control/catalog/
 suppresstopiclist: true
 ---
 

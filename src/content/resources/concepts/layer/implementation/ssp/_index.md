@@ -7,6 +7,7 @@ toc:
 aliases:
   - /documentation/schema/ssp/
   - /documentation/schema/implementation-layer/ssp/
+  - /concepts/layer/implementation/ssp/
 ---
 
 | SSP Schema | SSP Converters | Reference |

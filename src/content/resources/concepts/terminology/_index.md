@@ -14,6 +14,7 @@ aliases:
  - /learnmore/concepts/catalog/
  - /learnmore/concepts/profile/
  - /documentation/concepts/
+ - /concepts/terminology/
 ---
 
 This page reviews the many concepts and terms used in OSCAL, and is organized by the corresponding OSCAL layer where a given concept is first introduced.

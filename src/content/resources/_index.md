@@ -10,5 +10,5 @@ sidenav:
   inactiverenderdepth: 2
   activerenderdepth: 2
 toc:
-  enabled: true 
+  enabled: true
 ---

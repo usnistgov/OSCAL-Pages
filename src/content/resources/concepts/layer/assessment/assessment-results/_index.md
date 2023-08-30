@@ -8,6 +8,7 @@ toc:
 aliases:
   - /documentation/schema/assessment-results/
   - /documentation/schema/assessment-results-layer/assessment-results/
+  - /concepts/layer/assessment/assessment-results/
 ---
 
 | Assessment Results Schema | Assessment Results Converters | Reference

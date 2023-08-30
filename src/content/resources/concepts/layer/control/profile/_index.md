@@ -10,6 +10,7 @@ aliases:
   - /docs/model/profile/
   - /documentation/schema/profile/
   - /documentation/schema/profile-layer/profile/
+  - /concepts/layer/control/profile/
 ---
 
 | Profile Schema | Profile Converters | Reference |

@@ -11,6 +11,7 @@ toc:
 aliases:
   - /documentation/schema/catalog-layer/
   - /documentation/schema/profile-layer/
+  - /concepts/layer/control/
 ---
 
 The OSCAL control layer consists of the following models.

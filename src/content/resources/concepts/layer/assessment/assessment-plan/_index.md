@@ -8,6 +8,7 @@ toc:
 aliases:
   - /documentation/schema/assessment-plan/
   - /documentation/schema/assessment-layer/assessment-plan/
+  - /concepts/layer/assessment/assessment-plan/
 ---
 
 | Assessment Plan Schema | Assessment Plan Converters | Reference

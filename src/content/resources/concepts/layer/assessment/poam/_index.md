@@ -8,6 +8,7 @@ toc:
 aliases:
   - /documentation/schema/poam/
   - /documentation/schema/assessment-results-layer/poam/
+  - /concepts/layer/assessment/poam/
 ---
 
 | POA&M Schema | POA&M Converters | Reference

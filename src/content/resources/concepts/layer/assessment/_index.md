@@ -11,6 +11,7 @@ toc:
 aliases:
   - /documentation/schema/assessment-layer/
   - /documentation/schema/assessment-results-layer/
+  - /concepts/layer/assessment/
 ---
 
 The OSCAL assessment layer provides models for describing how an assessment is planned, performed, and how the results of assessment activities are reported.

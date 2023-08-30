@@ -7,6 +7,7 @@ toc:
 aliases:
   - /docs/relations/
   - /documentation/relations-to-other/
+  - /concepts/relations-to-other/
 ---
 
 Professionals working in the security domain are already familiar with numerous standards, specifications, guidelines and regulatory frameworks that define and describe practice in the systems security arena: NIST SP800-53, ISO 27002, FedRAMP, FISMA/FIPS, HIPAA and others. OSCAL's models are designed to capture the full range of these.

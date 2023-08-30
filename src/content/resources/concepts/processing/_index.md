@@ -5,6 +5,7 @@ description: Standardized processes to be applied to OSCAL data
 aliases:
   - /documentation/specification/
   - /documentation/processing/
+  - /concepts/processing/
 suppresstopiclist: true
 ---
 

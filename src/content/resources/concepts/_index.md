@@ -8,6 +8,7 @@ sidenav:
 aliases:
   - /docs/schemas/
   - /documentation/
+  - /concepts/
 ---
 
 This section of the OSCAL website presents:
