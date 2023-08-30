@@ -1,10 +1,6 @@
 ---
 title: Examples
 heading: OSCAL Examples
-menu:
-  primary:
-    name: Examples
-    weight: 50
 toc:
   enabled: true
 ---

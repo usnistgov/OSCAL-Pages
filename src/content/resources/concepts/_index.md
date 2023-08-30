@@ -1,9 +1,5 @@
 ---
 title: "OSCAL Concepts"
-menu:
-  primary:
-    name: Concepts
-    weight: 30
 suppresstopiclist: true
 sidenav:
   focusrenderdepth: 2

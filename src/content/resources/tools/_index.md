@@ -1,10 +1,6 @@
 ---
 title: Tools
 heading: OSCAL Tools
-menu:
-  primary:
-    name: Tools
-    weight: 50
 toc:
   enabled: true
 ---
