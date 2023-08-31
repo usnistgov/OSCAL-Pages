@@ -3,7 +3,7 @@ title: Learning Resources
 menu:
   primary:
     name: Learn
-    weight: 25
+    weight: 20
 suppresstopiclists: true
 ---
 

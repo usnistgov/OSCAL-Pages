@@ -4,7 +4,7 @@ heading: OSCAL Resources
 menu:
   primary:
     name: Resources
-    weight: 20
+    weight: 25
 sidenav:
   focusrenderdepth: 2
   inactiverenderdepth: 2
