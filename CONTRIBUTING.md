@@ -1,7 +1,7 @@
 
 # Branching for Contributors
 
-[OSCAL](https://github.com/usnistgov/OSCAL/) is the parent project of all `OSCAL-*` related repositories, and ***generally** all practices and guidance for contributions, versioning and branching apply.  
+[OSCAL](https://github.com/usnistgov/OSCAL/) is the parent repository of all `OSCAL-*` related repositories, and, ***generally***, all practices and guidance for contributions, versioning and branching defined in OSCAL also apply to those repositories.
 
 OSCAL-Pages is specific to the content that is published to the website for OSCAL, and this means that the ***branching naming convention is slightly different** to coordinate content with events, model updates and other important information for the community.
 
