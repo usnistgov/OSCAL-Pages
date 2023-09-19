@@ -4,7 +4,7 @@ title: OSCAL's Fall Cleaning
 
 Welcome to the Open Security Controls Assessment Language (OSCAL) Blog, open to the NIST OSCAL Team and to the community! 
 
-If you work closely with us, you might have noticed we finished [a large code repository reorganization](https://github.com/usnistgov/OSCAL/blob/f24dd56d5569ade8489924cf6fc2640dc297bfbe/decisions/0005-repository-reorganization.md) alongside [the release of OSCAL v1.1.0](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0). The OSCAL Project was in a desperate need of some internal restructuring, a fall cleaning of sorts. As an OSCAL user, the differences should not affect affect you, but we will still summarize some key changes for you. 
+If you work closely with us, you might have noticed we finished [a large code repository reorganization](https://github.com/usnistgov/OSCAL/blob/f24dd56d5569ade8489924cf6fc2640dc297bfbe/decisions/0005-repository-reorganization.md) alongside [the release of OSCAL v1.1.0](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0) and the subsequent [OSCAL v1.1.1 release] (https://github.com/usnistgov/OSCAL/releases/tag/v1.1.1). The OSCAL Project was in a desperate need of some internal restructuring, a fall cleaning of sorts. As an OSCAL user, the differences should not affect affect you, but we will still summarize some key changes for you. 
 
 One may wonder why we reorganized our code repos only recently. Our answer is simple: we started small (more than six years ago!) and wanted to keep everything in one place to reduce the maintenance overhead. As we expanded our work, we needed to separate code repos to get better organized.
 
