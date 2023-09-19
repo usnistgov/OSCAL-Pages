@@ -1,5 +1,5 @@
 ---
-title: OSCAL and Its First Deep Cleaning
+title: OSCAL's Fall Cleaning
 ---
 
 Welcome to the Open Security Controls Assessment Language (OSCAL) Blog, open to the NIST OSCAL Team and to all! 
