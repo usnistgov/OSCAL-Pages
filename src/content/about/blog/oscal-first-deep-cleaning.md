@@ -8,11 +8,12 @@ If you work closely with us, you might have noticed we finished [a large code re
 
 One may wonder why we reorganized our code repos only recently. Our answer is simple: we started small (more than six years ago!) and wanted to keep everything in one place to reduce the maintenance overhead. As we expanded our work, we needed to separate code repos to get better organized.
 
-Here is what we have done:
+Here is what changed:
 
 - The OSCAL website's source code (known as OSCAL pages) moved to its own repo, [OSCAL-Pages](https://github.com/usnistgov/OSCAL-Pages).
 - The OSCAL reference documentation's source code moved to its own repo, [OSCAL-Reference](https://github.com/usnistgov/OSCAL-Reference).
-- The  Metaschema tooling's source code, which we use to process OSCAL models and generate documentation, moved to its own repo, [metaschema-xslt](https://github.com/usnistgov/metaschema-xslt).
+- The Metaschema tooling's source code, which we use to process OSCAL models and generate documentation, moved to its own repo, [metaschema-xslt](https://github.com/usnistgov/metaschema-xslt).
+- The generated JSON and XML schemas for the models and converters for JSON-XML and XML-JSON conversion are only [published as part of releases](https://github.com/usnistgov/OSCAL/releases), they are not saved in the [OSCAL repo](https://github.com/usnistgov/OSCAL/) like source code anymore.
 
 The NIST OSCAL Team officially maintains those new repos above and the same [oscal-content](https://github.com/usnistgov/oscal-content/), [liboscal-java](https://github.com/usnistgov/liboscal-java/), [oscal-cli](https://github.com/usnistgov/oscal-cli/) repos just like before. As priorities shifted, we have paused development on [oscal-cat](https://github.com/usnistgov/oscal-cat) and [oscal-tools](https://github.com/usnistgov/oscal-tools). Those projects are archived and remain available for reference and demonstration.
 
