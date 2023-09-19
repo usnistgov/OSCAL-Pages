@@ -17,8 +17,6 @@ Here is what changed:
 
 The NIST OSCAL Team officially maintains those new repos in addition to the existing [OSCAL](https://github.com/usnistgov/OSCAL/), [oscal-content](https://github.com/usnistgov/oscal-content/), [liboscal-java](https://github.com/usnistgov/liboscal-java/), and [oscal-cli](https://github.com/usnistgov/oscal-cli/) repos. As priorities shifted, we have paused development on [oscal-cat, the catalog authoring tool](https://github.com/usnistgov/oscal-cat), and [oscal-tools, a library of XSLT transformations for OSCAL developer use cases](https://github.com/usnistgov/oscal-tools). Those projects are archived and remain available for reference and demonstration.
 
-OSCAL leverages the [Metaschema Information Modeling Framework](https://github.com/usnistgov/metaschema) just like before, but we changed where and how we use the same Metaschema tooling.
-
 For an up-to-date description of all projects and their relationship to one another, please take a moment and review the [OSCAL project structure](https://pages.nist.gov/OSCAL/about/projects/) on our website.
 
 Moving forward, the NIST team will author future blog posts as needed. If you have an OSCAL topic you would like to read about or you want to guest-author a blog, you can email the [NIST OSCAL team](mailto:oscal@nist.gov?subject=NIST%20Blog) your proposal and the team will work with you to approve and post the blog.
