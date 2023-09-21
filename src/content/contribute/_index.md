@@ -21,6 +21,7 @@ We are excited that you want to contribute to the OSCAL project. We are striving
 
 We use GitHub as a collaboration platform for the development of the OSCAL models. Within the OSCAL GitHub repository you will find:
 
+- Join in the [discussions](https://github.com/usnistgov/OSCAL/discussions) to generate ideas, participate in polls and get your questions answered.
 - A [set of issues](https://github.com/usnistgov/OSCAL/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) for which we need your help. Feel free to pick from this list, or [reach out to us](/contact/) about any other ideas you might have.
 - [Guidelines](https://github.com/usnistgov/OSCAL/blob/main/CONTRIBUTING.md) on contributing to this project.
 - A [project board](https://github.com/orgs/usnistgov/projects/25) that shows the issues the team is currently working on.
