@@ -11,6 +11,7 @@ aliases:
   - /documentation/schema/model-concepts/
   - /documentation/schema/overview/
   - /concepts/overview/
+  - /concepts/layer/overview/
 ---
 
 OSCAL is organized in a series of **layers** that each provide a set of **models**.
