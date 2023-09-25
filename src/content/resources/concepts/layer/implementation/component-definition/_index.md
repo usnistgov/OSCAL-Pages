@@ -10,6 +10,7 @@ aliases:
   - /documentation/schema/component/
   - /documentation/schema/implementation-layer/component/
   - /concepts/layer/implementation/component/
+  - /concepts/layer/implementation/component-definition/
 ---
 
 | Component Schema | Component Converters | Reference |
