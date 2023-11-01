@@ -8,6 +8,8 @@ sidenav:
     inactiverenderdepth: 2
 toc:
   enabled: true
+aliases:
+  - /concepts/layer/implementation/
 ---
 
 The OSCAL implementation layer provides models for describing how controls are implemented in a specific system or in distributed component that can be incorporated into a system.
