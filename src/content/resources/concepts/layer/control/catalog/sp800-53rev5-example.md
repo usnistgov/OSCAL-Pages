@@ -6,6 +6,8 @@ sidenav:
   title: SP800-53 Control Example
 toc:
   enabled: true
+aliases:
+  - /concepts/layer/control/catalog/sp800-53rev5-example/
 ---
 
 
