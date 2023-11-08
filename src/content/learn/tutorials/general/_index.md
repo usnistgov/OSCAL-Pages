@@ -1,5 +1,6 @@
 ---
 title: General Topics
+date: 2022-07-25 15:55:00 -0400
 heading: Tutorials that apply to OSCAL as a whole
 description: A set of tutorials that apply to all OSCAL models.
 weight: 10

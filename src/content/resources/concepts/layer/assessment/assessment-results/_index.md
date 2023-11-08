@@ -1,5 +1,6 @@
 ---
 title: Assessment Results Model
+date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Assessment Layer: Assessment Results Model"
 suppresstopiclist: true
 weight: 65

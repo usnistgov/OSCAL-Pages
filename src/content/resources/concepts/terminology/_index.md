@@ -1,5 +1,6 @@
 ---
 title: Key Concepts and Terms Used in OSCAL
+date: 2020-04-23 16:34:04 -0400
 heading: Key Concepts and Terms Used in OSCAL
 weight: 10
 sidenav:
