@@ -1,5 +1,6 @@
 ---
 title: OSCAL Model Engineering Meeting
+date: 2023-01-19 14:07:28 -0500
 description: Details about the OSCAL Model Engineering Meeting
 layout: devlunch
 aliases:

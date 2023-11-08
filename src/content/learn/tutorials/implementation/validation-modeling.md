@@ -1,5 +1,6 @@
 ---
 title: Representing Test Validation Information
+date: 2020-11-12 20:31:50 -0500
 heading: "Representing Test Validation Information for Components"
 summary: "A mini-tutorial on providing test validation information (e.g., FIPS 140-2 validation) as an OSCAL component."
 weight: 90

@@ -1,5 +1,6 @@
 ---
 title: Examples
+date: 2023-03-01 14:38:14 -0500
 heading: OSCAL Examples
 toc:
   enabled: true

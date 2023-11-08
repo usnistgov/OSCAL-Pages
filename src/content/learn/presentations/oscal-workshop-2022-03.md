@@ -1,5 +1,6 @@
 ---
 title: 3rd OSCAL Workshop
+date: 2022-05-26 13:18:18 -0400
 heading: 3rd Open Security Controls Assessment Language (OSCAL) Workshop
 toc:
   enabled: true
