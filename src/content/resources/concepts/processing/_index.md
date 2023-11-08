@@ -1,5 +1,6 @@
 ---
 title: Processing Specifications
+date: 2019-12-06 13:43:03 -0500
 weight: 50
 description: Standardized processes to be applied to OSCAL data
 aliases:

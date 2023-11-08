@@ -1,5 +1,6 @@
 ---
 title: Testing New Releases
+date: 2023-06-14 13:03:08 -0400
 heading: Testing New OSCAL Releases
 Description: A tutorial that 
 suppresstopiclist: true

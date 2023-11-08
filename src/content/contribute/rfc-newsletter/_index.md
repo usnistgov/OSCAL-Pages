@@ -1,5 +1,6 @@
 ---
 title: Request for Contributors Archive
+date: 2023-03-03 19:03:27 -0500
 description: A website archive of RFC newsletter requests.
 layout: rfc
 aliases:

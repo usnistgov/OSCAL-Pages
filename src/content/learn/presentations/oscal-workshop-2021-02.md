@@ -1,5 +1,6 @@
 ---
 title: 2nd OSCAL Workshop
+date: 2021-04-22 09:52:36 -0400
 heading: 2nd Open Security Controls Assessment Language (OSCAL) Workshop
 toc:
   enabled: true
