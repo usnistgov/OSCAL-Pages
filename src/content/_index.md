@@ -1,5 +1,6 @@
 ---
 title: "OSCAL - Open Security Controls Assessment Language"
+date: 2019-10-11 17:41:35 -0400
 ---
 {{% usa-hero image="/automation-hero.png" calloutText="Automated" calloutAltText="Control-Based Assessment" buttonURL="/about/" buttonText="Learn More" %}}
 Supporting Control-Based<br/>

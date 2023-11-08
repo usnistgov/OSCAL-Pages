@@ -1,5 +1,6 @@
 ---
 title: Extending OSCAL Models
+date: 2022-07-25 15:55:00 -0400
 heading: Extending OSCAL Models with Props and Links
 description: A tutorial on extending OSCAL models by using props and links.
 weight: 10

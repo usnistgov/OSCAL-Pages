@@ -1,5 +1,6 @@
 ---
 title: Assessment Plan Model
+date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Assessment Layer: Assessment Plan Model"
 suppresstopiclist: true
 weight: 60

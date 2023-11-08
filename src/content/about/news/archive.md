@@ -1,5 +1,6 @@
 ---
 title: News Archive
+date: 2021-04-22 09:52:36 -0400
 heading: OSCAL News Archive
 description: Archive of older news items relating to the OSCAL project
 toc:

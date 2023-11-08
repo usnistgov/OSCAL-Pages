@@ -1,5 +1,6 @@
 ---
 title: For Baseline Authors
+date: 2019-06-15 20:12:36 -0400
 heading: How can authors of baselines get involved?
 description: How can authors of baselines get involved?
 toc:

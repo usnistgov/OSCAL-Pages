@@ -1,5 +1,6 @@
 ---
 title: OSCAL's Fall Cleaning
+date: 2023-09-19 17:31:43 -0400
 ---
 
 Welcome to the Open Security Controls Assessment Language (OSCAL) Blog, open to the NIST OSCAL Team and to the community! 
