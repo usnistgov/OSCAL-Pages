@@ -3,5 +3,4 @@
 node_modules/
 src/public
 src/resources/_gen
-
-
+lychee_report.md
