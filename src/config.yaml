@@ -10,7 +10,6 @@ languages:
     languageName: English
     weight: 1
 MetaDataFormat: "yaml"
-theme: "uswds"
 googleAnalytics: UA-66610693-1
 enableGitInfo: true
 pygmentsCodeFences: true
@@ -43,6 +42,8 @@ menu:
     url: https://github.com/usnistgov/OSCAL
     weight: 90
 module:
+  imports:
+    - path: github.com/usnistgov/hugo-uswds
   mounts:
 #  - source: content
 #    target: content
