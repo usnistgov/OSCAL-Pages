@@ -25,19 +25,10 @@ If you have any questions about OSCAL in general or if you would like to get inv
 Run the following Git command to clone the OSCAL-Pages repository, and you can begin editing content without any special setup.
 
 ```sh
-git clone --recurse-submodules https://github.com/usnistgov/OSCAL-Pages.git
+git clone https://github.com/usnistgov/OSCAL-Pages.git
 ```
 
 The website content in this repository is generated into the full website with [Hugo](https://gohugo.io/).  If you wish to run the website locally, you can either install hugo, or use Docker and docker-compose.
-
-## Initializing for Development
-
-This repository uses submodules to load design elements required by the website.  You can initialize these submodules with the command inside the cloned repository:
-
-```sh
-cd OSCAL-Pages
-git submodule update --init --recursive
-```
 
 ## Using Hugo
 
