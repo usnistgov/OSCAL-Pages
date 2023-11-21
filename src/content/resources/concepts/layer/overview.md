@@ -1,5 +1,6 @@
 ---
 title: Model Overview
+date: 2020-10-09 14:42:01 -0400
 heading: Introduction to the OSCAL Models
 description: Reviews OSCAL modeling concepts, and discusses the supported OSCAL formats and related validation mechanisms.
 weight: 10
@@ -11,6 +12,7 @@ aliases:
   - /documentation/schema/model-concepts/
   - /documentation/schema/overview/
   - /concepts/overview/
+  - /concepts/layer/overview/
 ---
 
 OSCAL is organized in a series of **layers** that each provide a set of **models**.

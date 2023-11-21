@@ -1,5 +1,6 @@
 ---
 title: For Security Professionals
+date: 2019-06-15 20:12:36 -0400
 heading: How can security professionals get involved?
 description: How can security professionals get involved?
 toc:

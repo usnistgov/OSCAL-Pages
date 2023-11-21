@@ -1,5 +1,6 @@
 ---
 title: Assessment Results Model
+date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Assessment Layer: Assessment Results Model"
 suppresstopiclist: true
 weight: 65
@@ -13,8 +14,8 @@ aliases:
 
 | Assessment Results Schema | Assessment Results Converters | Reference
 |:--- |:--- |:--- |
-| [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_schema.json) | [XML to JSON Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_xml-to-json-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/json#converting-oscal-xml-content-to-json)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/json-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/json-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/json-index/) |
-| [XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_schema.xsd) | [JSON to XML Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_json-to-xml-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/xml#converting-oscal-json-content-to-xml)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/xml-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/xml-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/xml-index/) |
+| [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_schema.json) | [XML to JSON Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_xml-to-json-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/json-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/json-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/json-index/) |
+| [XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_schema.xsd) | [JSON to XML Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-results_json-to-xml-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/xml-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/xml-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-results/xml-index/) |
 
 ## Purpose
 

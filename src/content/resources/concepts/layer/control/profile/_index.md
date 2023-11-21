@@ -1,5 +1,6 @@
 ---
 title: OSCAL Profile Model
+date: 2019-10-11 17:41:35 -0400
 heading: "OSCAL Control Layer: Profile Model"
 weight: 40
 sidenav:
@@ -15,8 +16,8 @@ aliases:
 
 | Profile Schema | Profile Converters | Reference |
 |:--- |:--- |:--- |
-| [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.json) | [XML to JSON Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_xml-to-json-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/json#converting-oscal-xml-content-to-json)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/json-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/json-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/json-index/) |
-| [XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.xsd) | [JSON to XML Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_json-to-xml-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/xml#converting-oscal-json-content-to-xml)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-index/) |
+| [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.json) | [XML to JSON Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_xml-to-json-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/json-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/json-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/json-index/) |
+| [XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.xsd) | [JSON to XML Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_json-to-xml-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/xml-index/) |
 
 ## Purpose
 
@@ -92,6 +93,6 @@ Multiple examples of baselines expressed using the OSCAL profile model can be fo
 |:---|:---|
 | NIST SP 800-53 rev 5 | \[[XML]({{< param "contentRepoPath" >}}/nist.gov/SP800-53/rev5/xml/)\] \[[JSON]({{< param "contentRepoPath" >}}/nist.gov/SP800-53/rev5/json/)\] \[[YAML]({{< param "contentRepoPath" >}}/nist.gov/SP800-53/rev5/yaml/)\]
 | NIST SP 800-53 rev 4 | \[[XML]({{< param "contentRepoPath" >}}/nist.gov/SP800-53/rev4/xml/)\] \[[JSON]({{< param "contentRepoPath" >}}/nist.gov/SP800-53/rev4/json/)\] \[[YAML]({{< param "contentRepoPath" >}}/nist.gov/SP800-53/rev4/yaml/)\]
-| FedRAMP Baselines | \[[XML](https://github.com/GSA/fedramp-automation/tree/master/dist/content/baselines/rev4/xml)\] \[[JSON](https://github.com/GSA/fedramp-automation/tree/master/dist/content/baselines/rev4/json)\] \[[YAML](https://github.com/GSA/fedramp-automation/tree/master/dist/content/baselines/rev4/yaml/)\]
+| FedRAMP Baselines | \[[XML](https://github.com/GSA/fedramp-automation/tree/master/dist/content/rev4/baselines/xml)\] \[[JSON](https://github.com/GSA/fedramp-automation/tree/master/dist/content/rev4/baselines/json)\] \[[YAML](https://github.com/GSA/fedramp-automation/tree/master/dist/content/rev4/baselines/yaml/)\]
 
 You will also find the "resolved" version of each profile. These files end with the suffix `-resolved-profile_catalog` to indicate that the profile [resolution process](/concepts/processing/profile-resolution/) has been performed to generate a catalog containing only the selected and tailored controls defined by the profile.

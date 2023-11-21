@@ -1,5 +1,6 @@
 ---
 title: Implementation Layer
+date: 2021-05-27 10:55:53 -0400
 heading: "OSCAL Implementation Layer"
 suppresstopiclist: true
 weight: 50
@@ -8,6 +9,8 @@ sidenav:
     inactiverenderdepth: 2
 toc:
   enabled: true
+aliases:
+  - /concepts/layer/implementation/
 ---
 
 The OSCAL implementation layer provides models for describing how controls are implemented in a specific system or in distributed component that can be incorporated into a system.

@@ -1,5 +1,6 @@
 ---
 title: Learning Resources
+date: 2021-04-22 09:52:36 -0400
 menu:
   primary:
     name: Learn

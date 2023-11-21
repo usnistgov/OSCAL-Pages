@@ -1,5 +1,6 @@
 ---
 title: Component Definition Model
+date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Implementation Layer: Component Definition Model"
 description: XML and JSON format documentation for the OSCAL Component Definition model, which is part of the OSCAL implementation layer in the OSCAL [Layers and Models Reference](/documentation/schema/). These formats model a description of the controls that are supported in a given implementation of a hardware, software, service, policy, process, procedure, or compliance artifact (e.g., FIPS 140-2 validation).
 weight: 40
@@ -10,12 +11,13 @@ aliases:
   - /documentation/schema/component/
   - /documentation/schema/implementation-layer/component/
   - /concepts/layer/implementation/component/
+  - /concepts/layer/implementation/component-definition/
 ---
 
 | Component Schema | Component Converters | Reference |
 |:--- |:--- |:--- |
-| [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.json) | [XML to JSON Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_xml-to-json-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/json#converting-oscal-xml-content-to-json)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/json-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/json-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/json-index/) |
-| [XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.xsd) | [JSON to XML Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_json-to-xml-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/tree/main/xml#converting-oscal-json-content-to-xml)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/xml-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/xml-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/xml-index/) |
+| [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.json) | [XML to JSON Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_xml-to-json-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/json-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/json-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/json-index/) |
+| [XML Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.xsd) | [JSON to XML Converter](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_json-to-xml-converter.xsl)<br />([How do I use this?](https://github.com/usnistgov/OSCAL/blob/main/build/README.md#converters)) | [Outline](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/xml-outline/)<br />[Reference](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/xml-reference/)<br />[Index](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/xml-index/) |
 
 ## Purpose
 
