@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ with .Params.usabanner }}{{ partialCached "components/banner.html" . }}{{ end }}
 {{ partialCached "components/header-basic.html" . }}
+
 <main class="usa-layout-docs padding-top-2">
   <div class="grid-container">
     <div class="grid-row grid-gap">
@@ -35,8 +36,8 @@
   {{- $gridMainDesktopSize = sub $gridMainDesktopSize 2 -}}
 {{ end -}}
       <div id="main-content" class="usa-layout-docs__main widescreen:grid-col-{{ $gridMainWidescreenSize }} desktop:grid-col-{{ $gridMainDesktopSize }} display-block">
-        <article>
-          <header>
+          <article>
+            <header>
             {{ if isset .Params "heading" }}<h1>{{ .Params.heading }}</h1>{{else}}<h1>{{ .Title }}</h1>{{ end }}
           </header>
           {{ .Content }}
