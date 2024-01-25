@@ -22,11 +22,11 @@ Attendees were:
 - Participants in standard development organizations focusing on developing and publishing control catalogs and baselines;
 - System owners from the government, private, and academic sectors, who want to streamline the documentation of controls used in their information systems.
 
-## Agenda
+## May 23, 2023:
+
+### OSCAL Conference Agenda
 
 The following presentations are available from this workshop. Recordings are also provided where available. The [full agenda](https://csrc.nist.gov/csrc/media/Events/2023/4th-annual-oscal-conference/documents/OSCAL_AGENDA.pdf) is also available. The [speakers' bios](https://csrc.nist.gov/csrc/media/Events/2023/4th-annual-oscal-conference/documents/2023_OSCAL-Speaker-Bios.pdf) is available for review.
-
-## May 23, 2023:
 
 **Welcome, Introduction and Administrative issues** \[no slides\] \[[video](https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/684682/uiconf_id/31013851/entry_id/1_e861yoyu/embed/dynamic#t=25:38)\]
 
@@ -109,5 +109,15 @@ The following presentations are available from this workshop. Recordings are als
 
       Matthew Scholl, Chief, Computer Security Division, NIST
 
-     
+## May 24, 2023: 
+
+### OSCAL Workshop
+
+Format: In-person
+When: May 24, 2023, 9:00 a.m. - 12:00 p.m. EDT
+Where: Herbert C. Hoover Federal Building, 1401 Constitution Ave, NW, Washington, DC 20230
+
+The OSCAL program and the conferences and workshops series are aligned with NIST’s mission of promoting U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. NIST works to maximize its impact and mission fulfillment by positioning itself to anticipate future technology trends and develop the most important measurements and standards products that are aligned with industry drivers and needs. 
+
+The OSCAL  educational workshop, provided attendees an opportunity to familiarize themselves with, and build skills in, the development and use of OSCAL. The workshop was in-person only and sessions were not recorded.
 
