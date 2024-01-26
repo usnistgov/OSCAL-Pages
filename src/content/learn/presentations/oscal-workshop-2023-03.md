@@ -1,7 +1,7 @@
 ---
 title: 4th OSCAL Workshop
 date: 2023-05-23 13:18:18 -0400
-heading: 4rd Open Security Controls Assessment Language (OSCAL) Workshop
+heading: 4th Open Security Controls Assessment Language (OSCAL) Workshop
 toc:
   enabled: true
 ---
@@ -119,5 +119,5 @@ Where: Herbert C. Hoover Federal Building, 1401 Constitution Ave, NW, Washington
 
 The OSCAL program and the conferences and workshops series are aligned with NIST’s mission of promoting U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. NIST works to maximize its impact and mission fulfillment by positioning itself to anticipate future technology trends and develop the most important measurements and standards products that are aligned with industry drivers and needs. 
 
-The OSCAL  educational workshop, provided attendees an opportunity to familiarize themselves with, and build skills in, the development and use of OSCAL. The workshop was in-person only and sessions were not recorded.
+The OSCAL educational workshop provided attendees an opportunity to familiarize themselves with, and build skills in, the development and use of OSCAL. The workshop was in-person only and sessions were not recorded.
 
