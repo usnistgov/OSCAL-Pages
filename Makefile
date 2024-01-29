@@ -20,7 +20,7 @@ clean: clean-site clean-linkcheck ## Clean all
 SITE_OUTPUT_DIR:=src/public
 
 .PHONY: serve
-serve: modeldoc release-assets ## Spin up a static web server for local dev
+serve:  ## Spin up a static web server for local dev
 	cd src; hugo serve
 
 .PHONY: site
