@@ -133,7 +133,7 @@ URIs serving this purpose need to be used as a *locator*. URLs are typically use
 
 #### Linking to another OSCAL object
 
-A pointer to an OSCAL object identified by the referenced identifier, may be a [human-oriented](/resources/concepts/identifier-use/#human-oriented) [`token`](/reference/datatypes/#token) or a [machine-oriented](/resources/concepts/identifier-use/#machine-oriented) [`uuid`](https://pages.nist.gov/OSCAL/reference/datatypes/#uuid).
+A pointer to an OSCAL object identified by the referenced identifier, may be a [human-oriented](/resources/concepts/identifier-use/#human-oriented) [`token`](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#token) or a [machine-oriented](/resources/concepts/identifier-use/#machine-oriented) [`uuid`](https://pages.nist.gov/OSCAL-Reference/models/datatypes/#uuid).
 
 This approach uses a [*relative reference*](#relative-reference) consisting of only a URI *fragment* containing the identifier or UUID of the referenced object within the current documents effective data model. The effective data model of a document includes all objects identified with the document and any directly or transitively imported documents. Identifiers with a *cross-instance* [scope](/resources/concepts/identifier-use/#scope) are available to importing documents.
 
