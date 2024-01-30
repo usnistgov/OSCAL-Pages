@@ -76,7 +76,7 @@ This model allows an assessor to express all details associated with a classic "
 
 OSCAL assessment results are always defined in the context of an assessment plan, and must always be associated with an OSCAL [Assessment Plan (AP)](../assessment-plan/). OSCAL assessment results are associated with a specific system via the OSCAL assessment plan, which identifies the system to be assessed.
 
-The current version of this model was created based on the information requirements of a [FedRAMP Security Assessment Report](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Annual-SAR-Template.docx), and was expanded to include continuous assessment capabilities.
+The current version of this model was created based on the information requirements of a FedRAMP Security Assessment Report [available for download](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Security-Assessment-Report-(SAR)-Template.docx), and was expanded to include continuous assessment capabilities.
 
 This model was designed to use identical syntax to the [assessment plan model](../assessment-plan/), for overlapping syntax (Objectives, Assessment Subject, Assets, and Assessment Activities). It was also designed to use identical syntax to the [Plan of Action and Milestones (POA&M)](../poam/), for Results/Risks.
 
