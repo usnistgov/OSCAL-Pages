@@ -46,7 +46,7 @@ OSCAL reaches across such contexts for JSON, XML, and YAML, so the term has addi
 
 ### Does OSCAL provide schemas for OSCAL models?
 
-The OSCAL program develops and maintains schema documents conformant with [JSON Schema](https://github.com/usnistgov/OSCAL/tree/main/json/schema) to validate OSCAL documents in JSON and YAML data formats. For validating XML, we provide schema documents using [XML Schema Definition](https://github.com/usnistgov/OSCAL/tree/main/xml/schema) Language.
+The OSCAL program develops and maintains schema documents conformant with [JSON Schema](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_complete_schema.json) to validate OSCAL documents in JSON and YAML data formats. For validating XML, we provide schema documents using [XML Schema Definition](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_complete_schema.xsd) Language.
 
 ### What tools check that an OSCAL document is valid?
 

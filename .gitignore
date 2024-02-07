@@ -3,5 +3,9 @@
 node_modules/
 src/public
 src/resources/_gen
+<<<<<<< HEAD
 
+=======
+lychee_report.md
+>>>>>>> develop
 .hugo_build.lock
