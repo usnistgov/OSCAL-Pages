@@ -1,5 +1,6 @@
 ---
 title: Creating a Component Definition
+layout: rfc
 date: 2021-08-27 18:34:26 -0400
 description: A tutorial on creating an OSCAL component definition.
 weight: 40

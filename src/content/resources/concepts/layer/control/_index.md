@@ -1,5 +1,6 @@
 ---
 title: Control Layer
+layout: rfc
 date: 2021-05-27 10:55:53 -0400
 heading: "OSCAL Control Layer"
 weight: 70

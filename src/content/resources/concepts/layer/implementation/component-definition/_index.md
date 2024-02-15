@@ -1,5 +1,6 @@
 ---
 title: Component Definition Model
+layout: rfc
 date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Implementation Layer: Component Definition Model"
 description: XML and JSON format documentation for the OSCAL Component Definition model, which is part of the OSCAL implementation layer in the OSCAL [Layers and Models Reference](/documentation/schema/). These formats model a description of the controls that are supported in a given implementation of a hardware, software, service, policy, process, procedure, or compliance artifact (e.g., FIPS 140-2 validation).

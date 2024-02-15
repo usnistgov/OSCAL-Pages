@@ -1,5 +1,6 @@
 ---
 title: URI Usage
+layout: rfc
 date: 2023-09-25 13:23:30 -0400
 description: Provides information on the use of URIs in OSCAL.
 weight: 40

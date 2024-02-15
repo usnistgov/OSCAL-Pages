@@ -2,6 +2,7 @@
 title: OSCAL Development Roadmap
 date: 2019-05-15 14:26:45 -0400
 description: Information on the OSCAL development roadmap, which is taking place over a series of milestones.
+layout: rfc
 weight: 5
 toc:
   enabled: true

@@ -1,7 +1,9 @@
 ---
 title: OSCAL Resources
+layout: rfc
 date: 2023-09-06 13:48:17 -0400
 heading: OSCAL Resources
+layout: rfc
 menu:
   primary:
     name: Resources

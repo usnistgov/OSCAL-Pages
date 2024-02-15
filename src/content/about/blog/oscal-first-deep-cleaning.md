@@ -1,5 +1,6 @@
 ---
 title: OSCAL's Fall Cleaning
+layout: rfc
 date: 2023-09-19 17:31:43 -0400
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Creating a Control Catalog
+layout: rfc
 date: 2020-05-06 18:03:53 -0400
 description: A tutorial on creating an OSCAL control catalog.
 weight: 20

@@ -37,6 +37,7 @@
 {{ end -}}
       <div id="main-content" class="usa-layout-docs__main widescreen:grid-col-{{ $gridMainWidescreenSize }} desktop:grid-col-{{ $gridMainDesktopSize }} display-block">
           <article>
+            {{ partial "breadcrumbs.html" . }}
             <header>
             {{ if isset .Params "heading" }}<h1>{{ .Params.heading }}</h1>{{else}}<h1>{{ .Title }}</h1>{{ end }}
           </header>

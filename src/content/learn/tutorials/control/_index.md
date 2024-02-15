@@ -3,6 +3,7 @@ title: Control Layer Topics
 date: 2022-07-25 15:55:00 -0400
 heading: Tutorials that apply to the OSCAL control layer models
 description: A set of tutorials that apply to the OSCAL [control layer](/concepts/layer/control/) models.
+layout: rfc
 weight: 20
 suppresstopiclist: true
 toc:

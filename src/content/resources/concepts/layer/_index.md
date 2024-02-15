@@ -1,5 +1,6 @@
 ---
 title: Layers and Models
+layout: rfc
 date: 2021-05-27 10:55:53 -0400
 description: Provides details on the layers, models, and formats that comprise OSCAL. Concepts for each layer and model are discussed, and the semantics of each model and associated formats are defined.
 suppresstopiclist: true

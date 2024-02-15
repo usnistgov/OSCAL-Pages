@@ -1,5 +1,6 @@
 ---
 title: Implementation Layer
+layout: rfc
 date: 2021-05-27 10:55:53 -0400
 heading: "OSCAL Implementation Layer"
 suppresstopiclist: true

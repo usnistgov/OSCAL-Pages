@@ -1,5 +1,6 @@
 ---
 title: Creating a Profile
+layout: rfc
 date: 2023-05-16 21:53:22 -0400
 description: A tutorial on creating a Baseline using an OSCAL Profile.
 weight: 20

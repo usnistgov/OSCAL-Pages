@@ -2,6 +2,7 @@
 title: "Events"
 date: 2023-02-28 14:25:56 -0500
 heading: NIST OSCAL Community Events Calendar
+layout: rfc
 aliases:
   - /events/
 menu:

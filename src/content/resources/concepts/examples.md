@@ -1,5 +1,6 @@
 ---
 title: OSCAL Content Examples
+layout: rfc
 date: 2021-05-27 10:55:53 -0400
 description: Provides information on where to find OSCAL content examples.
 weight: 90

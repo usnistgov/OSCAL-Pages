@@ -1,5 +1,6 @@
 ---
 title: Testing New Releases
+layout: rfc
 date: 2023-06-14 13:03:08 -0400
 heading: Testing New OSCAL Releases
 Description: A tutorial that 

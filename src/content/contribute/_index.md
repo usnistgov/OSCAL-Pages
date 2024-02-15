@@ -2,6 +2,7 @@
 title: "Contribute"
 date: 2019-10-11 17:41:35 -0400
 heading: Welcome to the OSCAL Community
+layout: rfc
 aliases:
   - /community/
 menu:

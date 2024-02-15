@@ -2,6 +2,7 @@
 title: More about OSCAL
 date: 2019-10-11 17:41:35 -0400
 heading: Learn more about OSCAL
+layout: rfc
 menu:
   primary:
     name: About

@@ -1,5 +1,6 @@
 ---
 title: Use Cases
+layout: rfc
 date: 2019-05-15 14:26:45 -0400
 description: OSCAL supports a number of use cases.
 weight: 70

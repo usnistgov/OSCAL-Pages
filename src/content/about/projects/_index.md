@@ -2,6 +2,7 @@
 title: Project Structure
 date: 2023-03-08 12:47:16 -0500
 heading: OSCAL Project Structure
+layout: rfc
 weight: 20
 toc:
   enabled: true

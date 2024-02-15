@@ -1,5 +1,6 @@
 ---
 title: Plan of Action and Milestones Model
+layout: rfc
 date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Assessment Layer: Plan of Action and Milestones Model"
 suppresstopiclist: true

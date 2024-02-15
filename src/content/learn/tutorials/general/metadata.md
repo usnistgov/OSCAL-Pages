@@ -1,5 +1,6 @@
 ---
 title: Creating and Using Metadata
+layout: rfc
 date: 2022-07-25 15:55:00 -0400
 heading: Creating and Using Metadata in OSCAL
 description: A tutorial that covers the usage of the metadata section in OSCAL

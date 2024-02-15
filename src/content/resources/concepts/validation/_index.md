@@ -1,5 +1,6 @@
 ---
 title: Well-formed Data Formats and Valid OSCAL
+layout: rfc
 date: 2022-03-17 14:27:39 -0400
 weight: 50
 description: Explanation of well-formedness, validation, and how they relate to OSCAL

@@ -2,6 +2,7 @@
 title: OSCAL Mini Workshop Series
 date: 2022-05-26 13:18:18 -0400
 heading: Open Security Controls Assessment Language (OSCAL) Mini Workshop Series
+layout: rfc
 toc:
   enabled: true
 aliases:

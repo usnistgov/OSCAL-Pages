@@ -3,6 +3,7 @@ title: News
 date: 2023-08-16 09:16:16 -0400
 heading: OSCAL News
 description: News items relating to the OSCAL project.
+layout: rfc
 toc:
   enabled: true
 menu:

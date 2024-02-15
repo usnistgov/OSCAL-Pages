@@ -1,5 +1,6 @@
 ---
 title: March 2023 Newsletter
+layout: rfc
 date: 2023-03-03
 summary: RFC newsletter for March 2023 with first set of volunteer opportunities.
 sidenav:

@@ -1,5 +1,6 @@
 ---
 title: For Assessors
+layout: rfc
 date: 2019-06-15 20:12:36 -0400
 heading: How can assessors get involved?
 description: How can assessors get involved?

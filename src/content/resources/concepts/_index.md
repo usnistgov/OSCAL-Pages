@@ -1,5 +1,6 @@
 ---
 title: "OSCAL Concepts"
+layout: rfc
 date: 2021-05-27 10:55:53 -0400
 suppresstopiclist: true
 sidenav:

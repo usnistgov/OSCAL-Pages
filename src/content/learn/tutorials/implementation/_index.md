@@ -3,6 +3,7 @@ title: Implementation Layer Topics
 date: 2022-07-25 15:55:00 -0400
 heading: Tutorials for the OSCAL implementation layer models
 description: A set of tutorials that apply to the OSCAL component definition and system security plan models.
+layout: rfc
 weight: 30
 suppresstopiclist: true
 toc:

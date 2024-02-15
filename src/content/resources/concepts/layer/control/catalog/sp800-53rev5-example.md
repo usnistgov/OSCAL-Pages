@@ -1,5 +1,6 @@
 ---
 title: SP800-53 Control Example
+layout: rfc
 date: 2022-07-14 19:04:45 -0400
 heading: "Annotated Example - NIST SP 800-53 Revision 5 Control"
 weight: 30

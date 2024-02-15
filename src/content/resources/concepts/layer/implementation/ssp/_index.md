@@ -1,5 +1,6 @@
 ---
 title: System Security Plan Model (SSP)
+layout: rfc
 date: 2020-04-23 16:34:04 -0400
 heading: "OSCAL Implementation Layer: System Security Plan (SSP) Model"
 weight: 50

@@ -1,5 +1,6 @@
 ---
 title: Relations to Other Documentary Encoding Standards
+layout: rfc
 date: 2019-10-11 17:41:35 -0400
 description: Explanation of how OSCAL relates to various documentary standards.
 weight: 100
