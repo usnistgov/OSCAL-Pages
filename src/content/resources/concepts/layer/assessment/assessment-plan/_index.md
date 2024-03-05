@@ -77,7 +77,7 @@ This model allows an assessor to express all details associated with a classic "
 
 An OSCAL assessment plan is always defined in the context of a specific system, and must always be associated with an OSCAL [System Security Plan (SSP)](../../implementation/ssp/).
 
-The current version of this model was created based on the information requirements of a [FedRAMP Security Assessment Plan](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Annual-SAP-Template.docx), and was expanded to include continuous monitoring capabilities.
+The current version of this model was created based on the information requirements of a FedRAMP Security Assessment Plan [available for download](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Security-Assessment-Plan-(SAP)-Template.docx), and was expanded to include continuous monitoring capabilities.
 It was designed to use syntax identical to the [assessment results model](../assessment-results/), for overlapping assemblies (Objectives, Assessment Subject, Assets, and Assessment Activities).
 
 The figure below expresses represents the portion of the OSCAL stack as it relates to an OSCAL Assessment Plan.
