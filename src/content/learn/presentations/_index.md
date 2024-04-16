@@ -8,7 +8,7 @@ The following are presentations on OSCAL-related topics. Some of the older prese
 
 - [3rd NIST OSCAL Workshop](oscal-workshop-2022-03/) - March 1-2, 2022
 - [OSCAL Deep Diff Introduction](/presentations/OSCAL-deep-diff-LWtD-20220505.pdf) presented during the [Lunch with the OSCAL Developers](/contribute/dev-lunch/) - May 5, 2022
-- [Blog: Innovating Security Compliance Through Open Standards](https://blogs.easydynamics.com/2021/07/07/innovating-security-compliance-through-open-standards/) - July 7, 2021
+- [Blog: Innovating Security Compliance Through Open Standards](https://www.easydynamics.com/blog/innovating-security-compliance-through-open-standards/) - July 7, 2021
 - [Blog: The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project](https://www.nist.gov/blogs/cybersecurity-insights/foundation-interoperable-and-portable-security-automation-revealed) - May 19. 2021
 - [2nd NIST OSCAL Workshop](oscal-workshop-2021-02/) - February 2 & 3, 2021
 - [Using Leveraged Authorizations in OSCAL](/presentations/oscal-leveraged-authorizations-v6a.pdf) presented during the [OSCAL Model Review](/contribute/model-review/) - July 24, 2020
