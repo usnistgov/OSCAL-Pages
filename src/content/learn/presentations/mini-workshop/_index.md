@@ -6,6 +6,7 @@ toc:
   enabled: true
 aliases:
   - /learn/presentations/oscal-mini-workshop-series/
+weight: 1
 ---
 
 # OSCAL Mini Workshop Series
