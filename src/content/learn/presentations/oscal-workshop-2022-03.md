@@ -4,6 +4,7 @@ date: 2022-05-26 13:18:18 -0400
 heading: 3rd Open Security Controls Assessment Language (OSCAL) Workshop
 toc:
   enabled: true
+weight: 3
 ---
 
 {{% usa-tag %}}When{{% /usa-tag %}} March 1, 2022 thru March 2nd, 2022

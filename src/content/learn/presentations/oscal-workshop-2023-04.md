@@ -4,6 +4,7 @@ date: 2024-09-3
 heading: 4th Open Security Controls Assessment Language (OSCAL) Workshop
 toc:
     enabled: true
+weight: 4
 ---
 
 {{% usa-tag %}}When{{% /usa-tag %}} May 24th, 2023
