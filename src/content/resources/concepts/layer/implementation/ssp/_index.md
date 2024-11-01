@@ -43,7 +43,7 @@ Authorizing Officials consume SSPs in the adjudication of a system as part of ap
 {{% usa-grid-container class="padding-x-0" %}}
 {{% usa-grid-row %}}
 {{% usa-grid-column class="grid-col-fill" %}}
-An OSCAL profile is organized as follows:
+An OSCAL system security plan is organized as follows:
 - **Metadata**: Metadata syntax is identical and required in all OSCAL models. It includes information such as the document's title, publication version, publication date, and OSCAL version. Metadata is also used to define roles, parties (people, teams and organizations), and locations.
 - **Import Profile**: Identifies the applicable control baseline for the system. This baseline is represented as an OSCAL [profile](../../control/profile/).
 - **System Characteristics**: Represents attributes of the system, such as its name, description, models, and information processed.
