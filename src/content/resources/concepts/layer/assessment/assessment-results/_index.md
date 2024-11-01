@@ -44,7 +44,7 @@ Continuous assessment monitoring practitioners consume the assessment results as
 {{% usa-grid-container class="padding-x-0" %}}
 {{% usa-grid-row %}}
 {{% usa-grid-column class="grid-col-fill" %}}
-An OSCAL profile is organized as follows:
+An OSCAL assessment results is organized as follows:
 - **Metadata**: Metadata syntax is identical and required in all OSCAL models. It includes information such as the file's title, publication version, publication date, and OSCAL version. Metadata is also used to define roles, parties (people, teams and organizations), and locations.
 - **Import AP**: Identifies the OSCAL-based assessment plan (AP) for this assessment. The AP imports several pieces of information about the system being assessed including the system security plan (SSP), which is also represented according to the OSCAL [SSP model](../../implementation/ssp/). This linking of data eliminates the need to duplicate and maintain the same information in multiple places.
 - **Local Definitions**: When the assessment results contain an activity or control objective not defined by the assessment plan, assessors define it here instead.
