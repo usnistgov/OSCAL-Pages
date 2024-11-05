@@ -21,4 +21,4 @@ The following are presentations on OSCAL-related topics. Some of the older prese
 
 ### Blogs
 - [Blog: Innovating Security Compliance Through Open Standards](https://www.easydynamics.com/blog/innovating-security-compliance-through-open-standards/) - July 7, 2021
-- [Blog: The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project](https://www.nist.gov/blogs/cybersecurity-insights/foundation-interoperable-and-portable-security-automation-revealed) - May 19. 2021
+- [Blog: The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project](https://www.nist.gov/blogs/cybersecurity-insights/foundation-interoperable-and-portable-security-automation-revealed) - May 19, 2021
