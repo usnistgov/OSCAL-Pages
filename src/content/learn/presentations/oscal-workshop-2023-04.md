@@ -7,7 +7,7 @@ toc:
 weight: 4
 ---
 
-{{% usa-tag %}}When{{% /usa-tag %}} May 24th, 2023
+{{% usa-tag %}}When{{% /usa-tag %}} May 23rd, 2023
 {{% usa-tag %}}Purpose{{% /usa-tag %}} The conference will highlight the latest development of NIST OSCAL models and will explore OSCAL-based automation of risk management, governance, and compliance processes and tools for different national and international regulatory frameworks. Our presenters, some of the most prestigious cybersecurity experts who share the same passion for new advancements in security automation, will share their innovative OSCAL-based solutions, demonstrating, in the process, OSCAL's international adoption.  
 
 The following presentations are available from this workshop. Recordings are also provided where available. The [full agenda](https://csrc.nist.gov/csrc/media/Events/2023/4th-annual-oscal-conference/documents/OSCAL_AGENDA.pdf) is also available. The [speakers' bios](https://csrc.nist.gov/csrc/media/Events/2023/4th-annual-oscal-conference/documents/2023_OSCAL-Speaker-Bios.pdf) is available for review.
