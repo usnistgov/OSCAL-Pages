@@ -48,7 +48,7 @@ Continuous assessment implementers consume an assessment plan when establishing 
 {{% usa-grid-container class="padding-x-0" %}}
 {{% usa-grid-row %}}
 {{% usa-grid-column class="grid-col-fill" %}}
-An OSCAL profile is organized as follows:
+An OSCAL assessment plan is organized as follows:
 - **Metadata**: Metadata syntax is identical and required in all OSCAL models. It includes information such as the document's title, publication version, publication date, and OSCAL version. Metadata is also used to define roles, parties (people, teams and organizations), and locations.
 - **Import SSP**: Identifies the OSCAL-based SSP of the system being assessed. Several pieces of information about a system that normally appear in an assessment plan are now referenced via this import statement, eliminating the need to duplicate and maintain the same information in multiple places.
 - **Local Definitions**: Normally other aspects of the assessment plan point to content in the linked SSP. When the AP must reference information that is missing from linked SSP, assessors define it here instead.
