@@ -981,7 +981,7 @@ Assembling all of the control content described in this tutorial, we obtain the 
 {{< highlight json "linenos=table" >}}
 {
   "catalog" : {
-    "id" : "uuid-956c32af-8a15-4732-a4d9-f976a1149c4b",
+    "uuid" : "956c32af-8a15-4732-a4d9-f976a1149c4b",
     "metadata" : {
       "title" : "Sample Security Catalog",
       "published" : "2020-02-02T11:01:04.736-04:00",
