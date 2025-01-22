@@ -42,7 +42,7 @@ The examples below illustrate the top-level structure of the OSCAL control catal
 {{< highlight xml "linenos=table" >}}
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-    uuid="edaf664a-e984-4dbf-85ec-1104186fc12f">
+    uuid="956c32af-8a15-4732-a4d9-f976a1149c4b">
     <metadata/>
     <group/>
     <control/>
@@ -67,7 +67,7 @@ A `<catalog>` contains:
 {{< highlight json "linenos=table" >}}
 {
   "catalog": {
-    "uuid": "edaf664a-e984-4dbf-85ec-1104186fc12f",
+    "uuid": "956c32af-8a15-4732-a4d9-f976a1149c4b",
     "metadata": {},
     "groups": {},
     "controls": {},
@@ -93,7 +93,7 @@ A `catalog` contains the following props:
 {{< highlight yaml "linenos=table" >}}
 ---
 catalog:
-  uuid: edaf664a-e984-4dbf-85ec-1104186fc12f
+  uuid: 956c32af-8a15-4732-a4d9-f976a1149c4b
   metadata:
   groups:
   controls:
@@ -757,7 +757,7 @@ Assembling all of the control content described in this tutorial, we obtain the 
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../xml/schema/oscal_catalog_schema.xsd"
-  xmlns="http://csrc.nist.gov/ns/oscal/1.0" id="uuid-956c32af-8a15-4732-a4d9-f976a1149c4b">
+  xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="956c32af-8a15-4732-a4d9-f976a1149c4b">
   <metadata>
     <title>Sample Security Catalog</title>
     <published>2020-02-02T11:01:04.736-04:00</published>
@@ -1180,7 +1180,7 @@ Assembling all of the control content described in this tutorial, we obtain the 
 {{< highlight yaml "linenos=table" >}}
 ---
 catalog:
-  id: uuid-956c32af-8a15-4732-a4d9-f976a1149c4b
+  uuid: 956c32af-8a15-4732-a4d9-f976a1149c4b
   metadata:
     title: Sample Security Catalog
     published: 2020-02-02T11:01:04.736-04:00
