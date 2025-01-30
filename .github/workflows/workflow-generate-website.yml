@@ -67,7 +67,7 @@ jobs:
           --minify \
           --debug
     - name: Upload artifact
-      uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+      uses: actions/upload-artifact@v4 # @0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       with:
         name: website
         path: ./src/public
@@ -85,7 +85,7 @@ jobs:
         submodules: recursive
         fetch-depth: 0
     - name: Open Website Artifact
-      uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+      uses: actions/download-artifact@v4 #  @9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
       with:
         name: website
         path: website
@@ -101,7 +101,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Save Report
-      uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+      uses: actions/upload-artifact@v4   # @0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       with:
         name: report
         path: ./lychee/out.md
@@ -115,7 +115,7 @@ jobs:
       - check-links
     steps:
     - name: Open Website Artifact
-      uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+      uses: actions/download-artifact@v4  # @9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
       with:
         name: website
         path: public
