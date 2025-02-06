@@ -13,7 +13,7 @@ menu:
 
 ## Calendar
 
-The NIST OSCAL Team has a public calendar for the community to keep current with the meetings above and other public events hosted by the team.
+The NIST OSCAL Team has a public calendar for the community to keep current with the meetings above and other public events hosted by the team. 
 
 You can access the [web version of this calendar by clicking this link](https://outlook.office365.com/owa/calendar/97cb6b6254524d86aa63c32b74bd1337@nist.gov/494010486be740b3a9bb16964e8992e016522353741654500565/calendar.html) or configure your calendar application [with this iCalendar (ICS) file](https://outlook.office365.com/owa/calendar/97cb6b6254524d86aa63c32b74bd1337@nist.gov/494010486be740b3a9bb16964e8992e016522353741654500565/calendar.ics).
 
@@ -26,7 +26,8 @@ You can access the [web version of this calendar by clicking this link](https://
                 <h2 class="usa-card__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="/img/sprite.svg#launch"></use></svg><a id="section_6" class="usa-anchor"></a>Open on the web</h2>
             </div>
             <div class="usa-card__body">
-                <p>Open the calendar on the web to immediately see this month's events without configuring it in an application on your computer or mobile device.</p>
+                <p>Open the calendar on the web to immediately see this month's events without need to configure it in an application on your computer or mobile device.</p>
+                <p><strong>For more event details</strong>, simply click the TinyURL link provided in the event's location.</p>
             </div>
             <div class="usa-card__footer">
                 <button 
@@ -44,6 +45,7 @@ You can access the [web version of this calendar by clicking this link](https://
             </div>
             <div class="usa-card__body">
                 <p>Configure the calendar in your application of choice with an iCalendar (ICS) file. You can find instructions on the Internet for <a href="https://support.google.com/calendar/answer/37118">Google Workspace</a>, <a href="https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df">Microsoft Office 365</a>, and many more.</p>
+                <p>*Please note that once downloaded, the <strong>iCalendar <u>will not automatically update</u> with new events. </strong> To stay up to date with future OSCAL events, you will need to <strong>redownload the calendar again periodically.</strong></p>
             </div>
             <div class="usa-card__footer">
                 <button 
@@ -56,12 +58,31 @@ You can access the [web version of this calendar by clicking this link](https://
     </div>
 </div>
 
+
+
 ## Recurring Events Details
 
-The NIST OSCAL team hosts meetings and other events with the OSCAL community on different topics.
+The NIST OSCAL team hosts meetings and other events with the OSCAL community on different topics. We encourage you to attend these meetings as a way to keep up-to-date on and contribute to the development of OSCAL.
+<br></br>
+- ### **OSCAL Mini Workshops**
+  The NIST OSCAL team is hosting a new series of mini workshops, that aims to address topics of interests for our community and to open tihs forum for its members to present their OSCAL-related work. Unless specifically states, the workshops will not require a deep technical understanding of OSCAL, and the dialogue is informal, allowing the community to interact with the presenters and with the OSCAL team members. 
+  
+  **[The Mini Workshops page](../learn/presentations/mini-workshop/)** contains a masterlist of all mini-workshop recordings and presentation slides. 
+  
+  **For up-to-date information about the workshops, please visit our [OSCAL CSRC](https://csrc.nist.gov/projects/open-security-controls-assessment-language/oscal-adopters-workshops) page.**
+  
+  #### Don't miss out on the next session-simply click on the Zoom link  to join: [Zoom Link](https://nist.zoomgov.com/j/1609845104?pwd=eENkemtvbGdETkJ4UnpCY2F1QlgxZz09)
+  
+  Meeting ID: 160 984 5104
+  
+  Passcode: 10782510 
+#
 
-- **OSCAL DEFINE Meeting**: A monthly meeting on the third Thursday of every month to discuss the research and educational pursuits of OSCAL using an iterative and collaborative approach with the community. [The meeting page](../contribute/define-meeting/) has meeting information as well as slides and notes from past sessions.
-- **OSCAL Model Engineering Meeting**: A bi-weekly meeting to discuss OSCAL models, how they are developed, and development efforts by NIST staff and the greater OSCAL community using them. [The meeting page](../contribute/model-engineering-meeting/) has meeting information as well as slides and notes from past sessions.
-
-We encourage you to attend these meetings as a way to keep up-to-date on and contribute to the development of OSCAL.
+  
+- ### **OSCAL Conference Details**
+  These OSCAL conference workshops will provide attendees an opportunity to familiarize themselves and build skills in the development and use of OSCAL. We encourage developers of control-oriented security tools, and organizations that want to use or create OSCAL-based information, to register and attend the workshop.
+  - [4th NIST OSCAL Workshop](../learn/presentations/oscal-workshop-2023-04) - May 23, 2023
+  - [3rd NIST OSCAL Workshop](../learn/presentations/oscal-workshop-2022-03) - March 1-2, 2022
+  - [2nd NIST OSCAL Workshop](../learn/presentations/oscal-workshop-2021-02) - February 2-3, 2021
+  - [1st NIST OSCAL Workshop](../learn/presentations/OSCAL-workshop-20191105.pdf) - November 5, 2019
 
