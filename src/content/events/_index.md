@@ -26,7 +26,7 @@ You can access the [web version of this calendar by clicking this link](https://
                 <h2 class="usa-card__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="/img/sprite.svg#launch"></use></svg><a id="section_6" class="usa-anchor"></a>Open on the web</h2>
             </div>
             <div class="usa-card__body">
-                <p>Open the calendar on the web to immediately see this month's events without need to configure it in an application on your computer or mobile device.</p>
+                <p>Open the calendar on the web to immediately see this month's events without needing to configure it in an application on your computer or mobile device.</p>
                 <p><strong>For more event details</strong>, simply click the TinyURL link provided in the event's location.</p>
             </div>
             <div class="usa-card__footer">
@@ -65,13 +65,13 @@ You can access the [web version of this calendar by clicking this link](https://
 The NIST OSCAL team hosts meetings and other events with the OSCAL community on different topics. We encourage you to attend these meetings as a way to keep up-to-date on and contribute to the development of OSCAL.
 <br></br>
 - ### **OSCAL Mini Workshops**
-  The NIST OSCAL team is hosting a new series of mini workshops, that aims to address topics of interests for our community and to open tihs forum for its members to present their OSCAL-related work. Unless specifically states, the workshops will not require a deep technical understanding of OSCAL, and the dialogue is informal, allowing the community to interact with the presenters and with the OSCAL team members. 
+  The NIST OSCAL team is hosting a new series of mini workshops, that aims to address topics of interests for our community and to open this forum for its members to present their OSCAL-related work. Unless specifically stated, the workshops will not require a deep technical understanding of OSCAL, and the dialogue is informal, allowing the community to interact with the presenters and with the OSCAL team members. 
   
   **[The Mini Workshops page](../learn/presentations/mini-workshop/)** contains a masterlist of all mini-workshop recordings and presentation slides. 
   
   **For up-to-date information about the workshops, please visit our [OSCAL CSRC](https://csrc.nist.gov/projects/open-security-controls-assessment-language/oscal-adopters-workshops) page.**
   
-  #### Don't miss out on the next session-simply click on the Zoom link  to join: [Zoom Link](https://nist.zoomgov.com/j/1609845104?pwd=eENkemtvbGdETkJ4UnpCY2F1QlgxZz09)
+  #### Don't miss out on the next session-simply click on the Zoom link to join: [Zoom Link](https://nist.zoomgov.com/j/1609845104?pwd=eENkemtvbGdETkJ4UnpCY2F1QlgxZz09)
   
   Meeting ID: 160 984 5104
   
