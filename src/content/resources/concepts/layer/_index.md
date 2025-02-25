@@ -136,4 +136,4 @@ The following is the release state of each model, along with download links for 
 
 ## Well-formed Data and Valid OSCAL
 
-[Per our guidance](validation/), OSCAL-enabled tools must check OSCAL document instances to ensure they are well-formed and valid based upon the models in these layers. 
+[Per our guidance](../validation/), OSCAL-enabled tools must check OSCAL document instances to ensure they are well-formed and valid based upon the models in these layers.
