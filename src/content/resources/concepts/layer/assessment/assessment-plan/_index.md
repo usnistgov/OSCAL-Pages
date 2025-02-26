@@ -56,8 +56,7 @@ An OSCAL assessment plan is organized as follows:
 - **Reviewed Controls**: Identifies the controls to be included within the scope of the assessment, as well as the control objectives and assessment methods.
 - **Assessment Subject**: Identifies the elements of the system that are in scope for the assessment, including locations, components, inventory items, and users.
 - **Assessment Assets**: Identifies the assessor's assets used to perform the assessment, including the teams, tools, and rules of engagement.
-- **Assessment Action**: Describes the manual and automated activities that are intended to be as part of the assessment. This includes the steps required to perform the action.
-- **Task**: Identifies the intended schedule of milestones and assessment actions.
+- **Task**: Identifies the intended Schedule of Milestones and the Assessment Actions that enumerates the procedures required to perform the assessment action.
 - **Back Matter**: Back matter syntax is identical in all OSCAL models. It is used for attachments, citations, and embedded content such as graphics.
 {{% /usa-grid-column %}}
 {{% usa-grid-column class="grid-col-auto" %}}
