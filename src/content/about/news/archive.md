@@ -6,8 +6,17 @@ description: Archive of older news items relating to the OSCAL project
 toc:
   enabled: true
 ---
+For the latest news items relating to the OSCAL project, please consult the [News](../index.html) page.
 
-- [OSCAL 1.0.0 Full Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.0) - June 7, 2021
+- [OSCAL 1.1.1 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.1) - September 12, 2023.
+- [OSCAL 1.1.0 Minor Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.1.0) - July 25, 2023.
+- [OSCAL 1.0.6 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.6) - June 30, 2023.
+- [OSCAL 1.0.5 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.5) - April 18, 2023.
+- [OSCAL 1.0.4 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.4) - May 16, 2022.
+- [OSCAL 1.0.3 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.3) - May 9, 2022.
+- [OSCAL 1.0.2 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.2) - March 20, 2022. 
+- [OSCAL 1.0.1 Patch Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.1) - Jan 30, 2022.
+- [OSCAL 1.0.0 Full Release](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.0) - June 7, 2021.
 - [The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project](https://www.nist.gov/blogs/cybersecurity-insights/foundation-interoperable-and-portable-security-automation-revealed) - May 19, 2021
 - [OSCAL 1.0.0 Release Candidate 2 (RC2) Released](https://github.com/usnistgov/OSCAL/releases/tag/v1.0.0-rc2) - April 12, 2021
 - [OSCAL 1.0.0 Release Candidate 1 (RC1) Released](https://pages.nist.gov/OSCAL/contribute/roadmap/#oscal-100-release-candidate-1) - December 21, 2020
