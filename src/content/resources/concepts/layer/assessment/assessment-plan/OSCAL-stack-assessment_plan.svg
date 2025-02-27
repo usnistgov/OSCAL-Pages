@@ -52,7 +52,7 @@
 			<desc>Assessment Plan (AP)</desc>
 			<v:textBlock v:margins="rect(2,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="105.292" cy="284.25" width="210.59" height="562.5"/>
-			<rect x="0" y="3" width="210.584" height="562.5" class="st4"/>
+			<rect x="0" y="3" width="210.584" height="530" class="st4"/>
 			<text x="42.81" y="15.5" class="st2" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Assessment Plan (AP)</text>		</g>
 		<g id="shape20-10" v:mID="20" v:groupContext="shape" v:layerMember="1" transform="translate(712.585,-490.988)">
 			<title>Rectangle.20</title>
@@ -87,8 +87,8 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="84.9996" cy="536.812" width="170" height="57.375"/>
-			<rect x="0" y="508.125" width="169.999" height="57.375" class="st5"/>
-			<text x="59.51" y="519.63" class="st6" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Back Matter<v:newlineChar/><tspan
+			<rect x="0" y="475" width="169.999" height="57.375" class="st5"/>
+			<text x="59.51" y="486" class="st6" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Back Matter<v:newlineChar/><tspan
 						x="48.03" dy="1em" class="st7">Laws/Regulations,<v:newlineChar/></tspan><tspan x="43.55" dy="1em"
 						class="st7">Standards/Guidance<v:newlineChar/></tspan><tspan x="22.13" dy="1em" class="st7">May include artifacts to review<v:newlineChar/></tspan><tspan
 						x="23.95" dy="1em" class="st10">Other Attachments as Needed</tspan></text>		</g>
@@ -111,10 +111,11 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="84.9996" cy="544.51" width="170" height="41.9798"/>
-			<rect x="0" y="523.52" width="169.999" height="41.9798" class="st8"/>
-			<text x="75.66" y="535.02" class="st9" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Task<v:newlineChar/><tspan
-						x="10.06" dy="1em" class="st7">Intended schedule of milestones and </tspan><tspan x="45.83" dy="1em"
-						class="st7">assessment actions</tspan></text>		</g>
+			<rect x="0" y="470" width="169.999" height="60" class="st8"/>
+			<text x="75.66" y="480" class="st9" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Task<v:newlineChar/><tspan
+						x="10.06" dy="1em" class="st7">Intended schedule of milestones and </tspan><tspan x="6" dy="1em"
+						class="st7">assessment actions that enumerates the</tspan><tspan x="20" dy="1em" class="st7">procedures required to perform</tspan>
+						<tspan x="40" dy="1em" class="st7">the assessment action </tspan></text>		</g>
 		<g id="shape112-39" v:mID="112" v:groupContext="shape" v:layerMember="1" transform="translate(712.585,-299.42)">
 			<title>Rectangle.112</title>
 			<desc>Reviewed Controls Controls to include in the assessment we we...</desc>
@@ -458,18 +459,5 @@
 			<text x="39.82" y="530.31" class="st9" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Terms and Conditions<v:newlineChar/><tspan
 						x="15.73" dy="1em" class="st7">Rules of Engagement, Disclosures, </tspan><tspan x="15.86" dy="1em"
 						class="st7">Limitation of Liability, Assumption </tspan><tspan x="23.21" dy="1em" class="st7">Statements, and Methodology</tspan></text>		</g>
-		<g id="shape1103-196" v:mID="1103" v:groupContext="shape" v:layerMember="1" transform="translate(712.585,-138.29)">
-			<title>Rectangle.1103</title>
-			<desc>Assessment Action Enumerates the actions for performing the a...</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-			</v:userDefs>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
-			<v:textRect cx="84.9996" cy="540.75" width="170" height="49.5"/>
-			<rect x="0" y="516" width="169.999" height="49.5" class="st8"/>
-			<text x="45.89" y="527.5" class="st9" v:langID="1033"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Assessment Action<v:newlineChar/><v:paragraph
-						v:spLine="-1" v:horizAlign="1"/><tspan x="5.91" dy="1em" class="st7">Enumerates the actions for performing </tspan><tspan
-						x="8.61" dy="1em" class="st7">the assessment, including procedures </tspan><tspan x="8.81" dy="1em"
-						class="st7">for performing the assessment action</tspan></text>		</g>
 	</g>
 </svg>
