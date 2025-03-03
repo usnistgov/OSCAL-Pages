@@ -16,10 +16,6 @@ The OSCAL project maintains a variety of resources to learn and use OSCAL.
 
 ## Learn
 
-### Concepts
-
-The [concepts](./concepts/) section contains detailed information about the organization of OSCAL models, processing specifications, and explanations of important primitives (i.e. identifiers) underlying OSCAL data elements.
-
 ### Reference
 
 The [reference](https://pages.nist.gov/OSCAL-Reference) section contains the full details of all OSCAL models for development snapshots and all published releases, with visualizations of models in outline form, reference documentation for individual elements, and indices for the location of all elements across all models.

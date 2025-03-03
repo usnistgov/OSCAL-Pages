@@ -10,3 +10,6 @@ suppresstopiclists: true
 
 The following Open Security Controls Assessment Language (OSCAL) learning resources are available to help you understand the concepts behind and use of the OSCAL [models](/concepts/layer/).
 
+### Concepts
+
+The [concepts](./concepts/) section contains detailed information about the organization of OSCAL models, processing specifications, and explanations of important primitives (i.e. identifiers) underlying OSCAL data elements.
