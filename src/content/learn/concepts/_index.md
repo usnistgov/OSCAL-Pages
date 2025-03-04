@@ -10,6 +10,7 @@ aliases:
   - /docs/schemas/
   - /documentation/
   - /concepts/
+weight: 1
 ---
 
 This section of the OSCAL website presents:

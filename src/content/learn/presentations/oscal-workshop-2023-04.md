@@ -1,10 +1,10 @@
 ---
-title: 4th OSCAL Workshop
+title: 4th OSCAL Conference and Workshop
 date: 2024-09-3
-heading: 4th Open Security Controls Assessment Language (OSCAL) Workshop
+heading: 4th Open Security Controls Assessment Language (OSCAL) Conference and Workshop
 toc:
     enabled: true
-weight: 4
+weight: 2
 ---
 
 {{% usa-tag %}}When{{% /usa-tag %}} May 23rd, 2023

@@ -4,7 +4,7 @@ date: 2021-04-22 09:52:36 -0400
 heading: 2nd Open Security Controls Assessment Language (OSCAL) Workshop
 toc:
   enabled: true
-weight: 2
+weight: 4
 ---
 
 {{% usa-tag %}}When{{% /usa-tag %}} February 2, 2021 thru February 3, 2021

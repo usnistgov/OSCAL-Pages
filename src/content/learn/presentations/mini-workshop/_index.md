@@ -1,7 +1,7 @@
 ---
-title: OSCAL Mini Workshop Series
+title: OSCAL Monthly Workshop Series
 date: 2022-05-26 13:18:18 -0400
-heading: Open Security Controls Assessment Language (OSCAL) Mini Workshop Series
+heading: Open Security Controls Assessment Language (OSCAL) Monthly Workshop Series
 toc:
   enabled: true
 aliases:
@@ -9,7 +9,7 @@ aliases:
 weight: 1
 ---
 
-# OSCAL Mini Workshop Series
+# OSCAL Monthly Workshop Series
 
 The NIST [OSCAL](https://www.nist.gov/OSCAL) team is hosting a new series of mini workshops, that aims to address topics of interest for our community and to open this forum for its members to present their OSCAL-related work. Unless specifically stated, the workshops will not require a deep, technical understanding of OSCAL, and the dialog is informal, allowing the community to interact with the presenters and with the OSCAL team members. 
 
@@ -27,7 +27,7 @@ Who should attend:
 
 ## Call for Proposals
 
-NIST OSCAL Mini Workshop program committee is seeking timely, topical, and thought-provoking **technical presentations or demonstrations** highlighting OSCAL editorial tools, OSCAL-based security assessment automation processes, and Governance Risk and Compliance (GRC) tools supporting OSCAL formats for integration into such processes. 
+NIST OSCAL Monthly Workshop program committee is seeking timely, topical, and thought-provoking **technical presentations or demonstrations** highlighting OSCAL editorial tools, OSCAL-based security assessment automation processes, and Governance Risk and Compliance (GRC) tools supporting OSCAL formats for integration into such processes. 
 
 **NIST does not endorse any of the OSCAL tools or services presented. Presentations or demos promoting such tools or services, as opposed to focusing on the OSCAL-related technical aspects, will not be permitted.**
 
@@ -38,8 +38,8 @@ Please find below the calendar of proposed dates. Before submitting a proposal, 
 Submit your proposal via email to [oscal@nist.gov](mailto:oscal@nist.gov), with the subject line: “OSCAL Workshop - [Date: yyyy/mm/dd]”, where the “Date” is the selected date from the calendar below. Please include in your submission a pre-assessment of the OSCAL knowledge level the audience will need using a 4-levels scale with level one (L1/bronze) being equivalent to novice and level four (L4/platinum) being an OSCAL expert. 
 #
 ---
-## Attend the Next Mini Workshop Event
-We'd love for you to be a part of our upcoming virtual OSCAL Mini Workshop! These engaging workshops are held monthly, typically around the middle of the month. **For up-to-date information about the workshops, please visit our [OSCAL CSRC](https://csrc.nist.gov/projects/open-security-controls-assessment-language/oscal-adopters-workshops) page.**
+## Attend the Next Monthly Workshop Event
+We'd love for you to be a part of our upcoming virtual OSCAL Workshop! These engaging workshops are held monthly, typically around the middle of the month. **For up-to-date information about the workshops, please visit our [OSCAL CSRC](https://csrc.nist.gov/projects/open-security-controls-assessment-language/oscal-adopters-workshops) page.**
 
 **Visit our [Events Page](../../../events/)** to explore an interactive web calendar and download our iCalendar for seamless access to both upcoming and past events.
 

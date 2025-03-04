@@ -31,3 +31,8 @@ For an up-to-date description of all projects and their relationship to one anot
 
 Moving forward, the NIST team will author future blog posts as needed. If you have an OSCAL topic you would like to read about or you want to guest-author a blog post, you can email the [NIST OSCAL team](mailto:oscal@nist.gov?subject=NIST%20Blog) your proposal and the team will work with you to approve and publish the blog post.
 
+### July 7, 2021
+[Innovating Security Compliance Through Open Standards](https://www.easydynamics.com/blog/innovating-security-compliance-through-open-standards/)
+
+### May 19, 2021
+[The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project](https://www.nist.gov/blogs/cybersecurity-insights/foundation-interoperable-and-portable-security-automation-revealed)
