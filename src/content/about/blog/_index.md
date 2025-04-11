@@ -11,9 +11,20 @@ menu:
     weight: 90
 ---
 
+#
+### Explore the Latest Insights from Our OSCAL Community
+
+<p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles-simply click on any title to dive straight into the post you're interested in: </p>
+
+- **OSCAL Continues to Grow Roots in Europe** -- 04/09/2025 -- [Read More](#20250409)
+- **Exploring the OSCAL-based AI-augmented CISO Agent: A Student's Perspective** -- 03/19/2025 -- [Read More](#20250319)
+- **OSCAL Foundation launches to move security standard forward** -- 02/07/2025 -- [Read More](#20250207)
+
+#
+---
 ### 2025/04/09
-# OSCAL Continues to Grow Roots in Europe
-## The European Cyber Security Organization convenes “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe” 
+## <span style="color:#4d80d1">OSCAL Continues to Grow Roots in Europe
+### The European Cyber Security Organization convenes “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe”   </span>
 ### An awareness session on OSCAL for the European cybersecurity practitioners
 
   ##### -- Cristian Michael Tracci, Senior Manager, Policy Analysis and Outreach [policy@ecs-org.eu](mailto:policy@ecs-org.eu)
@@ -40,11 +51,47 @@ Fostering a collaborative approach, in line with its nature as a public-private 
 | 30 min | Cobalt EU Initiative for Automated Compliance |	Antonio Skarmeta, Full Professor, and Sara Nieves Matheu Garcia, Assistant Professor, University of Murcia |
 | 30 min	| Open Discussion	Moderated by ECSO | |
 
-Learn more about ECSO at ecs-org.eu
+*Learn more about ECSO at ecs-org.eu*
+
+# <div></div>
+
+---
+### 2025/03/19
+## <span style="color:#4d80d1"> Exploring the OSCAL-based AI-augmented CISO Agent: A Student's Perspective </span>
+
+  #### -- Presented By: 
+  - **Anca Sailer**, *Distinguished Engineer, IBM TJ Watson*
+  - **Hirokuni Kitahara**, *Research Scientist, IBM Tokyo*
+  - **Saki Takano**, *Research Scientist, IBM Tokyo*
+  - **Takumi Yanagawa**, *Research Advisory Software Developer, IBM Tokyo*
+  - **Yuji Watanabe**, *Research Senior Technical Staff, IBM Tokyo*
+  ### <p></p>
+
+  ##### -- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)
+
+I recently attended the OSCAL workshop titled "OSCAL-based AI-augmented CISO agent", hosted by our partners at IBM. The focus of the session was on leveraging OSCAL for AI-augmented compliance automation and policy validation. Over the past five years, IBM has made OSCAL a key part of their strategy for expressing security and compliance requirements across various domains, including infrastructure, data, AI, applications, and business processes. 
+
+During the workshop, I learned about IBM's 4-step compliance lifecycle, with a particular emphasis on the assessment phase. The session detailed how IBM bridges authored compliance controls with real-time validation through their Compliance to Policy (C2P) framework. I was particularly impressed by how C2P uses OSCAL component definitions and a plug-in based architecture to generate technology-specific policies, such as Ansible playbooks or Kyverno rules. These policies are then deployed in actual or pre-deployment environments for validation. What really stood out to me was how the C2P core interprets OSCAL structures, mapping controls to relevant policies, and generating validation results into standardized OSCAL assessment outputs. This system seems like a game-changer for organizations looking to streamline their compliance processes.
+
+Overall, the workshop gave me a deep dive into how structured compliance data, combined with Gen-AI and automated tools, can create a seamless and scalable compliance pipeline. I left the session with a solid understanding of how IBM is applying these technologies to modern cloud-native and AI-integrated systems. It's exciting to see how AI and automation are playing a key role in shaping the future of compliance.
 
 
+  ### Location: 
+  - Online
+  
+  ### Date and Time:
+  - 19 March 2025, 11:00 AM - 12:00 PM EDT
+
+#
+  *View this March 2025 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=%2D%2003/19/2025:).
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop#2025/3/19/).
+
+# <div></div>
+
+---
 ### 2025/02/07
-## OSCAL Foundation launches to move security standard forward 
+## <span style="color:#4d80d1">OSCAL Foundation launches to move security standard forward   </span>
 
   ##### -- John Banghart [jfbanghart@venable.com](mailto:jfbanghart@venable.com)
 
@@ -89,5 +136,5 @@ Washington, DC 20001
 | 4:00 p.m. - 4:05 p.m. ET | Closing Remarks |
 | 4:05 p.m. - 6:00 p.m. ET | Reception & Networking |
 
-Learn more about the OSCAL Foundation at OSCALFoundation.org.
+*Learn more about the OSCAL Foundation at OSCALFoundation.org.*
  
