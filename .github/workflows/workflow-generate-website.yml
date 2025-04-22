@@ -33,7 +33,7 @@ on:
 jobs:
   build-website:
     name: Build Website
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     env:
       HUGO_VERSION: 0.110.0
       HUGO_CHECKSUM: "969eeabb570e9d674d374de37a9d4c8799edf91a9a4dd9115dd714d559b5ad46"
@@ -75,7 +75,7 @@ jobs:
     
   check-links:
     name: Check Links
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs:
       - build-website
     steps:
@@ -109,7 +109,7 @@ jobs:
 
   stage-content:
     name: Publish Content to published-pages Branch
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs:
       - build-website
       - check-links
@@ -139,7 +139,7 @@ jobs:
 
   publish-website:
     name: Publish Website to OSCAL Branch for NIST Pages
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs: 
       - build-website
       - check-links
