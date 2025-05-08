@@ -9,7 +9,7 @@ Standardized Formats
 {{% /usa-hero %}}
 
 {{% usa-tagline caption="Providing control-related information in machine-readable formats." %}}
-NIST, in collaboration with industry, is developing the Open Security Controls Assessment Language (OSCAL). OSCAL is a set of formats expressed in XML, JSON, and YAML. These formats provide machine-readable representations of control catalogs, control baselines, system security plans, and assessment plans and results.
+The Open Security Controls Assessment Language (OSCAL) is a NIST-led initiative developed in collaboration with industry to modernize and automate security and compliance. OSCAL provides open, machine-readable formats—available in XML, JSON, and YAML—that streamline control-based risk assessments. By enabling automation, OSCAL dramatically cuts audit times from months to minutes, reduces human error, and accelerates compliance with evolving regulations—freeing security experts to focus on real-world threats, not extensive paperwork.
 {{% /usa-tagline %}}
 
 {{<usa-graphic-list>}}

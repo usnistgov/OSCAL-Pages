@@ -1,7 +1,7 @@
 ---
 title: Events and Presentations
 date: 2021-04-22 09:52:36 -0400
-suppresstopiclists: true
+suppresstopiclist: true
 weight: 3
 ---
 
