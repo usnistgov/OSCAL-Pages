@@ -15,13 +15,56 @@ menu:
 
 <p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles, simply click on any title to dive straight into the post you're interested in: </p>
 
+- **Inside the OSCAL Mapping Model: A Student's Perspective** -- 08/1/2025 -- [Read More](#202581)
 - **Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement** -- 06/26/2025 -- [Read More](#20250626)
 - **Demystifying Compliance Automation: A Student’s Perspective on the Continuous Compliance Framework** -- 05/27/2025 -- [Read More](#20250527)
 - **Revolutionizing Compliance Through Machine-Readable Data: A Student's Perspective** -- 04/16/2025 -- [Read More](#20250416)
-- **OSCAL Continues to Grow Roots in Europe** -- 04/09/2025 -- [Read More](#20250409)
 
 ##
 ---
+
+### 2025/8/1
+## <span style="color:#4d80d1"> Inside the OSCAL Mapping Model: A Student's Perspective </span>
+
+#### -- Presented By: 
+  - **Stephen Banghart**, *Technical Coordinator, OSCAL Foundation*
+  - **Anca Sailer**, *Distinguished Engineer, IBM Research*
+  - **Vikas Agarwal**, *Senior Technical Staff Member, IBM Research - India*
+
+  ##### -- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  ### <p></p>
+
+At the NIST OSCAL 37th Monthly Workshop, Stephen Banghart, Anca Sailer, and Vikas Agarwal delivered a compelling presentation on 'Collaboratively Maturing the OSCAL Control Mapping Model at the OSCAL Foundation'. The workshop provided a comprehensive introduction to the OSCAL Mapping Model, a powerful tool that streamlines security assessments and continuous compliance by automating the mapping of security controls between different frameworks.
+
+The OSCAL Mapping Model is a game changer in security assessments and compliance automation. By enabling the creation of a crosswalk between various control frameworks, it facilitates comparisons and mappings between them. As technology advances rapidly, having a robust and secure security posture is crucial. However, traditional security assessment processes often struggle to scale, which is where the NIST OSCAL team, OSCAL-Compass, and OSCAL Foundation come in, working together to implement a new use case for OSCAL with the Mapping Model. This leverages existing security postures to bootstrap a new mapping model, making it easier for organizations to adapt to changing security requirements. 
+
+The ability to map security frameworks is essential for organizations to analyze their compliance with different frameworks. With the OSCAL Mapping Model, users can automate this process, gaining valuable insights into how their current framework aligns with others. The presenters worked through the Mapping Model's use cases, demonstrating how organizations can utilize it to map controls from one security framework to another. This capability benefits a range of stakeholders, including security analysts, who can create detailed guidance and mapping documents to illustrate the relationships between frameworks. 
+
+A prototype of the OSCAL Mapping Model is currently being tested, featuring a mapping collection and schema that captures various security fields to demonstrate compliance between source and target control frameworks. The mapping collection includes fields such as 'provenance', which captures common fields across different mappings, and a 'method' field, which indicates the type of method used to map controls (automated, semi-automated, or manual). Additionally, a 'confidence score' field provides an indication of the accuracy and confidence of the produced mapping. On the other hand, the mapping schema captures information about the source and target catalogs/profiles, including a map array structure that specifies the source and target controls being mapped. It also captures the relationship between these controls, including equivalency and gaps (controls that are not mapped or partially mapped). The source and target gap summaries provide a detailed list of specific controls that require attention, enabling users to evaluate and plan for further compliance. 
+
+The presenters concluded their presentation by sharing insightful proposals for extending the OSCAL Mapping Model. These include enhancing the 'method' field to allow for user-defined values beyond automated, semi-automated, and manual. Another proposal suggests introducing a 'coverage' field to indicate the extent to which a control is compliant with another, providing a clear understanding of the overlap between controls and the additional work required to achieve complete mapping and compliance.
+
+As the technology landscape continues to evolve, the need for efficient and effective security assessment and compliance automation has never been more pressing. The OSCAL Mapping Model discussed in this workshop is a powerful tool that addresses this need, and the presentation by Banghart, Sailer, and Agarwal demonstrated its potential to revolutionize the way organizations approach security compliance. With the OSCAL community driving innovation and collaboration, the OSCAL Mapping Model is poised to play a vital role in shaping the future of security assessments and compliance processes.
+
+
+
+### Location: 
+  - Online
+  
+  ### Date and Time:
+  - 16 July 2025, 11:00 AM - 12:00 PM EDT
+
+
+#
+  *View this July 2025 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=%2D%2007/16/2025:).
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
+
+
+# <div></div>
+
+---
+
 ### 2025/06/26
 ## <span style="color:#4d80d1"> Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement </span>
 
@@ -126,40 +169,6 @@ Overall, this workshop was incredibly informative. I walked away with a much dee
   *View this April 2025 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=04/16/2025).
   
   *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop#2025/3/19/).
-
-# <div></div>
-
----
-### 2025/04/09
-## <span style="color:#4d80d1">OSCAL Continues to Grow Roots in Europe
-### The European Cyber Security Organization convenes “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe”   </span>
-### An awareness session on OSCAL for the European cybersecurity practitioners
-
-  ##### -- Cristian Michael Tracci, Senior Manager, Policy Analysis and Outreach [policy_team@ecs-org.eu](mailto:policy_team@ecs-org.eu)
-
-The European Cyber Security Organization (ECSO) organizes an event titled “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe.” This session aims to discuss how to automate compliance to cybersecurity policies and security assessment, auditing, and continuous monitoring processes, raising awareness about the Open Security Controls Assessment Language (OSCAL), its applications, and benefits in this domain. It is primarily addressed to the European cybersecurity community, including policymakers, GRC practitioners, and researchers, while also promoting dialogue between like-minded geographies on topics of common interest.
-Organizations, whether private corporations, government agencies, or supervisory authorities, face significant challenges worldwide in managing compliance with various national and international laws, contractual clauses, and standards. The proliferation of cybersecurity regulations and standards in Europe exacerbates these challenges.
-Fostering a collaborative approach, in line with its nature as a public-private partnership, ECSO can bring together the private and public sectors, promoting expert debate grounded in substantive discussions and focused on solutions that benefit the entire ecosystem.
-
-### Location: 
-   - Online
-
-### Date and time: 
-    - 23 April 2025, 15:00 CEST /9:00 EDT 
-### Registration:
- - [required](https://events.teams.microsoft.com/event/6d7dbddd-0186-4288-9369-99fcca0bba32@07daeece-77f0-4a62-882f-a7a4ce502054/registration).
-
-### Agenda
-| Time |	Session	| Speakers |
-| --------|-----------------------------------------------|-----------------------------------|
-| 10 min	| Opening Remarks	| ECSO |
-40 min | Continuous Proactive Security with OSCAL: Going Beyond ‘Shift Left’ |	Michaela Iorga, Supervisory Computer Engineer, Secure Systems and Applications Group, National Institute of Standards and Technology (NIST) |
-| 20 min	| Build with OSCAL: Use-cases for adoption and beyond	| Fritz Kunstler, Principal Security Engineer, Amazon Web Services (AWS) |
-| 20 min |	OSCAL and European Cybersecurity Public Policy |	Cristian Tracci, Senior Manager, Policy Analysis and Outreach Stream, ECSO |
-| 30 min | Cobalt EU Initiative for Automated Compliance |	Antonio Skarmeta, Full Professor, and Sara Nieves Matheu Garcia, Assistant Professor, University of Murcia |
-| 30 min	| Open Discussion	Moderated by ECSO | |
-
-*Learn more about ECSO at ecs-org.eu*
 
 # <div></div>
 
