@@ -15,12 +15,50 @@ menu:
 
 <p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles, simply click on any title to dive straight into the post you're interested in: </p>
 
+- **How CAPORDINO Converts Security Data into OSCAL Catalogs: A Student's Perspective** -- 08/26/2025 -- [Read More](#20250826)
 - **Inside the OSCAL Mapping Model: A Student's Perspective** -- 08/1/2025 -- [Read More](#202581)
 - **Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement** -- 06/26/2025 -- [Read More](#20250626)
-- **Demystifying Compliance Automation: A Student’s Perspective on the Continuous Compliance Framework** -- 05/27/2025 -- [Read More](#20250527)
-- **Revolutionizing Compliance Through Machine-Readable Data: A Student's Perspective** -- 04/16/2025 -- [Read More](#20250416)
 
 ##
+---
+
+### 2025/08/26
+## <span style="color:#4d80d1"> How CAPORDINO Converts Security Data into OSCAL Catalogs: A Student's Perspective  </span>
+
+#### -- Presented By: 
+  - **Selena Xiao**, Computer Scientist, NIST
+
+  <b> -- Blog by: Marilyn Nguyen </b> (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  ### <p></p>
+
+The recent workshop hosted by the NIST OSCAL Team featured a compelling presentation by Selena Xiao on *CAPORDINO: A Data Converter to OSCAL Catalogs*. The session provided valuable insights into how CAPORDINO (Cybersecurity and Privacy Open Reference Datasets in OSCAL) contributes to advancing security automation, particularly in the areas of secure software development and patch management, meeting the requirements of Executive Order 14144. 
+
+As cybersecurity systems continue to grow in complexity, so does the need for scalable, automated methods of conducting security assessments. CAPORDINO addresses this challenge by converting structured security reference data into OSCAL, a standardized, machine-readable format. The result is an approach that supports continuous assessment with reduced reliance on manual processes.
+
+A significant focus of the presentation was CAPORDINO's use of the Cybersecurity and Privacy Reference Tool (CPRT), which aggregates security guidance from various NIST security frameworks. CPRT provides this data in a structured JSON format, serving as a foundation for conversion into OSCAL documents. This structured format ensures compatibility with both automated systems and human readability.
+
+CAPORDINO's conversion process is built around two key stages: mapping and conversion. CAPORDINO first accesses specific CPRT security reference data through CPRT API HTTP requests, retrieving the necessary data, and uses a JSON processing library to map that data into its corresponding Java objects. From there, multiple classes handle the conversion into OSCAL-formatted XML documents, which are well-structured catalogs that retain all core information from the original references.
+
+What emerged from the workshop was a clear demonstration of how tools like CAPORDINO contribute to modernizing security assessment workflows. Rather than replacing human oversight, automation in this context enhances accuracy, consistency, and speed which are all critical as organizations scale their cybersecurity efforts.
+
+This workshop offered a strong example of innovation in cybersecurity. CAPORDINO represents a step forward in reducing the burden of manual documentation while aligning with industry standards for secure system development.
+
+
+### Location: 
+  - Online
+  
+  ### Date and Time:
+  - 20 August 2025, 11:00 AM - 12:00 PM EDT
+
+
+#
+  *View this August 2025 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=%2D%2008/20/2025:).
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
+
+
+# <div></div>
+
 ---
 
 ### 2025/8/1
@@ -31,7 +69,7 @@ menu:
   - **Anca Sailer**, *Distinguished Engineer, IBM Research*
   - **Vikas Agarwal**, *Senior Technical Staff Member, IBM Research - India*
 
-  ##### -- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  <b> -- Blog by: Marilyn Nguyen </b> (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
   ### <p></p>
 
 At the NIST OSCAL 37th Monthly Workshop, Stephen Banghart, Anca Sailer, and Vikas Agarwal delivered a compelling presentation on 'Collaboratively Maturing the OSCAL Control Mapping Model at the OSCAL Foundation'. The workshop provided a comprehensive introduction to the OSCAL Mapping Model, a powerful tool that streamlines security assessments and continuous compliance by automating the mapping of security controls between different frameworks.
@@ -72,7 +110,7 @@ As the technology landscape continues to evolve, the need for efficient and effe
   - **Mats Nahlinder**, *CEO & Co-Founder, Sunstone Secure*
   - **Robert Ficcaglia**, *CTO and Co-Founder, Sunstone Secure*
 
-  ##### -- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  <b> -- Blog by: Marilyn Nguyen </b> (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
   ### <p></p>
 
 
@@ -99,76 +137,6 @@ Overall, the workshop provided a valuable perspective on how OSCAL is evolving b
   
   *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
 
-
-# <div></div>
-
----
-
-### 2025/05/27
-## <span style="color:#4d80d1"> Demystifying Compliance Automation: A Student’s Perspective on the Continuous Compliance Framework </span>
-
-#### -- Presented By: 
-  - **Chris Vermeulen**, *Principal Engineer, Container Solutions*
-  - **Ian Miell**, *Partner, Container Solutions*
-
-  ##### -- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
-  ### <p></p>
-
-This month, I attended a workshop titled "Automated OSCAL-based evidence gathering with The Continuous Compliance Framework", presented by Chris Vermeulen and Ian Miell from Container Solutions. As someone new to the world of compliance automation, I found the session to be a valuable introduction to how modern organizations are tackling the challenges of regulatory mapping in complex systems. The Continuous Compliance Framework (CCF) is an open source tool that automates the collection of compliance evidence through distributed agents. These agents run on different systems and environments, gathering data and feeding it into a centralized API, all while remaining secure and lightweight.
-
-One of the most interesting concepts discussed was how CCF identifies and maps “subjects” and “components” without relying on centralized identifiers like UUIDs. Instead, it uses attribute-based mapping to determine if two pieces of evidence relate to the same subject, allowing the system to correlate data from various sources efficiently. This makes compliance tracking much more manageable, especially in large scale, distributed environments where manual mapping would be time-consuming and prone to errors. I appreciated how the framework is designed to scale across environments, from GitHub repositories to Linux hosts, making it highly flexible and practical.
-
-Another highlight was seeing how CCF integrates with the OSCAL format. The team demonstrated an in-progress editor for building system security plans directly within the framework, complete with visual tools like diagram editors for network and component layouts. This approach not only simplifies documentation but also ensures that compliance data is machine-readable and easy to export. Overall, the workshop gave me a clearer understanding of the future of compliance automation and how thoughtful tooling can turn a complex process into something far more manageable.
-
-
-
-### Location: 
-  - Online
-  
-  ### Date and Time:
-  - 21 May 2025, 11:00 AM - 12:00 PM EDT
-
-#
-  *View this May 2025 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=%2D%2005/21/2025:).
-  
-  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
-
-# <div></div>
-
----
-### 2025/04/16
-## <span style="color:#4d80d1"> Revolutionizing Compliance Through Machine-Readable Data: A Student's Perspective </span>
-
-  #### -- Presented By: 
-  - **Brian Ruf**, *Independent Consultant, RufRisk*
-  - **Pirooz Javan**, *CTO, Easy Dynamics*
-  - **Juan Risso**, *Lead Software Engineer, Easy Dynamics*
-  ### <p></p>
-
-  ##### -- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
-
-I had the chance to attend a fascinating workshop titled "OSCAL Catalogs: Create Easily and Use Broadly," presented by experts Brian Ruf (RufRisk), Priooz Javan (Easy Dynamics), and Juan Risso (Easy Dynamics). The session gave a deep dive into OSCAL and its use in various industries. While I initially thought OSCAL was focused solely on cybersecurity compliance frameworks, I quickly learned that its applications can stretch far beyond that, offering a powerful tool for managing a wide variety of regulatory and requirement-based scenarios.
-
-At its core, OSCAL was created to handle cybersecurity requirements, including well-known frameworks such as NIST SP 800-53 and SOC 2. These are essential standards in managing cybersecurity risk and compliance, but the workshop revealed that OSCAL can be applied much more broadly. It turns out OSCAL is highly versatile and can be used to manage virtually any type of requirement (including products, services, or processes) across multiple industries. The ability to define requirements clearly, track their implementation, and assess compliance can be a game-changer for industries like healthcare, manufacturing, financial services, and even construction.
-
-What was particularly intriguing was the emphasis on machine-readable data. Traditionally, compliance requirements are stored in formats like PDFs or Word documents, which are difficult to track and are often prone to errors. OSCAL solves this problem by structuring data in a way that machines can easily process, enabling automation and reducing human error. The presenters explained that by starting with OSCAL, organizations can seamlessly convert human-readable formats like HTML, Word, and Excel into machine-readable data, ensuring that compliance documents are both accessible and actionable. This concept of bridging the gap between machine-readable and human-readable data was one of the most important takeaways from the workshop.
-
-The workshop also featured a live demonstration of the Comply Zero platform, which is built around OSCAL and helps manage compliance lifecycles. In the demo, we saw how OSCAL catalogs can be created, managed, and assessed through an intuitive interface. The ability to define controls, parameters, and assessment objectives, and link them together, showcased how OSCAL can help organizations streamline their compliance processes.
-
-One of the key points made during the workshop was the idea that OSCAL’s machine-readable format enables automation and more efficient tracking of compliance efforts. As regulations become more complex, tools like OSCAL will be essential in managing and evaluating compliance in real time, minimizing the risks of human error, and reducing the time spent manually cross-referencing documents. This is especially critical in industries where compliance is not just a best practice but a legal requirement. Starting with OSCAL allows organizations to build a solid foundation for automation, and the ability to generate reports and assessments more easily means that stakeholders can focus on the actual outcomes rather than the complexity of the paperwork.
-
-Overall, this workshop was incredibly informative. I walked away with a much deeper understanding of how OSCAL works and how it is revolutionizing the way industries track and assess compliance requirements. It became clear to me that OSCAL is more than just a tool for cybersecurity—it’s a versatile solution with broad potential applications in fields like healthcare, construction, manufacturing, and finance. As a student, I’m excited about the possibilities this open standard offers for the future of compliance management.
-
-### Location: 
-  - Online
-  
-  ### Date and Time:
-  - 16 April 2025, 11:00 AM - 12:00 PM EDT
-
-#
-  *View this April 2025 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=04/16/2025).
-  
-  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop#2025/3/19/).
 
 # <div></div>
 
