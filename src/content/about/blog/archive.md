@@ -18,6 +18,96 @@ Discover a comprehensive archive of OSCAL blog posts featuring practical guidanc
 ## 2025
 <br>
 
+<!-- May 2025 OSCAL Monthly Workshop Student Blog Post -->
+<div class="usa-card-group">
+    <div class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Demystifying Compliance Automation: A Student’s Perspective on the Continuous Compliance Framework</span></h2>
+            </div>
+            <div class="usa-card__body">
+                <p><b>May 27, 2025</b></p>
+                <p><b>-- Presented By:  </b></p>
+                <p>
+                    <ul>
+                        <li><b>Chris Vermeulen</b>, <i>Principal Engineer, Container Solutions</i></li>
+                        <li><b>Ian Miell</b>, <i>Partner, Container Solutions</i></li>
+                    </ul>
+                </p>
+                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                <p>This month, I attended a workshop titled "Automated OSCAL-based evidence gathering with The Continuous Compliance Framework", presented by Chris Vermeulen and Ian Miell from Container Solutions. As someone new to the world of compliance automation, I found the session to be a valuable introduction to how modern organizations are tackling the challenges of regulatory mapping in complex systems. The Continuous Compliance Framework (CCF) is an open source tool that automates the collection of compliance evidence through distributed agents. These agents run on different systems and environments, gathering data and feeding it into a centralized API, all while remaining secure and lightweight.
+
+One of the most interesting concepts discussed was how CCF identifies and maps “subjects” and “components” without relying on centralized identifiers like UUIDs. Instead, it uses attribute-based mapping to determine if two pieces of evidence relate to the same subject, allowing the system to correlate data from various sources efficiently. This makes compliance tracking much more manageable, especially in large scale, distributed environments where manual mapping would be time-consuming and prone to errors. I appreciated how the framework is designed to scale across environments, from GitHub repositories to Linux hosts, making it highly flexible and practical.
+
+Another highlight was seeing how CCF integrates with the OSCAL format. The team demonstrated an in-progress editor for building system security plans directly within the framework, complete with visual tools like diagram editors for network and component layouts. This approach not only simplifies documentation but also ensures that compliance data is machine-readable and easy to export. Overall, the workshop gave me a clearer understanding of the future of compliance automation and how thoughtful tooling can turn a complex process into something far more manageable.
+<br><br>
+<details>
+    <summary><i>Click here to learn more about the OSCAL Workshops:</i></summary>
+        <h3>Location:</h3>
+            <li><ul>Online</ul></li>
+        <h3>Date and Time:</h3>
+            <li><ul>21 May 2025, 11:00 AM - 12:00 PM EDT</ul></li>
+        <br>
+        <i>View this May 2025 workshop recording and other files </i><a href = "https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=%2D%2005/21/2025:">here</a>
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../../learn/presentations/mini-workshop).
+</details>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- April 2025 OSCAL Monthly Workshop Student Blog Post -->
+<div class="usa-card-group">
+    <div class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Revolutionizing Compliance Through Machine-Readable Data: A Student's Perspective</span></h2>
+            </div>
+            <div class="usa-card__body">
+                <p><b>April 16, 2025</b></p>
+                <p><b>-- Presented By:  </b></p>
+                <p>
+                    <ul>
+                        <li><b>Brian Ruf</b>, <i>Independent Consultant, RufRisk</i></li>
+                        <li><b>Pirooz Javan</b>, <i>CTO, Easy Dynamics</i></li>
+                        <li><b>Juan Risso</b>, <i>Lead Software Engineer, Easy Dynamics</i></li>
+                    </ul>
+                </p>
+                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                <p>I had the chance to attend a fascinating workshop titled "OSCAL Catalogs: Create Easily and Use Broadly," presented by experts Brian Ruf (RufRisk), Priooz Javan (Easy Dynamics), and Juan Risso (Easy Dynamics). The session gave a deep dive into OSCAL and its use in various industries. While I initially thought OSCAL was focused solely on cybersecurity compliance frameworks, I quickly learned that its applications can stretch far beyond that, offering a powerful tool for managing a wide variety of regulatory and requirement-based scenarios...
+<details>
+    <summary><b><i><span style="color:#4d80d1">Continue reading here.</span></i></b></summary>
+    <p>At its core, OSCAL was created to handle cybersecurity requirements, including well-known frameworks such as NIST SP 800-53 and SOC 2. These are essential standards in managing cybersecurity risk and compliance, but the workshop revealed that OSCAL can be applied much more broadly. It turns out OSCAL is highly versatile and can be used to manage virtually any type of requirement (including products, services, or processes) across multiple industries. The ability to define requirements clearly, track their implementation, and assess compliance can be a game-changer for industries like healthcare, manufacturing, financial services, and even construction.
+
+What was particularly intriguing was the emphasis on machine-readable data. Traditionally, compliance requirements are stored in formats like PDFs or Word documents, which are difficult to track and are often prone to errors. OSCAL solves this problem by structuring data in a way that machines can easily process, enabling automation and reducing human error. The presenters explained that by starting with OSCAL, organizations can seamlessly convert human-readable formats like HTML, Word, and Excel into machine-readable data, ensuring that compliance documents are both accessible and actionable. This concept of bridging the gap between machine-readable and human-readable data was one of the most important takeaways from the workshop.
+
+The workshop also featured a live demonstration of the Comply Zero platform, which is built around OSCAL and helps manage compliance lifecycles. In the demo, we saw how OSCAL catalogs can be created, managed, and assessed through an intuitive interface. The ability to define controls, parameters, and assessment objectives, and link them together, showcased how OSCAL can help organizations streamline their compliance processes.
+
+One of the key points made during the workshop was the idea that OSCAL’s machine-readable format enables automation and more efficient tracking of compliance efforts. As regulations become more complex, tools like OSCAL will be essential in managing and evaluating compliance in real time, minimizing the risks of human error, and reducing the time spent manually cross-referencing documents. This is especially critical in industries where compliance is not just a best practice but a legal requirement. Starting with OSCAL allows organizations to build a solid foundation for automation, and the ability to generate reports and assessments more easily means that stakeholders can focus on the actual outcomes rather than the complexity of the paperwork.
+
+Overall, this workshop was incredibly informative. I walked away with a much deeper understanding of how OSCAL works and how it is revolutionizing the way industries track and assess compliance requirements. It became clear to me that OSCAL is more than just a tool for cybersecurity—it’s a versatile solution with broad potential applications in fields like healthcare, construction, manufacturing, and finance. As a student, I’m excited about the possibilities this open standard offers for the future of compliance management.</p>
+</details>
+    <br>
+<details>
+    <summary><i>Click here to learn more about the OSCAL Workshops:</i></summary>
+        <h3>Location:</h3>
+            <li><ul>Online</ul></li>
+        <h3>Date and Time:</h3>
+            <li><ul>16 April 2025, 11:00 AM - 12:00 PM EDT</ul></li>
+        <br>
+        <i>View this April 2025 workshop recording and other files </i><a href = "https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=%2D%2004/16/2025:">here</a>
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../../learn/presentations/mini-workshop).
+</details>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Cristian Michael Tracci Blog Post -- April 9, 2025 -->
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
@@ -66,7 +156,7 @@ Fostering a collaborative approach, in line with its nature as a public-private 
     </div>
 </div>
 
-
+<!-- March 2025 OSCAL Monthly Workshop Student Blog Post -->
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
@@ -110,6 +200,7 @@ Overall, the workshop gave me a deep dive into how structured compliance data, c
     </div>
 </div>
 
+<!-- OSCAL Foundatio Launch Blog Post -->
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
@@ -178,6 +269,7 @@ Washington, DC 20001
 
 ## 2023
 <br>
+<!-- OSCAL's Fall Cleaning Blog Post -->
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
@@ -217,6 +309,7 @@ Moving forward, the NIST team will author future blog posts as needed. If you ha
 
 ## 2021
 <br>
+<!-- Easy Dynamics Blog Post -->
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
@@ -237,6 +330,7 @@ Moving forward, the NIST team will author future blog posts as needed. If you ha
             </div>
         </div>
     </div>
+    <!-- OSCAL Foundation Blog Post -->
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
             <div class="usa-card__header">
