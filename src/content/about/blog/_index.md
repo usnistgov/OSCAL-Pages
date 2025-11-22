@@ -15,11 +15,59 @@ menu:
 
 <p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles, simply click on any title to dive straight into the post you're interested in: </p>
 
+- **OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan** -- 11/19/2025 -- [Read More](#20251119)
 - **How CAPORDINO Converts Security Data into OSCAL Catalogs: A Student's Perspective** -- 08/26/2025 -- [Read More](#20250826)
 - **Inside the OSCAL Mapping Model: A Student's Perspective** -- 08/1/2025 -- [Read More](#202581)
 - **Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement** -- 06/26/2025 -- [Read More](#20250626)
 
 ##
+---
+
+### 2025/11/19
+## <span style="color:#4d80d1"> OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan </span>
+
+As cloud environments grow more complex and interconnected, traditional compliance practices such as inefficient manual checks, paper-based audits, and proprietary formats are struggling to keep up. Security teams are often burried in fragmented documents, making it harder to track how controls apply across hybrid systems. The result? Slow, error prone processes that don't scale with today's fast-moving digital world.
+
+That is where **OSCAL** comes in.
+
+Developed by NIST and industry partners, the **Open Security Controls Assessment Language** (OSCAL) is transforming how cybersecurity compliance is managed. It standardizes how security information is documented and shared, making it machine-readable, and far more efficient.
+
+Think of OSCAL like the shipping container of cybersecurity. Before containerization, transporting goods was chaotic and inefficient, each shipment required repackaging at each transfer point. Then came a standard format that transformed global trade. OSCAL does the same for compliance data, making it portable, structured, and ready for automation across platforms and organizations.
+
+#### Why organizations are adopting OSCAL:
+- Faster, more accurate security assessments
+- Easier automation and tool integration
+- Reduced manual workload and fewer errors
+- Improved collaboration and reuse of standardized controls
+
+With the launch of the [**OSCAL Foundation**](https://oscalfoundation.org), the initiative is expanding globally, supported by federal agencies, global tech leaders, and a fast-growing community. OSCAL is also well-suited for adoption in healthcare, finance, and the National Retail Federation (NRF), where automated, standardized compliance can simplify regulatory complexity and boost efficiency.
+
+In a world where compliance must be agile, and resilient, OSCAL offers a foundation built for the future.
+
+Learn more about OSCAL from the official [OSCAL website](https://pages.nist.gov/OSCAL/), review how others used OSCAL in their automated risk management solutions by watching their [talks and demos](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops), or dive deeper in the [GitHub repositories](https://github.com/orgs/usnistgov/repositories?q=OSCAL) maintained by NIST.
+
+<br>
+
+### Upcoming: Join the Community at the OSCAL Plugfest!
+For those interested in seeing OSCAL innovation in action or want to contribute to it firsthand, the OSCAL Foundation is hosting an OSCAL Plugfest in Washington, DC. It will be a hands-on event, bringing together OSCAL users, vendors, and the broader community to collaborate on real-world technical challenges. Participants will tackle complex problems, share expertise, and help advance the OSCAL ecosystem.
+
+**Date:** Monday, December 15, 2025
+
+**Location:** Venable, 600 Massachusetts Ave NW, Washington, DC
+
+
+- **Morning Session (9:30 AM - 12:00 PM, Invitation-Only):**
+  A technical hackathon where experts will test OSCAL tools and content in a collaborative interoperability workshop. A key activity will focus on the OSCAL Mapping Model and recent official updates to the NIST specification led by the OSCAL Foundation. To request participation in the hackathon, contact sbanghart@oscalfoundation.org.
+
+- **Afternoon Session (12:00 PM - 4:00 PM, In-person and online via Zoom, must register):**
+  Presentations and discussions on OSCAL as both a technical standard and a practical solution for government and industry challenges.
+
+
+##### ➔ For more information or to register, visit the [event details](https://oscalfoundation.org/oscal-plugfest-in-washington-dc-save-the-date/) here.
+
+
+# <div></div>
+
 ---
 
 ### 2025/08/26
@@ -139,5 +187,3 @@ Overall, the workshop provided a valuable perspective on how OSCAL is evolving b
 
 
 # <div></div>
-
- 
