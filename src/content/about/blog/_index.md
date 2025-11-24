@@ -26,7 +26,7 @@ menu:
 ### 2025/11/19
 ## <span style="color:#4d80d1"> OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan </span>
 
-As cloud environments grow more complex and interconnected, traditional compliance practices such as inefficient manual checks, paper-based audits, and proprietary formats are struggling to keep up. Security teams are often burried in fragmented documents, making it harder to track how controls apply across hybrid systems. The result? Slow, error prone processes that don't scale with today's fast-moving digital world.
+As cloud environments grow more complex and interconnected, traditional compliance practices such as inefficient manual checks, paper-based audits, and proprietary formats are struggling to keep up. Security teams are often buried in fragmented documents, making it harder to track how controls apply across hybrid systems. The result? Slow, error prone processes that don't scale with today's fast-moving digital world.
 
 That is where **OSCAL** comes in.
 
