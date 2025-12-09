@@ -57,7 +57,7 @@ Here are some Internet resources to help you find a tool.
 - [JSON Schema validator](https://json-schema.org/implementations.html#validators)
 - [XML Schema validators](https://www.w3.org/XML/Schema#Tools)
 
-**Note: These lists are not exaustive and NIST does not endorse any of these tools.**
+**Note: These lists are not exhaustive and NIST does not endorse any of these tools.**
 
 ### Why can OSCAL document validation fail?
 
