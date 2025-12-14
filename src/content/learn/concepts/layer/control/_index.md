@@ -32,3 +32,17 @@ The **[Profile Model](profile/)** provides a structured, machine-readable repres
 The OSCAL profile model allows for selecting security controls from catalogs using a number of different mechanisms, as well as for tailoring those controls (e.g., assigning parameter values, modifying requirements). An OSCAL profile can select controls from more than one catalog, allowing an organization to have a single profile that references controls from several catalogs. OSCAL profiles can also be based on other OSCAL profiles, allowing baselines to be established as customizations of other baselines. This technical capability reflects the real-world use case for organizations and programs who need to do this.
 
 In OSCAL, profiles are generalized to be applicable to any set of information presented in catalog form. Thus, the idea of tailoring in application can be applied not only to security guidelines in general, but also in mixed environments that have to address requirements in more than one catalog at a time.
+
+## Control Mapping Model
+
+The **[Control Mapping Model](mapping/)** provides a structured, machine-readable representation of relationships among [controls](/concepts/terminology/#control) and control elements defined in disparate documentary sources, including standards, regulations, frameworks, and guidelines. The OSCAL controls mapping model can be represented in XML, JSON, and YAML formats.
+
+The purpose of the controls mapping model is not to restate or duplicate the source or target control content, but to formally describe how controls and requirements relate to one another across authoritative sources. 
+These relationships are expressed using well-defined set theory concepts such as `equivalent-to`, 
+`equal-to`, `subset-of`, `superset-of`, `intersects-with`, and `no-relationship` to capture the 
+`syntactic`, `semantic` or `functional` commonality between two similar sets of concepts referred to as source and target, the overlap, and gaps between controls originating in different catalogs or profiles.
+
+In OSCAL, the controls mapping model is generalized to support mappings among any control-based artifacts 
+represented in catalog or profile form. This abstraction allows the same mapping mechanisms to be applied 
+consistently across cybersecurity, privacy, supply chain, and other governance domains, supporting 
+scalable and interoperable compliance across complex, multi-framework environments.
