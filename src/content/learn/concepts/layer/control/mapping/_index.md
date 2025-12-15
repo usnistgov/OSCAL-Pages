@@ -2,7 +2,7 @@
 title: OSCAL Control Mapping Model
 date: 2025-12-14 15:41:35 -0400
 heading: "OSCAL Control Layer: Control Mapping Model"
-weight: 30
+weight: 50
 sidenav:
   title: Control Mapping Model
 toc:
@@ -37,44 +37,63 @@ The following definitions for the mapping methods are supported in this model:
 
 ### Example:
 
-Assume the following controls defined in OSCAL catalog or external source which provides a reference id (`id-ref`)
+Assume the following controls defined in two distinct OSCAL catalogs referred to as **_source-resource_** and **_target-resource_** identified by their IDs captured in the map as **_id-ref_**
+
+#### Source Control Snippet
+```xml
+<control id="s-control-1">
+  <title>Sample source control</title>
+  <part id="s-control-1_stm" name="statement"> 
+    <p>Implement TLS.
+  </part>
+</control>
 ```
-source control [id="s-control-1"]: "Implement TLS."
-```
-```
-target control [id="t-control-6"]: "Implement TLS version 1.2 or above."
+
+#### Target Control Snippet
+```xml
+<control id="t-control-1">
+  <title>Sample target control</title>
+  <part id="t-control-1_stm" name="statement"> 
+    <p>Implement TLS version 1.2 or above.
+  </part>
+</control>
 ```
 
 #### Analysis
 
 **Method**: `syntactic`
-The `s-control-1` control only expects TLS to be implemented, so to assess the control implementation and the satisfaction of teh requirement, testing for the TLS existence is sufficient. The `t-control-1` control enforces particular versions of the TLS implementation to be be supported, therefore, more assessment tests must be designed and performed. In this context, with the `syntactic` mapping method, the relationship is `subset-of`
+
+The `s-control-1` control only expects TLS to be implemented, so to assess the control implementation and the satisfaction of the requirement, testing for the TLS existence is sufficient. The `t-control-1` control enforces particular versions of the TLS implementation to be be supported, therefore, more assessment tests must be designed and performed. In this context, with the `syntactic` mapping method, the relationship is `subset-of`
 **Relationship**: `subset-of`
 
-**Method**: `Functional`
+**Method**: `functional`
+
 The `s-control-1` control only expects TLS to be implemented, so any known TLS version (1.0, 1.1, 1.2, 1.3) meets the requirements, meaning 4 options. The `t-control-1` control enforces particular versions of the TLS implementation to be be supported, therefore, only TLS 1.2 and 1.3 will meet the requirements - a total of 2 options. In this context, with the `functional` mapping method, the relationship is `superset-of`
 **Relationship**: `superset-of`
 
-A simplified snippet of the 
+A simplified snippet of the control mapping between the source and target resources showing the map relationships analyzed above is provided below:
+
 ```xml
-<metadata> …</metadata>
-<provenance method=”human” status=””>
-  <mapping-description> Syntactic mapping example</mapping-description>
-</provenance>
-<mapping uuid=”uuid” method=”human” method-rationale=”syntactic” status=”xxx”>
-  <source-resource type=”catalog” href=”URI-to-source-catalog”/>
-  <target-resource type=”catalog” href=”URI-to-target-catalog”/>
-  <map uuid=”” >
-    <relationship>subset-of</relationship>
-    <source type=”control” id-ref=”s-control-1”/>
-    <target type=”control” id-ref=”t-control-1”/>
-  </map>
-  <map uuid=”” method-rationale=”functional” >
-    <relationship>superset-of</relationship>
-    <source type=”control” id-ref=”s-control-1”/>
-    <target type=”control” id-ref=”t-control-1”/>
-  </map>
-</mapping>
+<mapping-collection uuid="">
+  <metadata>...</metadata>
+  <provenance method=”human” status=”complete”>
+    <mapping-description> Syntactic mapping example</mapping-description>
+  </provenance>
+  <mapping uuid=”f09bc381-6d6a-4828-b0fa-198e1dee52c1” method=”human” method-rationale=”syntactic” status=”complete”>
+    <source-resource type=”catalog” href=”URI-to-source-catalog”/>
+    <target-resource type=”catalog” href=”URI-to-target-catalog”/>
+    <map uuid=”1e04b08a-e62b-412d-8fd4-60a01d3f1943” >
+      <relationship>subset-of</relationship>
+      <source type=”control” id-ref=”s-control-1”/>
+      <target type=”control” id-ref=”t-control-1”/>
+    </map>
+    <map uuid=”0542cacb-f129-446d-bf21-2f083b67cea0” method-rationale=”functional” >
+      <relationship>superset-of</relationship>
+      <source type=”control” id-ref=”s-control-1”/>
+      <target type=”control” id-ref=”t-control-1”/><>
+    </map>
+  </mapping>
+</mapping-collection>
 ```
 
 The method used for matching the statements, controls or groups of controls - syntactic, semantic or functional – can be documented for the entire collection of mappings or locally overwritten for a particular relationship.
@@ -104,8 +123,8 @@ An accurate control mapping artifact can be used to reduce the cost, time and re
 {{% usa-grid-column class="grid-col-fill" %}}
 An OSCAL control mapping is organized as follows, which is based on the standard OSCAL [document structure](/concepts/layer/overview/#general-model-organization):
 - **Metadata**: Metadata syntax is identical and required in all OSCAL models. It includes information such as the file's title, publication version, publication date, and OSCAL version. Metadata is also used to define roles, parties (people, teams and organizations), and locations.
-- **Provenance**: 
-- **Mapping**: 
+- **Provenance**: Describes requirements, incompatibilities and gaps that are identified between a target and source in a mapping item.
+- **Mapping**: A mapping between the source and target resources.
 - **Back Matter**: Back matter syntax is identical in all OSCAL models. It is used for attachments, citations, and embedded content such as graphics.
 {{% /usa-grid-column %}}
 {{% usa-grid-column class="grid-col-auto" %}}
@@ -113,19 +132,3 @@ An OSCAL control mapping is organized as follows, which is based on the standard
 {{% /usa-grid-column %}}
 {{% /usa-grid-row %}}
 {{% /usa-grid-container %}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
