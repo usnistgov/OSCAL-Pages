@@ -74,7 +74,7 @@ The `s-control-1` control only expects TLS to be implemented, so any known TLS v
 A simplified snippet of the control mapping between the source and target resources showing the map relationships analyzed above is provided below:
 
 ```xml
-<mapping-collection uuid="">
+<mapping-collection uuid="2bbd81c0-1d1c-4566-9018-7ab4a644b32d">
   <metadata>...</metadata>
   <provenance method=”human” status=”complete”>
     <mapping-description> Syntactic mapping example</mapping-description>
