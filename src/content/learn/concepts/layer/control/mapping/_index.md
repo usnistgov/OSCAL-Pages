@@ -123,12 +123,12 @@ An accurate control mapping artifact can be used to reduce the cost, time and re
 {{% usa-grid-column class="grid-col-fill" %}}
 An OSCAL control mapping is organized as follows, which is based on the standard OSCAL [document structure](/concepts/layer/overview/#general-model-organization):
 - **Metadata**: Metadata syntax is identical and required in all OSCAL models. It includes information such as the file's title, publication version, publication date, and OSCAL version. Metadata is also used to define roles, parties (people, teams and organizations), and locations.
-- **Provenance**: Describes requirements, incompatibilities and gaps that are identified between a target and source in a mapping item.
-- **Mapping**: A mapping between the source and target resources.
+- **Provenance**: Describes requirements, incompatibilities and gaps that are identified between a target and source in a mapping item. Provides information about the method used to complete the overall mapping, matching rationale, status, confidence score, mapping description, and responsible parties.
+- **Mapping**: A mapping between the source and target resources. Contains additional details including the UUID (Universally Unique Identifier) which is used to reference the data item locally or globally.
 - **Back Matter**: Back matter syntax is identical in all OSCAL models. It is used for attachments, citations, and embedded content such as graphics.
 {{% /usa-grid-column %}}
 {{% usa-grid-column class="grid-col-auto" %}}
-{{<figure src="catalog-model.svg" alt="A diagram depicting the catalog model. As described in the text, within the larger catalog model box, it shows a metadata at the top, followed by a parameter box, control box, group box, and finally a back matter box." class="maxw-full margin-top-0">}}
+{{<figure src="mapping-model.png" alt="A diagram depicting the mapping model. As described in the text, within the larger mapping model box, it shows a metadata at the top, followed by a provenance box, mapping box, and finally a back matter box." class="maxw-full margin-top-0">}}
 {{% /usa-grid-column %}}
 {{% /usa-grid-row %}}
 {{% /usa-grid-container %}}
