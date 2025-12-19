@@ -23,20 +23,21 @@ The following image depicts each layer and the corresponding model(s) for each l
 
 {{<imagemap src="oscal-layers.svg" width="896" height="400" alt="OSCAL layers and models. The layers are listed (from top to bottom): Assessment, Implementation, and Control. The Assessment Layer is comprised of the Assessment Plan Model, Assessment Results Model, and the Plan of Action and Milestones (POA&M) Model. The Implementation Layer is comprised of the System Security Plan Model and the Component Model. The Control Layer is comprised of the Catalog Model and the Profile Model.">}}
   <!-- Assessment Layer -->
-  {{<area alt="Plan of Action and Milestones Model" title="Plan of Action and Milestones Model" href="assessment/poam/" coords="193,8,890,33" shape="rect">}}
-  {{<area alt="Assessment Results Model" title="Assessment Results Model" href="assessment/assessment-results/" coords="193,41,890,67" shape="rect">}}
-  {{<area alt="Assessment Plan Model" title="Assessment Plan Model" href="assessment/assessment-plan/" coords="193,74,890,109" shape="rect">}}
-  {{<area alt="Assessment Layer" title="Assessment Layer" href="assessment/" coords="0,0,896,151" shape="rect">}}
+  {{<area alt="Plan of Action and Milestones Model" title="Plan of Action and Milestones Model" href="assessment/poam/" coords="193,55,890,75" shape="rect">}}
+  {{<area alt="Assessment Results Model" title="Assessment Results Model" href="assessment/assessment-results/" coords="193,82,890,100" shape="rect">}}
+  {{<area alt="Assessment Plan Model" title="Assessment Plan Model" href="assessment/assessment-plan/" coords="193,107,890,130" shape="rect">}}
+  {{<area alt="Assessment Layer" title="Assessment Layer" href="assessment/" coords="0,50,896,160" shape="rect">}}
 
   <!-- Implementation Layer -->
-  {{<area alt="System Security Plan" title="System Security Plan" href="implementation/ssp/" coords="194,168,890,214" shape="rect">}}
-  {{<area alt="Component Definition" title="Component Definition" href="implementation/component-definition/" coords="193,219,890,247" shape="rect">}}
-  {{<area alt="Implementation Layer" title="Implementation Layer" href="implementation/" coords="0,162,896,289" shape="rect">}}
+  {{<area alt="System Security Plan" title="System Security Plan" href="implementation/ssp/" coords="194,177,890,210" shape="rect">}}
+  {{<area alt="Component Definition" title="Component Definition" href="implementation/component-definition/" coords="190,219,890,235" shape="rect">}}
+  {{<area alt="Implementation Layer" title="Implementation Layer" href="implementation/" coords="0,172,896,268" shape="rect">}}
 
   <!-- Control Layer -->
-  {{<area alt="Profile Model" title="Profile Model" href="control/profile/" coords="193,307,890,347" shape="rect">}}
-  {{<area alt="Catalog Model" title="Catalog Model" href="control/catalog/" coords="193,356,890,391" shape="rect">}}
-  {{<area alt="Control Layer" title="Control Layer" href="control/" coords="0,300,896,400" shape="rect">}}
+  {{<area alt="Profile Model" title="Profile Model" href="control/profile/" coords="193,280,890,310" shape="rect">}}
+  {{<area alt="Catalog Model" title="Catalog Model" href="control/catalog/" coords="193,318,890,343" shape="rect">}}
+  {{<area alt="Mapping Model" title="Mapping Model" href="control/mapping/" coords="193,350,890,375" shape="rect">}}
+  {{<area alt="Control Layer" title="Control Layer" href="control/" coords="0,275,896,385" shape="rect">}}
 {{</imagemap>}}
 
 Each OSCAL model is represented in multiple, machine-readable *formats* (e.g., XML, JSON, YAML), which provide a serialization and encoding mechanism for representing and exchanging OSCAL data, also referred to as *OSCAL content*.
@@ -49,9 +50,14 @@ The diagram above identifies the OSCAL layers from the bottom up because each hi
 
 The OSCAL layers are:
 
-- [Control Layer](#control-layer-overview)
-- [Implementation Layer](#implementation-layer-overview)
-- [Assessment Layer](#assessment-layer-overview)
+- [The OSCAL Layers](#the-oscal-layers)
+  - [Control Layer Overview](#control-layer-overview)
+  - [Implementation Layer Overview](#implementation-layer-overview)
+  - [Assessment Layer Overview](#assessment-layer-overview)
+- [Status of the OSCAL Layers](#status-of-the-oscal-layers)
+- [Well-formed Data and Valid OSCAL](#well-formed-data-and-valid-oscal)
+
+
 
 ### Control Layer Overview
 
@@ -76,6 +82,14 @@ The OSCAL [Control Layer](control/) provides:
   OSCAL profiles can import controls from catalogs or other OSCAL profiles, enabling the creation of a new baseline by customizing an existing baseline. This approach provides full transparency and traceability of control tailoring from a baseline back to the original catalog's control definition. Every control imported by a profile must originate within a catalog.
 
   Organizations already perform such selections manually. OSCAL profiles enable automation of control selection and tailoring while providing traceability.
+
+- The **[Control Mapping Model](control/mapping/)** is for representing relationships among controls and control elements, describing how controls and requirements relate to one another across authoritative sources.
+  
+  A mapping model is a structured way to link different security control frameworks, standards, or baselines to each other. The mapping model identifies the source and target frameworks. The source framework is the one being mapped from, and the target framework is the one that is being mapped to. 
+  
+  Each control in the source framework is linked to one or more or no corresponding controls in the target framework. Each mapping can include metadata, such as the type of relationship (e.g., "equivalent-to", "subset-of", "intersects-with", "no-relationship"), and references.
+
+  OSCAL's Mapping model reduces duplication of effort when complying with multiple frameworks, enables automated analysis of control coverage across standards, and provides clarity on how different frameworks relate to each other, helping organizations streamline compliance and assessment processes.
 
 ### Implementation Layer Overview
 
@@ -128,6 +142,7 @@ The following is the release state of each model, along with download links for 
 |:--- |:--- |:--- |:--- |:--- |
 | [Control](control/) | [Catalog](control/catalog/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_catalog_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_catalog_schema.json) |
 | [Control](control/) | [Profile](control/profile/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.json) |
+| [Control](control/) | [Mapping](control/mapping/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/v1.2.0/mapping/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_mapping_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_mapping_schema.json) |
 | [Implementation](implementation/) | [Component Definition](implementation/component-definition/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.json) |
 | [Implementation](implementation/) | [System Security Plan](implementation/ssp/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_ssp_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_ssp_schema.json) |
 | [Assessment](assessment/) | [Assessment Plan](assessment/assessment-plan/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-plan/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-plan_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-plan_schema.json) |
