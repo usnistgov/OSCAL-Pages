@@ -128,11 +128,7 @@ An OSCAL control mapping is organized as follows, which is based on the standard
 - **Back Matter**: Back matter syntax is identical in all OSCAL models. It is used for attachments, citations, and embedded content such as graphics.
 {{% /usa-grid-column %}}
 {{% usa-grid-column class="grid-col-auto" %}}
-<<<<<<< Updated upstream
-{{<figure src="mapping-model.png" alt="A diagram depicting the mapping model. As described in the text, within the larger mapping model box, it shows a metadata at the top, followed by a provenance box, mapping box, and finally a back matter box." class="maxw-full margin-top-0">}}
-=======
 {{<figure src="mapping-model.svg" alt="A diagram depicting the control mapping-description model. As described in the text, within the larger control mapping model box, it shows a metadata at the top, followed by a provenance box, mapping box, and finally a back matter box." class="maxw-full margin-top-0">}}
->>>>>>> Stashed changes
 {{% /usa-grid-column %}}
 {{% /usa-grid-row %}}
 {{% /usa-grid-container %}}
