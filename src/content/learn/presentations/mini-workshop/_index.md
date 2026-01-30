@@ -52,7 +52,15 @@ Passcode: 10782510
 
 ---
 
-## Workshops Calendar: jump to: [2025](#2025), [2024](#2024), [2023](#2023), [2022](#2022)
+## Workshops Calendar: jump to: [2026](#2026), [2025](#2025), [2024](#2024), [2023](#2023), [2022](#2022)
+
+### 2026
+| Date | Time | Talk/Demo/Discussion | Presenter & Affiliation | Type |
+| :--: | :--: | :------------------: | :---------------------: | :--: |
+| **2026/02/18** | 11:00AM-12:00PM EDT | OSCAL Hub - Open Source Visual Tools for Rapid Authorizations and Content Sharing using OSCAL | **Travis Howerton**, Co-Founder and CEO, *RegScale* | presentation, video, transcript |
+| **2026/02/04** | 11:00AM-12:00PM EDT | AI Agent for OSCAL: Instant OSCAL Expertise for All | **Fritz Kunstler**, Principal Security Engineer, *AWS* | presentation, video, transcript |
+
+<!-- | **2026/03/18** | 11:00AM-12:00PM EDT | TBD | **SPEAKER**, title, *ORG* | [presentation](), [video](), [transcript]() | -->
 
 ### 2025
 | Date | Time | Talk/Demo/Discussion | Presenter & Affiliation | Type |

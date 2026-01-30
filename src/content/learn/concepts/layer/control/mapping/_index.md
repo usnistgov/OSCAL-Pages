@@ -1,6 +1,6 @@
 ---
 title: OSCAL Control Mapping Model
-date: 2025-12-14 15:41:35 -0400
+date: 2026-01-28 15:41:35 -0400
 heading: "OSCAL Control Layer: Control Mapping Model"
 weight: 50
 sidenav:
@@ -25,7 +25,7 @@ suppresstopiclist: true
 
 The OSCAL control mapping model provides a structured, machine-readable representation of relationships among [controls](/concepts/terminology/#control) and control elements defined in disparate documentary sources, including standards, regulations, frameworks, and guidelines. The OSCAL controls mapping model can be represented in XML, JSON, and YAML formats.
 
-The purpose of the controls mapping model is not to restate or duplicate the source control content, but to formally describe how controls and requirements relate to one another across authoritative sources. These relationships are expressed using well-defined _set theory concepts_ such as _equivalent-to_, _equal-to_, _subset-of_, _superset-of_, _intersects-with_, and _no-relationship_ to capture the _syntactic_, _semantic_ or _functional_ commonality between two similar sets of concepts referred to as source and target, the overlap, and gaps between controls originating in different catalogs or profiles.
+The purpose of the controls mapping model is to formally describe how controls and requirements relate to one another across authoritative sources without restating or duplicating the source control content. The relationships describing how controls relate to one another are expressed using well-defined _set theory concepts_ such as _equivalent-to_, _equal-to_, _subset-of_, _superset-of_, _intersects-with_, and _no-relationship_ to capture the _syntactic_, _semantic_ or _functional_ commonality between two similar sets of concepts referred to as source and target, the overlap, and gaps between controls originating in different catalogs or profiles.
 
 The following definitions for the mapping methods are supported in this model:
 
@@ -128,7 +128,11 @@ An OSCAL control mapping is organized as follows, which is based on the standard
 - **Back Matter**: Back matter syntax is identical in all OSCAL models. It is used for attachments, citations, and embedded content such as graphics.
 {{% /usa-grid-column %}}
 {{% usa-grid-column class="grid-col-auto" %}}
+<<<<<<< Updated upstream
 {{<figure src="mapping-model.png" alt="A diagram depicting the mapping model. As described in the text, within the larger mapping model box, it shows a metadata at the top, followed by a provenance box, mapping box, and finally a back matter box." class="maxw-full margin-top-0">}}
+=======
+{{<figure src="mapping-model.svg" alt="A diagram depicting the control mapping-description model. As described in the text, within the larger control mapping model box, it shows a metadata at the top, followed by a provenance box, mapping box, and finally a back matter box." class="maxw-full margin-top-0">}}
+>>>>>>> Stashed changes
 {{% /usa-grid-column %}}
 {{% /usa-grid-row %}}
 {{% /usa-grid-container %}}
