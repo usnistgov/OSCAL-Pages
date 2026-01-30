@@ -124,15 +124,26 @@ The OSCAL [Assessment Layer](assessment/) provides:
 
 - The **[Plan of Action and Milestones (POA&M) model](assessment/poam/)**, which represents a set of findings for a periodic or continuous assessment that need to be addressed by the system owner/maintainers.
 
+## Information Traceability and Data Flow
+The OSCAL models provide native traceability from the assessment layer to the catalog layer. Each OSCAL model defined an import mechanism for the OSCAL artifact it uses. The diagram below depicts the native traceability and the direction of the information flow supported by all OSCAL models.
+
+<!--
+{{<imagemap src="oscal-layers-models-traceability.png" width="896" height="504" alt="OSCAL layers and models with information traceability and data flow indicated with arrows. The layers and models are listed from left to right.">}}
+{{</imagemap>}}
+-->
+<img src="oscal-layers-models-traceability.jpg" alt="OSCAL layers and models with information traceability and data flow indicated with arrows. The layers and models are listed from left to right." width="896" height="460">
+
+
 ## Status of the OSCAL Layers
 
 The OSCAL layers described above provide a framework for organizing the OSCAL models. As the OSCAL project [progresses](/contribute/roadmap/), the features of these models are expected to evolve and expand; the layer descriptions above are included here to indicate the current status of the related models within OSCAL and may not represent the final features supported by each layer and their corresponding model(s). XML, JSON, and YAML formats for each model will be provided when the model is released.
 
-The OSCAL models above are in various states of readiness for release:
+The new OSCAL models can be in various states of readiness for release:
 
-- **Future**: Additional models will be published as drafts in the future.
+- **Future**: Additional models will be published as prototypes in the future.
 - **Early Access Draft**: Indicates that the model has been newly developed and released for review and comment, but has received little to no review. Multiple revisions will likely be needed to mature the model for release.
 - **Draft**: Identifies that the model has received some review, but not enough review to be released as a final version. A revision or two might be needed to prepare the model for release.
+- **Prototype**: The model has been internally reviewed and considered fairly stable. The model is made available for public review.
 - **Pre-Final**: The model is fairly stable and has been extensively reviewed. Some small changes might occur before final release, but the impact of these changes will be small to users or tool implementers.
 - **Released**: The model has been released. Only non-backwards compatibility breaking changes will be made in maintenance releases.
 
@@ -142,7 +153,7 @@ The following is the release state of each model, along with download links for 
 |:--- |:--- |:--- |:--- |:--- |
 | [Control](control/) | [Catalog](control/catalog/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/catalog/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_catalog_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_catalog_schema.json) |
 | [Control](control/) | [Profile](control/profile/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/profile/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_profile_schema.json) |
-| [Control](control/) | [Mapping](control/mapping/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/v1.2.0/mapping/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_mapping_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_mapping_schema.json) |
+| [Control](control/) | [Control Mapping](control/mapping/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/v1.2.0/mapping/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_mapping_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_mapping_schema.json) |
 | [Implementation](implementation/) | [Component Definition](implementation/component-definition/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/component-definition/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_component_schema.json) |
 | [Implementation](implementation/) | [System Security Plan](implementation/ssp/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/system-security-plan/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_ssp_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_ssp_schema.json) |
 | [Assessment](assessment/) | [Assessment Plan](assessment/assessment-plan/) | Released | [XML, JSON, YAML](https://pages.nist.gov/OSCAL-Reference/models/latest/assessment-plan/) | [XML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-plan_schema.xsd), [JSON/YAML](https://pages.nist.gov/OSCAL-Reference/release-assets/latest/oscal_assessment-plan_schema.json) |
