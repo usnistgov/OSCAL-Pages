@@ -37,6 +37,7 @@ Apply the benefits of the ***data-centric*** approach to automate existing proce
 
 Control-based information expressed using OSCAL formats allows you to:
 
+- Translate policy standards of your enterprise to code in a strucutred and industry standard format
 - Easily access control information from security and privacy control catalogs
 - Establish and share machine-readable control baselines
 - Maintain and share actionable, up-to-date information about how controls are implemented in your systems
