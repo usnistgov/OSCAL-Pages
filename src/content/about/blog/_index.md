@@ -15,12 +15,53 @@ menu:
 
 <p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles, simply click on any title to dive straight into the post you're interested in: </p>
 
+- **A Student’s Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide** -- 04/02/2026 -- [Read More](#20260402)
 - **OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan** -- 11/19/2025 -- [Read More](#20251119)
 - **How CAPORDINO Converts Security Data into OSCAL Catalogs: A Student's Perspective** -- 08/26/2025 -- [Read More](#20250826)
 - **Inside the OSCAL Mapping Model: A Student's Perspective** -- 08/1/2025 -- [Read More](#202581)
 - **Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement** -- 06/26/2025 -- [Read More](#20250626)
 
 ##
+---
+
+### 2026/04/02
+## <span style="color:#4d80d1"> A Student’s Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide  </span>
+
+#### -- Presented By: 
+  - **Tevin Harris**, Federal Employee, Founder of euCann
+
+  <b> -- Blog by: Marilyn Nguyen </b> (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  ### <p></p>
+
+During OSCAL's March 2026 workshop, Tevin Harris from euCann LLC delivered an insightful and engaging presentation, including a live demo of the OSCAL Pocket Guide, a mobile OSCAL-based application that provides on-demand access to the OSCAL Catalog. Harris opened by highlighting a familiar challenge faced by many cybersecurity professionals: the long, tedious process of manually assessing paper-based security artifacts such as PDFs and spreadsheets. With multiple versions and formats of security frameworks, some often spanning hundreds of pages, manual assessment becomes highly inefficient.
+
+OSCAL addresses this issue by standardizing these artifacts into automatable, machine-readable formats, enabling continuous compliance and streamlined assessments. To further support OSCAL adoption and provide a more intuitive user experience, Harris developed the OSCAL Pocket Guide. The application allows users to easily browse OSCAL catalogs, analyze controls, navigate various framework models, review assessment objectives and artifacts, and explore parameters and implementation guidance. 
+
+Currently available on iOS, Android, and macOS devices, the application leverages data frameworks and formats based on OSCAL JSON documents. It does not require an internet connection, as it operates entirely offline with documents downloaded directly to the user's device. The app is powered by six core frameworks: SP 800-53 Revision 5, NIST CSF 2.0, SP 800-171 Revision 3, SP 800-218 (SSDF), the AI RMF Playbook, and Harris's own customized OSCAL SP 800-61 Volume II. 
+
+The OSCAL Pocket Guide features an intuitive interface that allows users to explore different frameworks and the modules that make them up. Built using a Flutter UI layer and core OSCAL services, the application supports document parsing, exporting, and secure local storage via encrypted SQLite. It is offered in two versions: a free version, and a Pro version priced at $10, which includes advanced multi-criteria filtering and control comparison capabilities.
+
+During the demonstration, I was particularly impressed by the application's ease of use and thoughtful design. Clear navigation and well-organized tabs guide users through OSCAL-based frameworks and their respective control modules. Features such as favoriting frequently accessed controls, applying baseline filters, sorting by control IDs, and displaying parameters inline further enhance the app's usability. 
+
+The application continues to evolve, with future updates expected to include a web interface and cloud-based capabilities, such as a retrieval-augmented generation (RAG) chatbot. This feature will enable users to ask questions about NIST catalog items and receive real-time, OSCAL-informed responses related to controls and frameworks. 
+
+Overall, the OSCAL Pocket Guide is a promising tool that simplifies interaction with complex OSCAL data, making it more accessible through a clean, user-friendly interface while supporting deeper exploration of its technical capabilities. 
+
+
+### Workshop Location: 
+  - Online
+  
+  ### Workshop Date and Time:
+  - 18 March 2026, 11:00 AM - 12:00 PM EDT
+
+
+#
+  *View this March 2026 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=Coordinator%2C%20OSCAL%20Foundation-,%2D%2003/18/2026:%C2%A0,-OSCAL%20Pocket%20Guide).
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
+
+
+# <div></div>
 ---
 
 ### 2025/11/19
