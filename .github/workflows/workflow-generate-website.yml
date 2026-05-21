@@ -48,7 +48,7 @@ jobs:
     - name: Install Dart Sass
       run: sudo snap install dart-sass
     - name: Checkout
-      uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      uses: actions/checkout@4
       with:
         fetch-depth: 0
     - name: Install Node.js dependencies
