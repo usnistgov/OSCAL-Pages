@@ -15,12 +15,48 @@ menu:
 
 <p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles, simply click on any title to dive straight into the post you're interested in: </p>
 
+- **How OSCAL.io is Transforming the OSCAL Experience** -- 05/29/2026 -- [Read More](#20260529)
 - **Learn OSCAL Through an Immersive Online Escape Room Experience** -- 04/24/2026 -- [Read More](#20260424)
 - **OSCAL Adoption for FedRAMP: Insights Learned and Path Going Forward** -- 04/23/2026 -- [Read More](#20260423)
 - **A Student’s Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide** -- 04/02/2026 -- [Read More](#20260402)
 - **OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan** -- 11/19/2025 -- [Read More](#20251119)
 
 ##
+
+# <div></div>
+
+---
+### 2026/05/29
+## <span style="color:#4d80d1"> How OSCAL.io is Transforming the OSCAL Experience  </span>
+
+#### -- Presented By: 
+  - **Pirooz Javan**, Cheif Technology Officer, Easy Dynamics
+
+  <b> -- Blog by: Marilyn Nguyen </b> (NIST Pathways, IT Student Trainee) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  ### <p></p>
+
+In the recent May OSCAL Adopters' Workshop, Pirooz Javan, the CTO of Easy Dynamics, shared how his team is helping advance OSCAL adoption through the website OSCAL.io. Easy Dynamics developed OSCAL.io to serve as a hub for a variety of OSCAL-related tools and resources. The workshop focused on the OSCAL viewer, which is open source and designed to make OSCAL files easier to work with. The viewer can transform OSCAL JSON files into a format that is more understandable for users. It also allows users to publish, discover, and manage different versions of OSCAL documents. The registry includes features such as search filtering, role-based access control, user management, and options for favoriting, sharing, and controlling the visibility of documents. 
+
+To demonstrate these capabilities, Javan walked through an example using the Federal Space and Exploration Administration and its Orion Mission Platform. The example showed how the OSCAL Viewer and Registry could be used together to manage compliance information across a complex environment. The platform included several integrated systems, including an AWS FedRAMP environment, Gemini Enterprise ICAM, External Voyager Public Identity for user authentication, and Houston SOC integration for security monitoring. The OSCAL Viewer is open source, allowing anyone to contribute through pull requests. However, contributions are reviewed and governed carefully before being approved to maintain quality and consistency.
+
+This workshop provided a helpful look at how OSCAL.io is making OSCAL artifacts more accessible and manageable. Seeing the practical demonstration helped the community better understand how these different tools can support compliance workflows and encourage collaboration among the OSCAL community.
+
+
+
+### Workshop Location: 
+  - Online
+  
+  ### Workshop Date and Time:
+  - 20 May 2026, 11:00 AM - 12:00 PM EDT
+
+
+#
+  *View this May 2026 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=Development%20Specialist%2C%20ASSYST-,%2D%2005/20/2026:,-OSCAL.io%C2%A0for%20Evaluating).
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
+
+# <div></div>
+
 ---
 ### 2026/04/24
 ## <span style="color:#4d80d1"> Learn OSCAL Through an Immersive Online Escape Room Experience  </span>
