@@ -15,13 +15,53 @@ menu:
 
 <p>Stay up-to-date with the newest blog posts from our OSCAL community members. Below you'll find a list of recent blog titles, simply click on any title to dive straight into the post you're interested in: </p>
 
+- **Making ATO Smarter: ASSYST's Approach to OSCAL and AI** -- 06/24/2026 -- [Read More](#20260701)
 - **How OSCAL.io is Transforming the OSCAL Experience** -- 05/29/2026 -- [Read More](#20260529)
 - **Learn OSCAL Through an Immersive Online Escape Room Experience** -- 04/24/2026 -- [Read More](#20260424)
 - **OSCAL Adoption for FedRAMP: Insights Learned and Path Going Forward** -- 04/23/2026 -- [Read More](#20260423)
 - **A Student’s Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide** -- 04/02/2026 -- [Read More](#20260402)
-- **OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan** -- 11/19/2025 -- [Read More](#20251119)
 
 ##
+
+# <div></div>
+
+---
+### 2026/07/01
+## <span style="color:#4d80d1"> Making ATO Smarter: ASSYST's Approach to OSCAL and AI  </span>
+
+#### -- Presented By: 
+  - **Vijay Narasimhan**, Chief Technology Officer, ASSYST
+  - **Joe Anderson**, Chief Operating Officer, ASSYST
+  - **John Kimberl**, Business Development Specialist, ASSYST
+
+  <b> -- Blog by: Marilyn Nguyen </b> (IT Cybersecurity Specialist, NIST) [marilyn.nguyen@nist.gov](mailto:marilyn.nguyen@nist.gov)
+  ### 
+  <p>
+  OSCAL's June workshop featured ASSYST's Vijay Narasimhan, Joe Anderson, and John Kimberl, who shared how their team adopted OSCAL through ComplySyncATO to address challenges in the federal authorization process. A key takeaway from the discussion was that their OSCAL journey started with a real operational problem. Long ATO timelines were slowing down DevSecOps projects because teams were relying on static documents, spreadsheets, and manual reviews to demonstrate compliance. Their presentation showed how adopting OSCAL helped transform that information into machine readable data that could move more easily between systems and support a more streamlined process.
+  </p>
+  <p>
+  It was especially interesting to see how they described using OSCAL alongside AI to help evaluate implementation statements and identify compliance gaps. Rather than spending valuable time reviewing lengthy documentation, ISSOs can focus more on managing risk while the platform helps organize and analyze the supporting evidence. The speakers emphasized that the goal was not to replace the people involved in the RMF process, but to give them better tools to work more efficiently.
+  </p>
+  <p>
+  The live demonstration of ComplySyncATO really helped bring those ideas together. Uploading an OSCAL formatted System Security Plan and seeing the platform analyze controls, highlight implementation status, and generate recommendations made it easier to understand how structured compliance data can simplify what has traditionally been a document-heavy process.
+  </p>
+  <p>
+  The workshop offered a practical look at OSCAL adoption from an organization's perspective. It highlighted how standardized, machine readable security data can support automation, improve collaboration across tools, and help organizations move toward a more continuous approach to authorization.
+  </p>
+
+
+
+### Workshop Location: 
+  - Online
+  
+  ### Workshop Date and Time:
+  - 24 June 2026, 11:00 AM - 12:00 PM EDT
+
+
+#
+  *View this June 2026 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=Container%20Solutions%2C%20UK-,%2D%2006/24/2026:,-Automating%20Continuous%20Authorization).
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
 
 # <div></div>
 
@@ -157,52 +197,6 @@ Overall, the OSCAL Pocket Guide is a promising tool that simplifies interaction 
   *View this March 2026 workshop recording and other files* [here](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=Coordinator%2C%20OSCAL%20Foundation-,%2D%2003/18/2026:%C2%A0,-OSCAL%20Pocket%20Guide).
   
   *Learn more about the OSCAL Monthly Workshop series* [here](../../learn/presentations/mini-workshop).
-
-
-# <div></div>
----
-
-### 2025/11/19
-## <span style="color:#4d80d1"> OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan </span>
-
-As cloud environments grow more complex and interconnected, traditional compliance practices such as inefficient manual checks, paper-based audits, and proprietary formats are struggling to keep up. Security teams are often buried in fragmented documents, making it harder to track how controls apply across hybrid systems. The result? Slow, error prone processes that don't scale with today's fast-moving digital world.
-
-That is where **OSCAL** comes in.
-
-Developed by NIST and industry partners, the **Open Security Controls Assessment Language** (OSCAL) is transforming how cybersecurity compliance is managed. It standardizes how security information is documented and shared, making it machine-readable, and far more efficient.
-
-Think of OSCAL like the shipping container of cybersecurity. Before containerization, transporting goods was chaotic and inefficient, each shipment required repackaging at each transfer point. Then came a standard format that transformed global trade. OSCAL does the same for compliance data, making it portable, structured, and ready for automation across platforms and organizations.
-
-#### Why organizations are adopting OSCAL:
-- Faster, more accurate security assessments
-- Easier automation and tool integration
-- Reduced manual workload and fewer errors
-- Improved collaboration and reuse of standardized controls
-
-With the launch of the [**OSCAL Foundation**](https://oscalfoundation.org), the initiative is expanding globally, supported by federal agencies, global tech leaders, and a fast-growing community. OSCAL is also well-suited for adoption in healthcare, finance, and the National Retail Federation (NRF), where automated, standardized compliance can simplify regulatory complexity and boost efficiency.
-
-In a world where compliance must be agile, and resilient, OSCAL offers a foundation built for the future.
-
-Learn more about OSCAL from the official [OSCAL website](https://pages.nist.gov/OSCAL/), review how others used OSCAL in their automated risk management solutions by watching their [talks and demos](https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops), or dive deeper in the [GitHub repositories](https://github.com/orgs/usnistgov/repositories?q=OSCAL) maintained by NIST.
-
-<br>
-
-### Upcoming: Join the Community at the OSCAL Plugfest!
-For those interested in seeing OSCAL innovation in action or want to contribute to it firsthand, the OSCAL Foundation is hosting an OSCAL Plugfest in Washington, DC. It will be a hands-on event, bringing together OSCAL users, vendors, and the broader community to collaborate on real-world technical challenges. Participants will tackle complex problems, share expertise, and help advance the OSCAL ecosystem.
-
-**Date:** Monday, December 15, 2025
-
-**Location:** Venable, 600 Massachusetts Ave NW, Washington, DC
-
-
-- **Morning Session (9:30 AM - 12:00 PM, Invitation-Only):**
-  A technical hackathon where experts will test OSCAL tools and content in a collaborative interoperability workshop. A key activity will focus on the OSCAL Mapping Model and recent official updates to the NIST specification led by the OSCAL Foundation. To request participation in the hackathon, contact sbanghart@oscalfoundation.org.
-
-- **Afternoon Session (12:00 PM - 4:00 PM, In-person and online via Zoom, must register):**
-  Presentations and discussions on OSCAL as both a technical standard and a practical solution for government and industry challenges.
-
-
-##### ➔ For more information or to register, visit the [event details](https://oscalfoundation.org/oscal-plugfest-in-washington-dc-save-the-date/) here.
 
 
 # <div></div>
