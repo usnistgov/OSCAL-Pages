@@ -38,4 +38,22 @@ Understand the process of representing test validation information (e.g., FIPS-1
 
 [Read Tutorial →](validation-modeling/)
 </div>
+
+<!-- Box containing information about creating policy component definitions -->
+<div style="flex: 1 1 300px; border-left: 4px solid #4d8055; background-color: #ecf3ec; padding: 1em; border-radius: 6px;">
+
+<strong>Creating a Policy Component</strong><br>
+Learn how to represent an organizational policy as a `type="policy"` [component definition](/concepts/layer/implementation/component-definition/), citing the policy document itself in back matter. <br>
+
+[Read Tutorial →](policy-component-definition/)
+</div>
+
+<!-- Box containing information about modeling a capability component -->
+<div style="flex: 1 1 300px; border-left: 4px solid #4d8055; background-color: #ecf3ec; padding: 1em; border-radius: 6px;">
+
+<strong>Modeling a Capability Component</strong><br>
+Explore an emerging, proposed pattern for representing an OSCAL capability as a `type="capability"` [component definition](/concepts/layer/implementation/component-definition/) that incorporates other components. <br>
+
+[Read Tutorial →](capability-component-definition/)
+</div>
 </div>

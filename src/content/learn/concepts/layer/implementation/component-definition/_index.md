@@ -105,6 +105,8 @@ The following tutorials are provided that are related to the component definitio
 
 - [Creating a Component Definition](/learn/tutorials/implementation/simple-component-definition/): Covers creating a basic OSCAL component definition for a software product.
 - [Representing Test Validation Information](/learn/tutorials/validation-modeling/): Explains how to represent test validation information (e.g., FIPS-140-2) for a component in an OSCAL component definition.
+- [Creating a Policy Component](/learn/tutorials/implementation/policy-component-definition/): Explains how to represent an organizational policy as a `type="policy"` component definition.
+- [Modeling a Capability Component](/learn/tutorials/implementation/capability-component-definition/): Explores an emerging, proposed pattern for representing a capability as a `type="capability"` component definition.
 
 ## Content Examples
 
