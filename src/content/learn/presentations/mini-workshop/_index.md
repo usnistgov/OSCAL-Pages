@@ -2,63 +2,194 @@
 title: OSCAL Monthly Workshop Series
 date: 2022-05-26 13:18:18 -0400
 heading: Open Security Controls Assessment Language (OSCAL) Monthly Workshop Series
-toc:
-  enabled: true
 aliases:
   - /learn/presentations/oscal-mini-workshop-series/
 weight: 1
 ---
 
-# OSCAL Monthly Workshop Series
 
-The NIST [OSCAL](https://www.nist.gov/OSCAL) team is hosting a new series of mini workshops, that aims to address topics of interest for our community and to open this forum for its members to present their OSCAL-related work. Unless specifically stated, the workshops will not require a deep, technical understanding of OSCAL, and the dialog is informal, allowing the community to interact with the presenters and with the OSCAL team members. 
 
-Please see below the call for proposals if you are interested in presenting your OSCAL work. To submit topics for discussion, please email us at [oscal@nist.gov](mailto:oscal@nist.gov).
+<br>
+<style>
+.nav-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff !important; 
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0; 
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.nav-button:hover {
+  transform: translateY(-2px);
+  background-color: #339fff;
+  color: #ffffff !important; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+</style>
+<div style="background-color: #e6f7ff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 1rem 0;">
+<h3 align="center" style="margin-top: 0;">Navigate this Page</h3>
+<p align="center" style="margin-bottom: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+<a href="#what-is-the-oscal-monthly-workshop-series" class="nav-button">What is the OSCAL Monthly Workshop Series?</a>
+<a href="#attend-the-next-monthly-workshop" class="nav-button">Attend the Workshops</a>
+<a href="#call-for-proposals" class="nav-button">Call for Proposals</a>
+<a href="#workshops-calendar" class="nav-button">Workshops Calendar</a>
+</p>
+</div>
 
-The OSCAL project and this workshop series are aligned with NIST’s mission of promoting U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. NIST works to maximize its impact and mission fulfillment by positioning itself to anticipate future technology trends and develop the most important measurements and standards products that are aligned with industry drivers and needs.
+
+<div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 1.5rem 0; border-left: 4px solid #007bff;">
+
+## What is the OSCAL Monthly Workshop Series?
+
+The NIST OSCAL team hosts a series of mini workshops for the OSCAL community to learn, share, and connect. Each session explores topics of interest, highlights real-world OSCAL implementations, and gives community members an opportunity to present their work and exchange ideas. Most of the workshops are designed to be accessible to a broad audience and do not require deep technical knowledge of OSCAL. Discussions are interactive, with plenty of opportunities to ask questions and engage with presenters and the OSCAL team.
+
+If you are interested in presenting your OSCAL-related work or proposing a topic for discussion, please see the **Call for Proposals** section below or email the OSCAL team at **[oscal@nist.gov](mailto:oscal@nist.gov)**.
+
+<br>
+
+#### Who should attend?
+These workshops are for anyone interested in using OSCAL to improve security automation, including: 
+- Government, industry, and academic leaders focused on digital transformation and security automation.
+- Developers and vendors building security and compliance tools with OSCAL support.
+- Organizations creating or using OSCAL content to streamline security documentation and assessment.
+- Standards organizations developing control catalogs and baselines.
+- Teams exploring or implementing continuous Authorization to Operate (cATO).
 
 We encourage developers of control-oriented security tools, organizations that want to use or create OSCAL-based information to automate security assessment, and those planning to move towards continuous Authorization to Operate (cATO) to attend the workshops.
+</div>
 
-Who should attend:
-- Leaders in digital transformation and security automation from the government, private, and academic sectors;
-- Vendors of security automation tools who are considering implementing OSCAL formats in their tools;
-- Participants in standard development organizations focusing on developing and publishing control catalogs and baselines;
-- System owners from the government, private, and academic sectors, who want to streamline the documentation of controls used in their information systems.
+---
+
+<div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 1.5rem 0; border-left: 4px solid #007bff;">
+
+## Attend the Next Monthly Workshop
+
+<br>
+
+<div style="display: flex; align-items: start; gap: 2rem; margin-top: 1rem; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 260px;">
+
+  We'd love for you to join us at an upcoming virtual OSCAL Workshop!
+  
+  These engaging sessions are held monthly, typically around the middle of each month. For the latest workshop details and schedules, please visit the **[OSCAL CSRC](https://csrc.nist.gov/projects/open-security-controls-assessment-language/oscal-adopters-workshops)** page.
+    
+  You can also explore our **[Events Page](../../../events/)** for an interactive calendar and download our iCalendar to easily keep track of upcoming and past OSCAL events.
+  </div>
+  
+  <div style="background-color: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);  min-width: 280px; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+
+  #### Don't miss out on the next upcoming session!
+  <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);  min-width: 200px;">
+      <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+        <a href="https://nist.zoomgov.com/j/1609845104?pwd=eENkemtvbGdETkJ4UnpCY2F1QlgxZz09" 
+           style="display: inline-block; background-color: #007bff; color: white !important; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 500; transition: all 0.2s ease;"
+           onmouseover="this.style.backgroundColor='#339fff'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'"
+           onmouseout="this.style.backgroundColor='#007bff'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)'">
+           Join Zoom Workshop
+        </a>
+        <div style="font-size: 0.9rem; line-height: 1.4;">
+          <p><strong>Meeting ID:</strong> 160 984 5104</p>
+          <p><strong>Passcode:</strong> 10782510</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+---
+
+<div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 1.5rem 0; border-left: 4px solid #007bff;">
+
+<style>
+  details {
+    margin-bottom: 1rem;
+  }
+  details > summary {
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    cursor: pointer;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  details[open] > summary {
+    margin-bottom: 0.5rem;
+    background-color: #e9ecef;
+  }
+  details[open] {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+</style>
 
 ## Call for Proposals
 
-NIST OSCAL Monthly Workshop program committee is seeking timely, topical, and thought-provoking **technical presentations or demonstrations** highlighting OSCAL editorial tools, OSCAL-based security assessment automation processes, and Governance Risk and Compliance (GRC) tools supporting OSCAL formats for integration into such processes. 
+The OSCAL Monthly Workshop Program Committee is seeking timely, relevant, and thought-provoking technical presentations or demonstrations that showcase practical applications of OSCAL.
 
-**NIST does not endorse any of the OSCAL tools or services presented. Presentations or demos promoting such tools or services, as opposed to focusing on the OSCAL-related technical aspects, will not be permitted.**
+Find important information about how to get involved with the workshops below:
 
-We encourage proposals from a diverse array of organizations and individuals with different perspectives, from the public and private sectors, international bodies, assessment and authorization (A&A), or certification and authorization (C&A) providers.
+<details>
+  <summary><span style="background-color: #e9ecef; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600;">Suggested Topics</span></summary>
 
-Please find below the calendar of proposed dates. Before submitting a proposal, please consult the calendar and indicate the preferred date with your submission and the duration of your presentation (60 min, including Q&A). We will do our best to update the calendar as soon as a submission is approved.
+  Proposed topics may include:
+  - OSCAL editorial tools and related workflows
+  - OSCAL-based security assessment automation processes  
+  - Governance, Risk, and Compliance (GRC) tools that support OSCAL formats and integrate with OSCAL-based processes
+</details>
 
-Submit your proposal via email to [oscal@nist.gov](mailto:oscal@nist.gov), with the subject line: “OSCAL Workshop - [Date: yyyy/mm/dd]”, where the “Date” is the selected date from the calendar below. Please include in your submission a pre-assessment of the OSCAL knowledge level the audience will need using a 4-levels scale with level one (L1/bronze) being equivalent to novice and level four (L4/platinum) being an OSCAL expert. 
-#
+<details>
+  <summary><span style="background-color: #e9ecef; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600;">Important Guidelines</span></summary>
+
+  - NIST does not endorse any OSCAL tools, products, or services presented during the workshops
+  - Presentations should focus on the technical aspects of OSCAL, including implementation approaches, lessons learned, and interoperability considerations
+  - Proposals primarily intended to promote or market a specific tool or service will not be accepted
+</details>
+
+<details>
+  <summary><span style="background-color: #e9ecef; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600;">Who Can Submit</span></summary>
+
+  We welcome submissions from a wide range of organizations and individuals representing diverse perspectives, including:
+  - Public and private sector organizations
+  - International bodies
+  - Assessment and authorization (A&A) communities
+  - Certification and authorization (C&A) providers
+</details>
+
+<details>
+  <summary><span style="background-color: #e9ecef; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600;">Finding an Available Workshop Date</span></summary>
+
+  Before submitting a proposal, please review the workshop [calendar](https://outlook.office365.com/owa/calendar/9aae7a2b87fc44b4aa2e3e0511db19fa@nist.gov/96f3dfa546f046cdaa2aa8e2c76a689d10012253312208051400/calendar.html) and identify your preferred presentation date. Each workshop session is 60 minutes long, including time for questions and discussion. The calendar will be updated as soon as possible after a submission is approved.
+</details>
+
+<details>
+  <summary><span style="background-color: #e9ecef; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600;">Where to Submit the Proposal</span></summary>
+
+  Submit your proposal by email to [oscal@nist.gov](mailto:oscal@nist.gov) using the subject line format: **“OSCAL Workshop - [Date: yyyy/mm/dd]”**
+</details>
+
+<br>
+</div>
+
 ---
-## Attend the Next Monthly Workshop Event
-We'd love for you to be a part of our upcoming virtual OSCAL Workshop! These engaging workshops are held monthly, typically around the middle of the month. **For up-to-date information about the workshops, please visit our [OSCAL CSRC](https://csrc.nist.gov/projects/open-security-controls-assessment-language/oscal-adopters-workshops) page.**
 
-**Visit our [Events Page](../../../events/)** to explore an interactive web calendar and download our iCalendar for seamless access to both upcoming and past events.
+## Workshops Calendar
 
-#### Don't miss out on the next upcoming session! Simply click on the Zoom link to join: [Zoom Link](https://nist.zoomgov.com/j/1609845104?pwd=eENkemtvbGdETkJ4UnpCY2F1QlgxZz09)
+Explore upcoming workshop schedules and access recordings and materials from past sessions to see how the OSCAL community is applying OSCAL in real-world projects. 
 
-Meeting ID: 160 984 5104
-
-Passcode: 10782510 
-# 
-
----
-
-## Workshops Calendar: jump to: [2026](#2026), [2025](#2025), [2024](#2024), [2023](#2023), [2022](#2022)
+<div style="display:inline-flex; align-items:center; gap:0.5rem;"><span style="font-size:1.25rem; font-weight:600;">Jump to:</span> <a href="#2026" style="display:inline-block; background-color:#007bff; color:#ffffff !important; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-size:1rem; transition:transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; box-shadow:0 2px 4px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.backgroundColor='#339fff'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#007bff'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)'">2026</a> <a href="#2025" style="display:inline-block; background-color:#007bff; color:#ffffff !important; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-size:1rem; transition:transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; box-shadow:0 2px 4px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.backgroundColor='#339fff'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#007bff'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)'">2025</a> <a href="#2024" style="display:inline-block; background-color:#007bff; color:#ffffff !important; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-size:1rem; transition:transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; box-shadow:0 2px 4px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.backgroundColor='#339fff'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#007bff'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)'">2024</a> <a href="#2023" style="display:inline-block; background-color:#007bff; color:#ffffff !important; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-size:1rem; transition:transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; box-shadow:0 2px 4px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.backgroundColor='#339fff'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#007bff'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)'">2023</a> <a href="#2022" style="display:inline-block; background-color:#007bff; color:#ffffff !important; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-size:1rem; transition:transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; box-shadow:0 2px 4px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.backgroundColor='#339fff'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#007bff'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)'">2022</a></div>
 
 ### 2026
 | Date | Time | Talk/Demo/Discussion | Presenter & Affiliation | Type |
 | :--: | :--: | :------------------: | :---------------------: | :--: |
 | **2026/08/19 [UPCOMING]** | 11:00AM-12:00PM EDT | German BSI Baseline Manual goes OSCAL: Tools and Learnings | **Christoph Puppe**, Principal Enterprise Security Architect, *NTT DATA, Deutschland* | *Recording will be available once the workshop concludes.*  |
-| **2026/07/15 [UPCOMING]** | 11:00AM-12:00PM EDT | The Continuous Compliance Framework - An Updated Demonstration | **Ian Miell**, Chief Technology Officer, *Container Solutions*; **Gustavo Carvalho**, Principal Engineer, *Container Solutions* | *Recording will be available once the workshop concludes.*  |
+| **2026/07/15** | 11:00AM-12:00PM EDT | The Continuous Compliance Framework - An Updated Demonstration | **Gustavo Carvalho**, Principal Engineer, *Container Solutions* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-45-CCF/07.15.2026_Container_Solutions.pdf), [video](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-45-CCF/07.15.2026_ContainerSolutionsCCF.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-45-CCF/CAPTIONS_07.15.2026_ContainerSolutions.txt)  |
 | **2026/06/24** | 11:00AM-12:00PM EDT | Automating Continuous Authorization: Leveraging OSCAL for Real-Time Compliance with ComplySyncATO | **Vijay Narasimhan**, Chief Technology Officer, *ASSYST*; **Joe Anderson**, Chief Operating Officer, *ASSYST*; **John Kimberl**, Business Development Specialist, *ASSYST*  | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-44-ASSYST/06.24.2026_ComplySyncATO.pdf), [video](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-44-ASSYST/06.24.2026_ASSYST.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-44-ASSYST/CAPTIONS_06.24.2026_ASSYST.txt) |
 | **2026/05/20** | 11:00AM-12:00PM EDT | OSCAL.io for Evaluating Interoperability | **Pirooz Javan**, Chief Technology Officer, *Easy Dynamics* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-43-EasyDynamics/05.20.2026_EasyDynamics.pdf), [video](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-43-EasyDynamics/VID_05.20.2026_EasyDynamics.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-43-EasyDynamics/CAPTIONS_05.20.2026_EasyDynamics.txt)  |
 | **2026/04/15** | 11:00AM-12:00PM EDT | FedRAMP Deliverables in OSCAL | **Brian J. Ruf**, FedRAMP Technology Focus Group Lead, *OSCAL Foundation*; **Stephen Banghart**, Technical Coordinator, *OSCAL Foundation* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-42-OSCALFoundation/2026-04-15_OSCAL-Foundation_FedRAMP.pdf), [video](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-42-OSCALFoundation/04.15.2026_OSCALFoundation.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-42-OSCALFoundation/CAPTIONS_04.16.2026_OSCALFoundation.txt)  |
@@ -66,6 +197,9 @@ Passcode: 10782510
 | **2026/02/18** | 11:00AM-12:00PM EDT | OSCAL Hub - Open Source Visual Tools for Rapid Authorizations and Content Sharing using OSCAL | **Travis Howerton**, Co-Founder and CEO, *RegScale* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-40-RegScale/02.18.2026_OSCAL_Hub.pdf), [video part 1](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-40-RegScale/PART1_02.18.2026_RegScale.mp4), [video part 2](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-40-RegScale/PART2_02.18.2026_RegScale.mp4), [video part 3](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-40-RegScale/PART3_02.18.2026_RegScale.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-40-RegScale/CAPTIONS_02.18.2026_RegScale.txt) |
 | **2026/02/04 SPECIAL EDITION** | 11:00AM-12:00PM EDT | AI Agent for OSCAL: Instant OSCAL Expertise for All | **Fritz Kunstler**, Principal Security Engineer, *AWS* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-39-AWS/02.04.2026_AWS.pdf), [video](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-39-AWS/02.04.2026_AWS.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2026/oscal-monthly-workshop-39-AWS/CAPTIONS_02.04.2026_AWS.txt) |
 
+
+<details>
+  <summary>2025</summary>
 
 ### 2025
 | Date | Time | Talk/Demo/Discussion | Presenter & Affiliation | Type |
@@ -79,6 +213,10 @@ Passcode: 10782510
 | **2025/2/19** | 11:00AM-12:00PM EDT | The OSCAL Implementer's Guide: Strategies, Lessons, and Best Practices | **Macey Smith**, Vice President & Co Founder, *USAI*; **Matthew Coughlin**, Information System Security Officer, *USAI* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/oscal-mini-workshop-32-USAI/2.19.2025_USAI_SlideDeck.pdf), [video part 1](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/oscal-mini-workshop-32-USAI/PART1_2.19.2025_USAI.mp4), [video part 2](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/oscal-mini-workshop-32-USAI/PART2_2.19.2025_USAI.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/oscal-mini-workshop-32-USAI/CAPTIONS_2.19.2025_USAI.txt) |
 | **2025/1/15** | 11:00AM-12:00PM EDT | From One-Size-Fits-All to Right-Sizing: Adapting OSCAL for the Singapore Government's Tech Standards | **Hunter Nield**, Distinguished Engineer, *GovTech Singapore*; **Eugene Lim**, Lead Cybersecurity Engineer, *GovTech Singapore* | [presentation](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/1.15.2025_GovTechSingapore.pdf), [video part 1](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/PART1_1.15.2025_GovTech.mp4), [video part 2](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/PART2_1.15.2025_GovTech.mp4), [video part 3](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/PART3_1.15.2025_GovTech.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2025/CAPTIONS_1.15.2025_GovTech.txt) |
 
+
+</details>
+<details>
+  <summary>2024</summary>
 
 ### 2024
 
@@ -98,6 +236,10 @@ Passcode: 10782510
 | **2024/1/14** | 11:00AM-12:00PM EDT | A Developer's View of OSCAL - Experiences and recommendations for implementing OSCAL Libraries | **Rob Sherwood**, Principal Consultant, *Credentive Security* | [presentation](https://csrc.nist.gov/csrc/media/presentations/2024/oscal-mini-workshops/20240117-Sherwood-Programmers%20view%20of%20OSCAL.pdf), [video part 1](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/Part1_1.17.2024_A-developers-view-of-oscal_R.Sherwood.mp4), [video part 2](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/Part2_1.17.2024_A-developers-view-of-oscal_R.Sherwood.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/Captions_1.17.2024_R.Sherwood.txt) |
 
 
+</details>
+<details>
+  <summary>2023</summary>
+
 ### 2023
 
 | Date | Time | Talk/Demo/Discussion | Presenter & Affiliation | Type |
@@ -114,6 +256,10 @@ Passcode: 10782510
 | **2023/02/01 SPECIAL EDITION** | 11:00AM-12:00PM EDT | A Modern Authorization and Accreditation Platform Enabled by OSCAL | **John Tibbits**, Principal, *IMPLERUS Corporation*; **Marcin Staszewski**, Chief Development Officer, *IMPLERUS Corporation* | [presentation](https://csrc.nist.gov/csrc/media/Presentations/2023/oscal-mini-workshop-9-implerus/Synergeo%20PPT-v1.4%20NIST%2031-JAN-2023%20v3.pdf), [video & demo](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2.01.2023_Modern-Authorization-and-Accreditation_John-Tibbitts.mp4), [transcript](https://csrc.nist.gov/csrc/media/Projects/open-security-controls-assessment-language/images-media/2.15.2023_Googles-Internal-OSCAL-Adoption_CAPTIONS.txt) |
 
 
+</details>
+<details>
+  <summary>2022</summary>
+
 ### 2022
 
 | Date | Time | Talk/Demo/Discussion | Presenter & Affiliation | Type | Knowledge Level |
@@ -127,3 +273,4 @@ Passcode: 10782510
 |  **2022/06/15** |  11:00AM-12:00PM EDT  | IBM's Trestle - compliance as code orchestrator and automation workflow  | **Dr. Anca Sailer** [video](https://csrc.nist.gov/csrc/media/Presentations/2022/oscal-mini-workshop-2-ibm-s-trestle/images-media/IBM-Trestle-part1-ASailer-2022-06-15-caption.mp4); **Dr. Vikas Agarwal** [video](https://csrc.nist.gov/csrc/media/Presentations/2022/oscal-mini-workshop-2-ibm-s-trestle/images-media/IBM-Trestle-part2-VAgarwal-2022-06-15-caption.mp4); **Lou DeGenaro** [video](https://csrc.nist.gov/csrc/media/Presentations/2022/oscal-mini-workshop-2-ibm-s-trestle/images-media/IBM-Trestle-part3-LDegenaro-2022-06-15-caption.mp4)| [presentation](trestle-agile-authoring.pdf) & [demo summary](trestle-agile-authoring-demo.pdf) | L4 |   
 | **2022/05/18** | 11:00AM-11:40AM EDT | 1.  Compliance as Code for Big Bang Risk Management Framework (RMF) Control Mapping to Accelerate Department of Defense (DoD) Authorization to Operate (ATO) | **Maj Camdon Cady**, Chief Operating Officer, *Platform One, US Airforce*; **Tom Runyon**, *Defense Unicorns*   | [presentation](https://csrc.nist.gov/csrc/media/Presentations/2022/oscal-mini-workshop-1-P1_DoD%2BNIST/P1%20OSCAL%20PA%20Approved.pdf) |  L2 |
 | **2022/05/18** | 11:40AM-12:00PM EDT | 2. OSCAL Catalog Authoring Tool (CAT) | **Dmitry Cousin**, OSCAL Team Member, *NIST* |[presentation](https://csrc.nist.gov/csrc/media/Presentations/2022/oscal-mini-workshop-1-P1_DoD%2BNIST/OSCAL-CAT_Dmitry-Cousin.pdf) demo |  L1 |   
+</details>

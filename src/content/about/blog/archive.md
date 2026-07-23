@@ -6,14 +6,231 @@ description: Archive of old blog posts related to the OSCAL project.
 suppresstopiclist: true
 ---
 
+<style>
+.usa-card-group .usa-card {
+  transition: transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.usa-card-group .usa-card:hover {
+  transform: translateY(-4px);
+}
+
+.usa-card-group .usa-card__container {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.usa-card-group .usa-card:hover .usa-card__container {
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.blog-metadata {
+  background-color: white;
+  border-radius: 4px 4px 0 0;
+  padding: 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.blog-metadata h2 {
+  color: #4d80d1;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.blog-metadata p {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content {
+  padding: 1.5rem;
+}
+
+.jump-to-section {
+  background-color: #e9f7fe;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+.jump-to-section .label {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.jump-to-section a {
+  display: block;
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.jump-to-section a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.year-navigation {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.year-navigation span {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.year-navigation a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.year-navigation a:hover {
+  transform: translateY(-2px);
+  background-color: #339fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+</style>
+
 ### Explore Past OSCAL Blogs Packed With Expert Insights
 Discover a comprehensive archive of OSCAL blog posts featuring practical guidance, relevant updates, and in-depth analysis to support effective security compliance. These articles cover a range of topics suited for both newcomers and experienced practitioners in the field.
 
-#### Jump to read blogs from: [2025](#2025), [2023](#2023), [2021](#2021)
+<br>
+<div class="jump-to-section">
+  <div class="label">Jump to a year:</div>
+  <a href="#2026">2026</a>
+  <a href="#2025">2025</a>
+  <a href="#2023">2023</a>
+  <a href="#2021">2021</a>
+</div>
 
 
 #
 ---
+
+## 2026
+<br>
+
+<!-- April 2026 Workshop Blog Post -->
+<div class="usa-card-group">
+    <div class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="a-students-take-on-oscala-innovation-exploring-the-oscala-pocket-guide"><span style="color:#4d80d1">A Student's Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide</span></h2>
+                <div>
+                    <p><b>April 23, 2026</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Brian Ruf</b>, <i>FedRAMP Technology Focus Group Lead, OSCAL Foundation</i></li>
+                            <li><b>Stephen Banghart</b>, <i>Technical Coordinator, OSCAL Foundation</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <p>        
+                In OSCAL's recent monthly workshop, Brian Ruf and Stephan Banghart from the OSCAL Foundation highlighted their efforts to make FedRAMP security artifacts machine-readable and OSCAL-compliant. A key theme throughout the session was improving interoperability and ensuring that security documentation can be consistently understood and used across different agencies and organizations.
+                </p>
+                <p>
+                One of the most interesting takeaways was the feedback gathered from various U.S. government agencies. While OSCAL offers a high degree of flexibility in how information can be structured and mapped, that same flexibility can make adoption a bit challenging. Agencies noted that transitioning from traditional formats like Word documents and spreadsheets to fully machine-readable OSCAL artifacts can feel like a big jump, especially with tooling being limited.
+                </p>
+                <p>
+                To address this challenge, the OSCAL Foundation is taking a phased approach. Their current focus is on the FedRAMP System Security Plan and their goal is to provide clearer guidance on how SSPs should be represented in OSCAL so that implementations are more consistent and interoperable.
+                </p>
+<details>
+    <summary><b><i><span style="color:#4d80d1">Continue reading here.</span></i></b></summary>
+    <p>
+    Another aspect that stood out was the emphasis on incremental adoption. Instead of requiring organizations to fully convert their documentation all at once, the OSCAL Foundation introduced two adoption paths: a retrofit path for converting existing legacy documents and a native path for organizations that are starting fresh. This approach allows users to begin with simpler, flat representations of their data and gradually transition to more structured component-based models over time.
+    The presenters also shared several resources for the community to get support in adoption, including a GitHub repository containing examples of OSCAL representations. These tools aim to make it easier for organizations to get started and build familiarity with the standard.
+    </p>
+    <p>
+    Overall, this insightful workshop highlighted both the challenges and ongoing efforts to make OSCAL adoption more accessible by focusing on guidance and incremental progress.
+    </p>
+</details>
+    <br>
+<details>
+    <summary><i>Click here to learn more about the OSCAL Workshops:</i></summary>
+        <p><strong>Location:</strong> Online</p>
+        <p><strong>Date and Time:</strong> 15 April 2026, 11:00 AM - 12:00 PM EDT</p>
+        <br>
+        <i>View this April 2026 workshop recording and other files </i><a href = "https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=Officer%2C%20Easy%20Dynamics-,%2D%2004/15/2026:,-FedRAMP%20Deliverables%20in">here</a>
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../../learn/presentations/mini-workshop).
+</details>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- March 2026 Workshop Blog Post -->
+<div class="usa-card-group">
+    <div class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="a-students-take-on-oscala-innovation-exploring-the-oscala-pocket-guide-march-2026"><span style="color:#4d80d1">A Student's Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide</span></h2>
+                <div>
+                    <p><b>April 2, 2026</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Tevin Harris</b>, <i>Federal Employee & Founder, euCann</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <p>
+                During OSCAL's March 2026 workshop, Tevin Harris from euCann LLC delivered an insightful and engaging presentation, including a live demo of the OSCAL Pocket Guide, a mobile OSCAL-based application that provides on-demand access to the OSCAL Catalog. Harris opened by highlighting a familiar challenge faced by many cybersecurity professionals: the long, tedious process of manually assessing paper-based security artifacts such as PDFs and spreadsheets. With multiple versions and formats of security frameworks, some often spanning hundreds of pages, manual assessment becomes highly inefficient.
+                </p>
+                <p>
+                OSCAL addresses this issue by standardizing these artifacts into automatable, machine-readable formats, enabling continuous compliance and streamlined assessments. To further support OSCAL adoption and provide a more intuitive user experience, Harris developed the OSCAL Pocket Guide. The application allows users to easily browse OSCAL catalogs, analyze controls, navigate various framework models, review assessment objectives and artifacts, and explore parameters and implementation guidance.
+                Currently available on iOS, Android, and macOS devices, the application leverages data frameworks and formats based on OSCAL JSON documents. It does not require an internet connection, as it operates entirely offline with documents downloaded directly to the user's device. The app is powered by six core frameworks: SP 800-53 Revision 5, NIST CSF 2.0, SP 800-171 Revision 3, SP 800-218 (SSDF), the AI RMF Playbook, and Harris's own customized OSCAL SP 800-61 Volume II.
+                </p>
+<details>
+    <summary><b><i><span style="color:#4d80d1">Continue reading here.</span></i></b></summary>
+    <p>
+    The OSCAL Pocket Guide features an intuitive interface that allows users to explore different frameworks and the modules that make them up. Built using a Flutter UI layer and core OSCAL services, the application supports document parsing, exporting, and secure local storage via encrypted SQLite. It is offered in two versions: a free version, and a Pro version priced at $10, which includes advanced multi-criteria filtering and control comparison capabilities.
+    </p>
+    <p>
+    During the demonstration, I was particularly impressed by the application's ease of use and thoughtful design. Clear navigation and well-organized tabs guide users through OSCAL-based frameworks and their respective control modules. Features such as favoriting frequently accessed controls, applying baseline filters, sorting by control IDs, and displaying parameters inline further enhance the app's usability.
+    The application continues to evolve, with future updates expected to include a web interface and cloud-based capabilities, such as a retrieval-augmented generation (RAG) chatbot. This feature will enable users to ask questions about NIST catalog items and receive real-time, OSCAL-informed responses related to controls and frameworks.
+    Overall, the OSCAL Pocket Guide is a promising tool that simplifies interaction with complex OSCAL data, making it more accessible through a clean, user-friendly interface while supporting deeper exploration of its technical capabilities.
+    </p>
+</details>
+    <br>
+<details>
+    <summary><i>Click here to learn more about the OSCAL Workshops:</i></summary>
+        <p><strong>Location:</strong> Online</p>
+        <p><strong>Date and Time:</strong> 18 March 2026, 11:00 AM - 12:00 PM EDT</p>
+        <br>
+        <i>View this March 2026 workshop recording and other files </i><a href = "https://csrc.nist.gov/Projects/open-security-controls-assessment-language/oscal-adopters-workshops#:~:text=Coordinator%2C%20OSCAL%20Foundation-,%2D%2003/18/2026:">here</a>
+  
+  *Learn more about the OSCAL Monthly Workshop series* [here](../../../learn/presentations/mini-workshop).
+</details>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<details>
+<summary style="background-color: #f8f9fa; padding: 12px 16px; border-radius: 6px; cursor: pointer; border: 1px solid #dee2e6; margin-bottom: 16px; font-weight: 600;"><strong>2025</strong></summary>
 
 ## 2025
 <br>
@@ -22,11 +239,13 @@ Discover a comprehensive archive of OSCAL blog posts featuring practical guidanc
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="oscal-plugfest-sailing-ahead-with-nist-oscala-the-next-game-plan"><span style="color:#4d80d1">OSCAL Plugfest & Sailing Ahead with NIST OSCAL: The Next Game Plan</span></h2>
+                <div>
+                    <p><b>November 19, 2025</b></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>November 19, 2025</b></p>
+            <div class="blog-content">
                 <p>
                 As cloud environments grow more complex and interconnected, traditional compliance practices such as inefficient manual checks, paper-based audits, and proprietary formats are struggling to keep up. Security teams are often baried in fragmented documents, making it harder to track how controls apply across hybrid systems. The result? Slow, error prone processes that don't scale with today's fast-moving digital world.
                 </p>
@@ -69,18 +288,20 @@ Discover a comprehensive archive of OSCAL blog posts featuring practical guidanc
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">How CAPORDINO Converts Security Data into OSCAL Catalogs: A Student's Perspective</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="how-capordino-converts-security-data-into-oscala-catalogs-a-students-perspective"><span style="color:#4d80d1">How CAPORDINO Converts Security Data into OSCAL Catalogs: A Student's Perspective</span></h2>
+                <div>
+                    <p><b>August 26, 2025</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Selena Xiao</b>, <i>Computer Scientist, NIST</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>August 26, 2025</b></p>
-                <p><b>-- Presented By:  </b></p>
-                <p>
-                    <ul>
-                        <li><b>Selena Xiao</b>, <i>Computer Scientist, NIST</i></li>
-                    </ul>
-                </p>
-                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+            <div class="blog-content">
                 <p>The recent workshop hosted by the NIST OSCAL Team featured a compelling presentation by Selena Xiao on *CAPORDINO: A Data Converter to OSCAL Catalogs*. The session provided valuable insights into how CAPORDINO (Cybersecurity and Privacy Open Reference Datasets in OSCAL) contributes to advancing security automation, particularly in the areas of secure software development and patch management, meeting the requirements of Executive Order 14144. 
 
 As cybersecurity systems continue to grow in complexity, so does the need for scalable, automated methods of conducting security assessments. CAPORDINO addresses this challenge by converting structured security reference data into OSCAL, a standardized, machine-readable format. The result is an approach that supports continuous assessment with reduced reliance on manual processes.
@@ -114,20 +335,22 @@ This workshop offered a strong example of innovation in cybersecurity. CAPORDINO
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Inside the OSCAL Mapping Model: A Student's Perspective</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="inside-the-oscala-mapping-model-a-students-perspective"><span style="color:#4d80d1">Inside the OSCAL Mapping Model: A Student's Perspective</span></h2>
+                <div>
+                    <p><b>August 1, 2025</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Stephen Banghart</b>, <i>Technical Coordinator, OSCAL Foundation</i></li>
+                            <li><b>Anca Sailer</b>, <i>Distinguished Engineer, IBM Research</i></li>
+                            <li><b>Vikas Agarwal</b>, <i>Senior Technical Staff Member, IBM Research - India</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>August 1, 2025</b></p>
-                <p><b>-- Presented By:  </b></p>
-                <p>
-                    <ul>
-                        <li><b>Stephen Banghart</b>, <i>Technical Coordinator, OSCAL Foundation</i></li>
-                        <li><b>Anca Sailer</b>, <i>Distinguished Engineer, IBM Research</i></li>
-                        <li><b>Vikas Agarwal</b>, <i>Senior Technical Staff Member, IBM Research - India</i></li>
-                    </ul>
-                </p>
-                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+            <div class="blog-content">
                 <p>At the NIST OSCAL 37th Monthly Workshop, Stephen Banghart, Anca Sailer, and Vikas Agarwal delivered a compelling presentation on 'Collaboratively Maturing the OSCAL Control Mapping Model at the OSCAL Foundation'. The workshop provided a comprehensive introduction to the OSCAL Mapping Model, a powerful tool that streamlines security assessments and continuous compliance by automating the mapping of security controls between different frameworks.
 
 The OSCAL Mapping Model is a game changer in security assessments and compliance automation. By enabling the creation of a crosswalk between various control frameworks, it facilitates comparisons and mappings between them. As technology advances rapidly, having a robust and secure security posture is crucial. However, traditional security assessment processes often struggle to scale, which is where the NIST OSCAL team, OSCAL-Compass, and OSCAL Foundation come in, working together to implement a new use case for OSCAL with the Mapping Model. This leverages existing security postures to bootstrap a new mapping model, making it easier for organizations to adapt to changing security requirements...
@@ -164,19 +387,22 @@ As the technology landscape continues to evolve, the need for efficient and effe
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="test-driving-compliance-a-students-perspective-on-oscala-government-procurement"><span style="color:#4d80d1">Test-Driving Compliance: A Student's Perspective on OSCAL & Government Procurement</span></h2>
+                <div>
+                    <p><b>June 26, 2025</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Mats Nahlinder</b>, <i>CEO & Co-Founder, Sunstone Secure</i></li>
+                            <li><b>Robert Ficcaglia</b>, <i>CTO and Co-Founder, Sunstone Secure</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
             </div>
+            <div class="blog-content">
             <div class="usa-card__body">
-                <p><b>June 26, 2025</b></p>
-                <p><b>-- Presented By:  </b></p>
-                <p>
-                    <ul>
-                        <li><b>Mats Nahlinder</b>, <i>CEO & Co-Founder, Sunstone Secure</i></li>
-                        <li><b>Robert Ficcaglia</b>, <i>CTO and Co-Founder, Sunstone Secure</i></li>
-                    </ul>
-                </p>
-                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
                 <p>Attending the OSCAL Monthly Workshop titled "OSCAL - A 'FastTrack' to agency contracting" was an insightful experience, especially in understanding how compliance and procurement processes can be improved through automation and standardization. The workshop, presented by Mats Nahlinder and Robert Ficcaglia, founders of Sunstone Secure, opened my eyes to the practical challenges agencies face in vendor evaluation and system procurement, and how OSCAL can be a game changer. Their focus on FedRAMP, a government-wide program that standardizes cloud service security assessments, made the topic very relevant.
 
 One key takeaway was the exploration of the current pain points in agency procurement. Despite certifications like SOC-2 or FedRAMP levels, there is often little insight into the actual quality and maturity of a cloud service provider's security posture. This disconnect leads to high risks for agencies, who may contract services that are not fully compliant or mature enough, sometimes only realizing this after the deal is signed. The presenters highlighted how OSCAL can address this by providing a structured, data-driven, and risk-focused approach to evaluating vendors before procurement, rather than relying on broad certifications or fixed risk levels...
@@ -210,19 +436,21 @@ Overall, the workshop provided a valuable perspective on how OSCAL is evolving b
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Demystifying Compliance Automation: A Student’s Perspective on the Continuous Compliance Framework</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="demystifying-compliance-automation-a-students-perspective-on-the-continuous-compliance-framework"><span style="color:#4d80d1">Demystifying Compliance Automation: A Student’s Perspective on the Continuous Compliance Framework</span></h2>
+                <div>
+                    <p><b>May 27, 2025</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Chris Vermeulen</b>, <i>Principal Engineer, Container Solutions</i></li>
+                            <li><b>Ian Miell</b>, <i>Partner, Container Solutions</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>May 27, 2025</b></p>
-                <p><b>-- Presented By:  </b></p>
-                <p>
-                    <ul>
-                        <li><b>Chris Vermeulen</b>, <i>Principal Engineer, Container Solutions</i></li>
-                        <li><b>Ian Miell</b>, <i>Partner, Container Solutions</i></li>
-                    </ul>
-                </p>
-                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+            <div class="blog-content">
                 <p>This month, I attended a workshop titled "Automated OSCAL-based evidence gathering with The Continuous Compliance Framework", presented by Chris Vermeulen and Ian Miell from Container Solutions. As someone new to the world of compliance automation, I found the session to be a valuable introduction to how modern organizations are tackling the challenges of regulatory mapping in complex systems. The Continuous Compliance Framework (CCF) is an open source tool that automates the collection of compliance evidence through distributed agents. These agents run on different systems and environments, gathering data and feeding it into a centralized API, all while remaining secure and lightweight.
 
 One of the most interesting concepts discussed was how CCF identifies and maps “subjects” and “components” without relying on centralized identifiers like UUIDs. Instead, it uses attribute-based mapping to determine if two pieces of evidence relate to the same subject, allowing the system to correlate data from various sources efficiently. This makes compliance tracking much more manageable, especially in large scale, distributed environments where manual mapping would be time-consuming and prone to errors. I appreciated how the framework is designed to scale across environments, from GitHub repositories to Linux hosts, making it highly flexible and practical.
@@ -252,18 +480,20 @@ Another highlight was seeing how CCF integrates with the OSCAL format. The team 
         <div class="usa-card__container">
             <div class="usa-card__header">
                 <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Revolutionizing Compliance Through Machine-Readable Data: A Student's Perspective</span></h2>
+                <div>
+                    <p><b>April 16, 2025</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Brian Ruf</b>, <i>Independent Consultant, RufRisk</i></li>
+                            <li><b>Pirooz Javan</b>, <i>CTO, Easy Dynamics</i></li>
+                            <li><b>Juan Risso</b>, <i>Lead Software Engineer, Easy Dynamics</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
             </div>
             <div class="usa-card__body">
-                <p><b>April 16, 2025</b></p>
-                <p><b>-- Presented By:  </b></p>
-                <p>
-                    <ul>
-                        <li><b>Brian Ruf</b>, <i>Independent Consultant, RufRisk</i></li>
-                        <li><b>Pirooz Javan</b>, <i>CTO, Easy Dynamics</i></li>
-                        <li><b>Juan Risso</b>, <i>Lead Software Engineer, Easy Dynamics</i></li>
-                    </ul>
-                </p>
-                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
                 <p>I had the chance to attend a fascinating workshop titled "OSCAL Catalogs: Create Easily and Use Broadly," presented by experts Brian Ruf (RufRisk), Priooz Javan (Easy Dynamics), and Juan Risso (Easy Dynamics). The session gave a deep dive into OSCAL and its use in various industries. While I initially thought OSCAL was focused solely on cybersecurity compliance frameworks, I quickly learned that its applications can stretch far beyond that, offering a powerful tool for managing a wide variety of regulatory and requirement-based scenarios...
 <details>
     <summary><b><i><span style="color:#4d80d1">Continue reading here.</span></i></b></summary>
@@ -299,20 +529,22 @@ Overall, this workshop was incredibly informative. I walked away with a much dee
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">OSCAL Continues to Grow Roots in Europe</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="oscal-continues-to-grow-roots-in-europe"><span style="color:#4d80d1">OSCAL Continues to Grow Roots in Europe</span></h2>
+                <div>
+                    <p><b>The European Cyber Security Organization convenes “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe”</b></p>
+                    <p><b>An awareness session on OSCAL for the European cybersecurity practitioners</b></p>
+                    <br>
+                    <p><b>April 9, 2025</b></p>
+                    <p>
+                        <ul>
+                            <li><b>Cristian Michael Tracci</b>, <i> Senior Manager</i>, Policy Analysis and Outreach <a href = "mailto:policy_team@ecs-org.eu">(policy_team@ecs-org.eu)</a> </li>
+                        </ul>
+                    </p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>The European Cyber Security Organization convenes “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe”</b></p>
-                <p><b>An awareness session on OSCAL for the European cybersecurity practitioners</b></p>
-                <br>
-                <p><b>April 9, 2025</b></p>
-                <p>
-                    <ul>
-                        <li><b>Cristian Michael Tracci</b>, <i> Senior Manager</i>, Policy Analysis and Outreach <a href = "mailto:policy_team@ecs-org.eu">(policy_team@ecs-org.eu)</a> </li>
-                    </ul>
-                </p>
-The European Cyber Security Organization (ECSO) organizes an event titled “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe.” This session aims to discuss how to automate compliance to cybersecurity policies and security assessment, auditing, and continuous monitoring processes, raising awareness about the Open Security Controls Assessment Language (OSCAL), its applications, and benefits in this domain. It is primarily addressed to the European cybersecurity community, including policymakers, GRC practitioners, and researchers, while also promoting dialogue between like-minded geographies on topics of common interest.
+            <div class="blog-content">
+                The European Cyber Security Organization (ECSO) organizes an event titled “Actions Beyond Words: Automating Audits for Streamlined Cybersecurity Policy Compliance in Europe.” This session aims to discuss how to automate compliance to cybersecurity policies and security assessment, auditing, and continuous monitoring processes, raising awareness about the Open Security Controls Assessment Language (OSCAL), its applications, and benefits in this domain. It is primarily addressed to the European cybersecurity community, including policymakers, GRC practitioners, and researchers, while also promoting dialogue between like-minded geographies on topics of common interest.
 Organizations, whether private corporations, government agencies, or supervisory authorities, face significant challenges worldwide in managing compliance with various national and international laws, contractual clauses, and standards. The proliferation of cybersecurity regulations and standards in Europe exacerbates these challenges.
 Fostering a collaborative approach, in line with its nature as a public-private partnership, ECSO can bring together the private and public sectors, promoting expert debate grounded in substantive discussions and focused on solutions that benefit the entire ecosystem.
 <br><br>
@@ -328,14 +560,14 @@ Fostering a collaborative approach, in line with its nature as a public-private 
  - [Required](https://events.teams.microsoft.com/event/6d7dbddd-0186-4288-9369-99fcca0bba32@07daeece-77f0-4a62-882f-a7a4ce502054/registration)
 
 ### Agenda
-| Time |	Session	| Speakers |
-| --------|-----------------------------------------------|-----------------------------------|
-| 10 min	| Opening Remarks	| ECSO |
-40 min | Continuous Proactive Security with OSCAL: Going Beyond ‘Shift Left’ |	Michaela Iorga, Supervisory Computer Engineer, Secure Systems and Applications Group, National Institute of Standards and Technology (NIST) |
-| 20 min	| Build with OSCAL: Use-cases for adoption and beyond	| Fritz Kunstler, Principal Security Engineer, Amazon Web Services (AWS) |
-| 20 min |	OSCAL and European Cybersecurity Public Policy |	Cristian Tracci, Senior Manager, Policy Analysis and Outreach Stream, ECSO |
-| 30 min | Cobalt EU Initiative for Automated Compliance |	Antonio Skarmeta, Full Professor, and Sara Nieves Matheu Garcia, Assistant Professor, University of Murcia |
-| 30 min	| Open Discussion	Moderated by ECSO | |
+| Time   | Session                                                             | Speakers                                                                                                                                    |
+| ------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 10 min | Opening Remarks                                                     | ECSO                                                                                                                                        |
+| 40 min | Continuous Proactive Security with OSCAL: Going Beyond ‘Shift Left’ | Michaela Iorga, Supervisory Computer Engineer, Secure Systems and Applications Group, National Institute of Standards and Technology (NIST) |
+| 20 min | Build with OSCAL: Use-cases for adoption and beyond                 | Fritz Kunstler, Principal Security Engineer, Amazon Web Services (AWS)                                                                      |
+| 20 min | OSCAL and European Cybersecurity Public Policy                      | Cristian Tracci, Senior Manager, Policy Analysis and Outreach Stream, ECSO                                                                  |
+| 30 min | Cobalt EU Initiative for Automated Compliance                       | Antonio Skarmeta, Full Professor, and Sara Nieves Matheu Garcia, Assistant Professor, University of Murcia                                  |
+| 30 min | Open Discussion	Moderated by ECSO                                   |                                                                                                                                             |
 
 *Learn more about ECSO at ecs-org.eu*
 </details>
@@ -348,22 +580,24 @@ Fostering a collaborative approach, in line with its nature as a public-private 
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Exploring the OSCAL-based AI-augmented CISO Agent: A Student's Perspective</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="exploring-the-oscala-based-ai-augmented-ciso-agent-a-students-perspective"><span style="color:#4d80d1">Exploring the OSCAL-based AI-augmented CISO Agent: A Student's Perspective</span></h2>
+                <div>
+                    <p><b>March 19, 2025</b></p>
+                    <p><b>Presented By:  </b></p>
+                    <p>
+                        <ul>
+                            <li><b>Anca Sailer</b>, <i>Distinguished Engineer, IBM TJ Watson</i></li>
+                            <li><b>Hirokuni Kitahara</b>, <i>Research Scientist, IBM Tokyo</i></li>
+                            <li><b>Saki Takano</b>, <i>Research Scientist, IBM Tokyo</i></li>
+                            <li><b>Takumi Yanagawa</b>, <i>Research Advisory Software Developer, IBM Tokyo</i></li>
+                            <li><b>Yuji Watanabe</b>, <i>Research Senior Technical Staff, IBM Tokyo</i></li>
+                        </ul>
+                    </p>
+                    <p><b>Blog By: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>March 19, 2025</b></p>
-                <p><b>-- Presented By:  </b></p>
-                <p>
-                    <ul>
-                        <li><b>Anca Sailer</b>, <i>Distinguished Engineer, IBM TJ Watson</i></li>
-                        <li><b>Hirokuni Kitahara</b>, <i>Research Scientist, IBM Tokyo</i></li>
-                        <li><b>Saki Takano</b>, <i>Research Scientist, IBM Tokyo</i></li>
-                        <li><b>Takumi Yanagawa</b>, <i>Research Advisory Software Developer, IBM Tokyo</i></li>
-                        <li><b>Yuji Watanabe</b>, <i>Research Senior Technical Staff, IBM Tokyo</i></li>
-                    </ul>
-                </p>
-                <p><b>-- Blog by: Marilyn Nguyen (NIST Pathways, IT Student Trainee)</b> <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a>  </b></p>
+            <div class="blog-content">
                 <p>I recently attended the OSCAL workshop titled "OSCAL-based AI-augmented CISO agent", hosted by our partners at IBM. The focus of the session was on leveraging OSCAL for AI-augmented compliance automation and policy validation. Over the past five years, IBM has made OSCAL a key part of their strategy for expressing security and compliance requirements across various domains, including infrastructure, data, AI, applications, and business processes. 
 
 During the workshop, I learned about IBM's 4-step compliance lifecycle, with a particular emphasis on the assessment phase. The session detailed how IBM bridges authored compliance controls with real-time validation through their Compliance to Policy (C2P) framework. I was particularly impressed by how C2P uses OSCAL component definitions and a plug-in based architecture to generate technology-specific policies, such as Ansible playbooks or Kyverno rules. These policies are then deployed in actual or pre-deployment environments for validation. What really stood out to me was how the C2P core interprets OSCAL structures, mapping controls to relevant policies, and generating validation results into standardized OSCAL assessment outputs. This system seems like a game-changer for organizations looking to streamline their compliance processes.
@@ -392,12 +626,14 @@ Overall, the workshop gave me a deep dive into how structured compliance data, c
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">OSCAL Foundation launches to move security standard forward</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="oscal-foundation-launches-to-move-security-standard-forward"><span style="color:#4d80d1">OSCAL Foundation launches to move security standard forward</span></h2>
+                <div>
+                    <p><b>February 7, 2025</b></p>
+                    <p><b>John Banghart </b><a href = "mailto:jfbanghart@venable.com">jfbanghart@venable.com</a></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>February 7, 2025</b></p>
-                <p><b>-- John Banghart </b><a href = "mailto:jfbanghart@venable.com">jfbanghart@venable.com</a></p>
+            <div class="blog-content">
 
 The ability to automate security assessments to information technology systems is critical. It removes the possibility of human error and assists in overall security compliance. The Open Security Controls Assessment Language (OSCAL) is a machine-readable language that automates, simplifies, and standardizes these assessments. 
 
@@ -420,30 +656,30 @@ Washington, DC 20001
 
 ### Agenda
 
-| Time | Session |
-| ------------------------- | ------------------------------------------------|
-| 1:00 p.m. - 1:10 p.m. ET: | **Introduction:** John Banghart, Venable |
-| 1:10 p.m. - 1:30 p.m. ET: | **Keynote:** Hart Rossman, VP, Amazon |
-| 1:30 p.m. - 2:10 p.m. ET:| **Panel discussion:** The FedRAMP OSCAL Use Case |
-| | (Moderator) Pirooz Javan, Easy Dynamics |
-| | Brian Ruf, RufRisk |
-| | Travis Howerton, RegScale |
-| 2:10 p.m. - 2:50 p.m. ET | **Panel discussion:** The Global OSCAL Use Case |
-| | (Moderator) Michaela Iorga, NIST |
-| | Vikram Khare, Google |
-| | Matt Weinberg, AWS |
-| | Jim Reavis, Cloud Security Alliance |
-| 2:50 p.m. - 3:30 p.m. ET | **Panel discussion:** Financial Services, OSCAL Use Case |
-| | (Moderator) Josh Magri, Cyber Risk Institute |
-| | Julie Rohlena, US Bank |
-| | Elisabeth Nottingham, JPMorgan Chase |
-| | John Goodman, Cyber Risk Institute |
-| 3:30 p.m. - 4:00 p.m. ET | Discussion of Upcoming Foundation Technical Activities and Q&A |
-| | John Banghart, OSCAL Foundation |
-| | Ross Nodurft, OSCAL Foundation |
-| | Stephen Banghart, OSCAL Foundation |
-| 4:00 p.m. - 4:05 p.m. ET | Closing Remarks |
-| 4:05 p.m. - 6:00 p.m. ET | Reception & Networking |
+| Time                      | Session                                                        |
+| ------------------------- | -------------------------------------------------------------- |
+| 1:00 p.m. - 1:10 p.m. ET: | **Introduction:** John Banghart, Venable                       |
+| 1:10 p.m. - 1:30 p.m. ET: | **Keynote:** Hart Rossman, VP, Amazon                          |
+| 1:30 p.m. - 2:10 p.m. ET: | **Panel discussion:** The FedRAMP OSCAL Use Case               |
+|                           | (Moderator) Pirooz Javan, Easy Dynamics                        |
+|                           | Brian Ruf, RufRisk                                             |
+|                           | Travis Howerton, RegScale                                      |
+| 2:10 p.m. - 2:50 p.m. ET  | **Panel discussion:** The Global OSCAL Use Case                |
+|                           | (Moderator) Michaela Iorga, NIST                               |
+|                           | Vikram Khare, Google                                           |
+|                           | Matt Weinberg, AWS                                             |
+|                           | Jim Reavis, Cloud Security Alliance                            |
+| 2:50 p.m. - 3:30 p.m. ET  | **Panel discussion:** Financial Services, OSCAL Use Case       |
+|                           | (Moderator) Josh Magri, Cyber Risk Institute                   |
+|                           | Julie Rohlena, US Bank                                         |
+|                           | Elisabeth Nottingham, JPMorgan Chase                           |
+|                           | John Goodman, Cyber Risk Institute                             |
+| 3:30 p.m. - 4:00 p.m. ET  | Discussion of Upcoming Foundation Technical Activities and Q&A |
+|                           | John Banghart, OSCAL Foundation                                |
+|                           | Ross Nodurft, OSCAL Foundation                                 |
+|                           | Stephen Banghart, OSCAL Foundation                             |
+| 4:00 p.m. - 4:05 p.m. ET  | Closing Remarks                                                |
+| 4:05 p.m. - 6:00 p.m. ET  | Reception & Networking                                         |
 
 *Learn more about the OSCAL Foundation at OSCALFoundation.org.*
             </details>
@@ -451,9 +687,12 @@ Washington, DC 20001
         </div>
     </div>
 </div>
+</details>
 
 
 
+<details>
+<summary style="background-color: #f8f9fa; padding: 12px 16px; border-radius: 6px; cursor: pointer; border: 1px solid #dee2e6; margin-bottom: 16px; font-weight: 600;"><strong>2023</strong></summary>
 
 ## 2023
 <br>
@@ -461,12 +700,14 @@ Washington, DC 20001
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">OSCAL's Fall Cleaning</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="oscalas-fall-cleaning"><span style="color:#4d80d1">OSCAL's Fall Cleaning</span></h2>
+                <div>
+                    <p><b>September 6, 2023</b></p>
+                    <p><b>Dr. Michaela Iorga, Director, OSCAL Program </b><a href = "mailto:oscal@nist.gov">oscal@nist.gov</a></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>September 6, 2023</b></p>
-                <p><b>-- Dr. Michaela Iorga, Director, OSCAL Program </b><a href = "mailto:oscal@nist.gov">oscal@nist.gov</a></p>
+            <div class="blog-content">
 
 Welcome to the Open Security Controls Assessment Language (OSCAL) Blog, open to the NIST OSCAL Team and to the community! 
 
@@ -491,9 +732,15 @@ Moving forward, the NIST team will author future blog posts as needed. If you ha
         </div>
     </div>
 </div>
+</details>
 
 
 
+
+
+
+<details>
+<summary style="background-color: #f8f9fa; padding: 12px 16px; border-radius: 6px; cursor: pointer; border: 1px solid #dee2e6; margin-bottom: 16px; font-weight: 600;"><strong>2021</strong></summary>
 
 ## 2021
 <br>
@@ -501,12 +748,14 @@ Moving forward, the NIST team will author future blog posts as needed. If you ha
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">Innovating Security Compliance Through Open Standards</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="innovating-security-compliance-through-open-standards"><span style="color:#4d80d1">Innovating Security Compliance Through Open Standards</span></h2>
+                <div>
+                    <p><b>July 7, 2021</b></p>
+                    <p><b>Easy Dynamics</b></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>July 7, 2021</b></p>
-                <p><b>-- Easy Dynamics</b></p>
+            <div class="blog-content">
                 <p>Discover how open standards like OSCAL are transforming security compliance by stremalining processes and improving transparency. This article by Easy Dynamics explores the benefits of adopting open frameworks to innovate and simplify regulatory requirements in today's complex cybersecurity landscape.</p>
             </div>
             <div class="usa-card__footer">
@@ -521,12 +770,14 @@ Moving forward, the NIST team will author future blog posts as needed. If you ha
     <!-- OSCAL Foundation Blog Post -->
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
-            <div class="usa-card__header">
-                <h2 class="usa-card__heading"><a id="section_6" class="usa-anchor"></a><span style="color:#4d80d1">The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project</span></h2>
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="the-foundation-for-interoperable-and-portable-security-automation-is-revealed-in-nists-oscala-project"><span style="color:#4d80d1">The Foundation for Interoperable and Portable Security Automation is Revealed in NIST’s OSCAL Project</span></h2>
+                <div>
+                    <p><b>May 19, 2021</b></p>
+                    <p><b>Dr. Michaela Iorga, Director, OSCAL Program </b><a href = "mailto:oscal@nist.gov">oscal@nist.gov</a></p>
+                </div>
             </div>
-            <div class="usa-card__body">
-                <p><b>May 19, 2021</b></p>
-                <p><b>-- Dr. Michaela Iorga, Director, OSCAL Program </b><a href = "mailto:oscal@nist.gov">oscal@nist.gov</a></p>
+            <div class="blog-content">
                 <p>This blog by Dr. Michaela Iorga discusses the importance of building a foundation of interoperable and portable security automation. It explains how standardized approaches can improve cybersecurity by making security tools and processes more consistent and adaptable across diverse environments. The article highlights key efforts to advance automation that supports stronger, more scalable defenses.</p>
             </div>
             <div class="usa-card__footer">
@@ -539,4 +790,6 @@ Moving forward, the NIST team will author future blog posts as needed. If you ha
         </div>
     </div>
 </div>
+</details>
+
 
