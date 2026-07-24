@@ -126,7 +126,7 @@ Discover a comprehensive archive of OSCAL blog posts featuring practical guidanc
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
             <div class="blog-metadata">
-                <h2 class="usa-card__heading" id="a-students-take-on-oscala-innovation-exploring-the-oscala-pocket-guide"><span style="color:#4d80d1">A Student's Take on OSCAL Innovation: Exploring the OSCAL Pocket Guide</span></h2>
+                <h2 class="usa-card__heading" id="a-students-take-on-oscala-innovation-exploring-the-oscala-pocket-guide"><span style="color:#4d80d1">OSCAL Adoption for FedRAMP: Insights Learned and Path Going Forward</span></h2>
                 <div>
                     <p><b>April 23, 2026</b></p>
                     <p><b>Presented By:  </b></p>
