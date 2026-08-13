@@ -80,6 +80,22 @@ menu:
   background-color: #007bff;
   color: white;
 }
+.blog-button {
+  display: inline-block;
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.blog-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
 </style>
 
 ### Explore the Latest Insights from Our OSCAL Community
@@ -88,6 +104,7 @@ menu:
 
 <div class="jump-to-section">
   <div class="label">Jump to:</div>
+  <a href="#oscal-v1.2.3-patch-release">OSCAL v1.2.3 Patch Release</a>
   <a href="#how-the-continuous-compliance-framework-simplifies-compliance">How the Continuous Compliance Framework Simplifies Compliance</a>
   <a href="#making-ato-smarter-assysts-approach-to-oscal-and-ai">Making ATO Smarter: ASSYST's Approach to OSCAL and AI</a>
   <a href="#how-oscaliio-is-transforming-the-oscalk-experience">How OSCAL.io is Transforming the OSCAL Experience</a>
@@ -97,6 +114,33 @@ menu:
 <br>
 
 <br>
+<div class="usa-card-group">
+    <div class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="oscal-v1.2.3-patch-release"><span style="color:#4d80d1">OSCAL v1.2.3 Patch Release</span></h2>
+                <div>
+                    <p><strong>By: Marilyn Nguyen </strong> (IT Cybersecurity Specialist, NIST) <a href="mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a></p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <p>
+                The latest OSCAL patch release, <strong>v1.2.3</strong>, is now available, with a focus on security, dependency maintenance, and improvements to the OSCAL build environment. These updates help keep OSCAL secure, stable, and ready to support the OSCAL community. This release updates several project dependencies, including <strong>ip-address, undici, XML Calabash, brace-expansion, and markdown-link-check </strong>, along with GitHub Actions such as <strong>actions/checkout</strong> and <strong>actions/setup-node</strong>.
+                </p>
+                <p>
+                Security is a key focus of this patch. OSCAL v1.2.3 addresses JS-YAML vulnerabilities and adds security notes for the resolver-pipeline, providing additional guidance for users and developers. As a patch release, OSCAL v1.2.3 does not introduce changes to the OSCAL models or new features. Instead, it delivers important maintenance and security updates that help keep OSCAL secure, current, and reliable.
+                </p>
+                <p>
+                Thank you to everyone who contributed code, reviews, testing, and maintenance to this release. Your contributions help strengthen OSCAL and support its growing community.
+                </p>
+                <a href="https://github.com/usnistgov/OSCAL/releases/tag/v1.2.3" class="blog-button">View the OSCAL v1.2.3 Release on GitHub → </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
