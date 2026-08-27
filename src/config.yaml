@@ -6,7 +6,6 @@ defaultContentLanguage: en
 disableAliases: false
 languages:
   en:
-    lang: en
     languageName: English
     weight: 1
 MetaDataFormat: "yaml"
