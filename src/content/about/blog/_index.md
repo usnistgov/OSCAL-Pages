@@ -120,6 +120,7 @@ menu:
             <div class="blog-metadata">
                 <h2 class="usa-card__heading" id="oscal-v1.2.3-patch-release"><span style="color:#4d80d1">OSCAL v1.2.3 Patch Release</span></h2>
                 <div>
+                    <p><strong>August 13, 2026</strong></p>
                     <p><strong>By: Marilyn Nguyen </strong> (IT Cybersecurity Specialist, NIST) <a href="mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a></p>
                 </div>
             </div>
@@ -147,6 +148,7 @@ menu:
             <div class="blog-metadata">
                 <h2 class="usa-card__heading" id="how-the-continuous-compliance-framework-simplifies-compliance"><span style="color:#4d80d1">How the Continuous Compliance Framework Simplifies Compliance</span></h2>
                 <div>
+                    <p><strong>July 22, 2026</strong></p>
                     <p><strong>Presented By: </strong></p>
                     <p>
                         <ul style="margin-top: 0;">
@@ -181,6 +183,7 @@ menu:
             <div class="blog-metadata">
                 <h2 class="usa-card__heading" id="making-ato-smarter-assysts-approach-to-oscal-and-ai"><span style="color:#4d80d1">Making ATO Smarter: ASSYST's Approach to OSCAL and AI</span></h2>
                 <div>
+                    <p><strong>July 2, 2026</strong></p>
                     <p><strong>Presented By: </strong></p>
                     <p>
                         <ul style="margin-top: 0;">
@@ -217,6 +220,7 @@ menu:
             <div class="blog-metadata">
                 <h2 class="usa-card__heading" id="how-oscaliio-is-transforming-the-oscalk-experience"><span style="color:#4d80d1">How OSCAL.io is Transforming the OSCAL Experience</span></h2>
                 <div>
+                    <p><strong>June 2, 2026</strong></p>
                     <p><strong>Presented By: </strong></p>
                     <p>
                         <ul style="margin-top: 0;">
@@ -248,6 +252,7 @@ menu:
             <div class="blog-metadata">
                 <h2 class="usa-card__heading" id="learn-oscalthrough-an-immersive-online-escape-room-experience"><span style="color:#4d80d1">Learn OSCAL Through an Immersive Online Escape Room Experience</span></h2>
                 <div>
+                    <p><strong>April 24, 2026</strong></p>                
                     <p><strong>Blog by: Marilyn Nguyen </strong> (NIST Pathways, IT Student Trainee) <a href = "mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a></p>
                 </div>
             </div>
