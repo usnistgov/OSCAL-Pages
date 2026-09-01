@@ -44,11 +44,13 @@ For details on how to use and obtain OSCAL converters, see the [OSCAL repository
  
 ## NIST's OSCAL Application Frameworks, Tools and Libraries
 
-Valid OSCAL is open-ended in application. Some of the tools described provide validation and conversion, while others do not, presuming that inputs are already valid.
+Valid OSCAL is open-ended in application. Some of the tools described provide validation and conversion, while others do not, presuming that inputs are already valid. This table covers only tools developed and maintained by the NIST OSCAL team; entries no longer actively maintained are marked *Archived* and retained here for historical reference.
 
-|  Name |  Description | Type |
-|:------:|:-------------|:----:|
-| [OSCAL Deep Diff](https://github.com/usnistgov/oscal-deep-diff) | A Typescript-based CLI application and library that produces machine readable and human-consumable comparisons of JSON OSCAL artifacts. | open source |
-| [OSCAL Java Library](https://github.com/usnistgov/liboscal-java) | A Java-based programming API for reading and writing content conformant to the OSCAL XML, JSON, and YAML based models. | open source |
-| [XSLT Tooling](https://github.com/usnistgov/oscal-tools/tree/main/xslt) | A variety of Extensible Stylesheet Language (XSL) Transformations (XSLT), Cascading Style Sheets (CSS), and related utilities for authoring, converting, and publishing OSCAL content in various forms. | open source |
-| [OSCAL Java CLI](https://github.com/usnistgov/oscal-cli) | An OSCAL Java command-line tool able to validate OSCAL content and metaschema for well formatting, to convert such content between the OSCAL XML, JSON and YAML formats, to resolve OSCAL profiles, and to generateXML and JSON schemas from Metaschema module(s). | open source |
+|  Name |  Description | Type | Status |
+|:------:|:-------------|:----:|:------:|
+| [OSCAL Java Library](https://github.com/usnistgov/liboscal-java) | A Java-based programming API for reading and writing content conformant to the OSCAL XML, JSON, and YAML based models. | open source | Active |
+| [OSCAL Java CLI](https://github.com/usnistgov/oscal-cli) | An OSCAL Java command-line tool able to validate OSCAL content and metaschema for well formatting, to convert such content between the OSCAL XML, JSON and YAML formats, to resolve OSCAL profiles, and to generate XML and JSON schemas from Metaschema module(s). | open source | Active |
+| [OSCAL-XSLT](https://github.com/usnistgov/oscal-xslt) | A collection of XSLT-based utilities for displaying and processing OSCAL documents; consolidates XSLT work formerly published under OSCAL Tools. | open source | Active |
+| [OSCAL Deep Diff](https://github.com/usnistgov/oscal-deep-diff) | A Typescript-based CLI application and library that produces machine readable and human-consumable comparisons of JSON OSCAL artifacts. | open source | Archived |
+| [OSCAL Tools](https://github.com/usnistgov/oscal-tools) | A collection of miscellaneous OSCAL tools, including the XSLT utilities now maintained in OSCAL-XSLT (above). | open source | Archived |
+| [OSCAL-CAT](https://github.com/usnistgov/oscal-cat) | OSCAL Content Authoring Tool — an early graphical tool for authoring OSCAL catalog content. | open source | Archived |

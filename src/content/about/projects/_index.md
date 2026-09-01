@@ -73,13 +73,13 @@ OSCAL-Reference contains the source code for web page templates and supporting a
 
 Repository: https://github.com/usnistgov/OSCAL-Reference
 
-### `liboscal-java`
+### OSCAL Library in Java (`liboscal-java`)
 
 The liboscal-java repository contains a suite of Java libraries based on [metaschema-java](#metaschema-java) that implement common OSCAL operations such as reading/writing artifacts, profile resolution, and validation.
 
 Repository: https://github.com/usnistgov/liboscal-java
 
-### OSCAL-CLI
+### OSCAL Command Line Interface (`oscal-cli`)
 
 The oscal-cli repository provides an easy-to-use command-line interface (CLI) based on [`liboscal-java`](#liboscal-java). 
 
@@ -90,6 +90,28 @@ Repository: https://github.com/usnistgov/oscal-cli
 The OSCAL content repository provides a library of official NIST-maintained OSCAL examples in XML, JSON, and YAML.
 
 Repository: https://github.com/usnistgov/oscal-content
+
+## Archived NIST-Maintained OSCAL Tools
+
+These projects were previously maintained by the OSCAL team. They are no longer actively developed and are retained here for historical reference; their GitHub repositories are archived (read-only).
+
+### OSCAL Tools
+
+A collection of miscellaneous tools for the OSCAL project. Its XSLT utilities are now maintained in [OSCAL-XSLT](#oscal-xslt).
+
+Repository: https://github.com/usnistgov/oscal-tools (archived)
+
+### OSCAL-Deep-Diff (archived)
+
+A schema-agnostic diffing tool and library built to compare OSCAL JSON documents. This repository is no longer actively maintained; see [Archived NIST-Maintained OSCAL Tools](#archived-nist-maintained-oscal-tools).
+
+Repository: https://github.com/usnistgov/oscal-deep-diff (archived)
+
+### OSCAL-CAT
+
+OSCAL Content Authoring Tool: an early graphical tool for authoring OSCAL catalog content.
+
+Repository: https://github.com/usnistgov/oscal-cat (archived)
 
 ## NIST-Maintained OSCAL Dependencies
 
@@ -123,15 +145,9 @@ Repository: https://github.com/usnistgov/hugo-uswds
 
 These projects are managed by the OSCAL team, but at times, might be given a lower priority than the core OSCAL projects.
 
-### OSCAL-Deep-Diff
-
-A schema-agnostic diffing tool and library built to compare OSCAL JSON documents.
-
-Repository: https://github.com/usnistgov/oscal-deep-diff
-
 ### OSCAL-XSLT
 
-This repository contains a collection of XSLT-based utilities for displaying and processing OSCAL documents.
+This repository contains a collection of XSLT-based utilities for displaying and processing OSCAL documents. It consolidates XSLT work formerly published under [OSCAL Tools](#oscal-tools).
 
 Repository: https://github.com/usnistgov/oscal-xslt
 
