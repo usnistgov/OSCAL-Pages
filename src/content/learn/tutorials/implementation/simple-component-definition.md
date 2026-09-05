@@ -63,7 +63,7 @@ A `<component-definition>` contains the following elements:
 - `<metadata>` (required) - Provides document metadata for the component definition. This is covered in the [next section](#defining-the-component-definitions-metadata) to a limited extent. The metadata used here is similar to metadata for other OSCAL models, therefor is not described extensively in this tutorial.
 - `<import-component-definition>` (optional) – Identifies a collection of external component definitions from other resources from which related information is referenced within this component definition. Use of `<import-component-definition>` is not covered in this tutorial.
 - `<component>` (optional) - Defines a given component in the component definition. Zero or more `<component>` elements may be used. Use of this element is [discussed later](#defining-the-mongodb-component) in this tutorial.
-- `<capability>` (optional) - Defines a given capability in the component definition. Zero or more `<capability>` elements may be used. Capabilities are not covered in this tutorial.
+- `<capability>` (optional) - Defines a given capability in the component definition. Zero or more `<capability>` elements may be used. This tutorial does not cover the `<capability>` element directly, but see [Modeling a Capability Component](/learn/tutorials/implementation/capability-component-definition/) for an emerging, proposed alternative pattern for representing capabilities using `<component>`.
 - `<back-matter>` (optional) – Contains resources which are referenced within the component definition. Use of `<back-matter>` is not covered in this tutorial.
 {{% /tab %}}
 {{% tab %}}
@@ -87,7 +87,7 @@ A `component-definition` contains the following properties:
 - `metadata` (required) - Provides document metadata for the component definition. This is covered in the [next section](#defining-the-component-definitions-metadata) to a limited extent. The metadata used here is similar to metadata for other OSCAL models, therefor is not described extensively in this tutorial.
 - `import-component-definitions` (optional) – Identifies a collection of external component definitions from other resources from which related information is referenced within this component definition.  Use of `import-component-definitions` is not covered in this tutorial.
 - `components` (optional) - Groups `component` objects which each define a given component in the component definition. One or more `component` objects may be provided. Use of this property is [discussed later](#defining-the-mongodb-component) in this tutorial.
-- `capabilities` (optional) - Defines a group of given capabilities in the component definition. One or more `capability` objects may be used. Capabilities are not covered in this tutorial.
+- `capabilities` (optional) - Defines a group of given capabilities in the component definition. One or more `capability` objects may be used. This tutorial does not cover the `capabilities` key directly, but see [Modeling a Capability Component](/learn/tutorials/implementation/capability-component-definition/) for an emerging, proposed alternative pattern for representing capabilities using `components`.
 - `back-matter` (optional) – Contains references which are referenced within the component definition. Use of `back-matter` is not covered in this tutorial.
 {{% /tab %}}
 {{% tab %}}
@@ -110,7 +110,7 @@ A `component-definition` contains the following keys:
 - `metadata` (required) - Provides document metadata for the component definition. This is covered in the [next section](#defining-the-component-definitions-metadata) to a limited extent. The metadata used here is similar to metadata for other OSCAL models, therefor is not described extensively in this tutorial.
 - `import-component-definitions` (optional) – Identifies a collection of external component definitions from other resources from which related information is referenced within this component definition.  Use of `import-component-definitions` is not covered in this tutorial.
 - `components` (optional) - Groups `component` items which define given component(s) in the component definition. One or more `component` items may be used. Use of this key is [discussed later](#defining-the-mongodb-component) in this tutorial.
-- `capabilities` (optional) - Defines a group of given capabilities in the component definition. One or more `capability` items may be used. Capabilities are not covered in this tutorial.
+- `capabilities` (optional) - Defines a group of given capabilities in the component definition. One or more `capability` items may be used. This tutorial does not cover the `capabilities` key directly, but see [Modeling a Capability Component](/learn/tutorials/implementation/capability-component-definition/) for an emerging, proposed alternative pattern for representing capabilities using `components`.
 - `back-matter` (optional) – Contains references which are referenced within the component definition. Use of `back-matter` is not covered in this tutorial.
 {{% /tab %}}
 {{< /tabs >}}
@@ -130,7 +130,7 @@ Most OSCAL models have a standard metadata syntax, therefore, this is not covere
     <title>MongoDB Component Definition Example</title>
     <last-modified>2001-08-26T23:11:47Z</last-modified>
     <version>20210826</version>
-    <oscal-version>1.0.0</oscal-version>
+    <oscal-version>1.2.2</oscal-version>
     <role id="provider">
       <title>Provider</title>
     </role>
@@ -154,8 +154,8 @@ The `<party>` element represents either a person or organization that serves as 
     "metadata": {
       "title": "MongoDB Component Definition Example",
       "last-modified": "2001-12-17T09:30:47Z",
-      "version": 20210507,
-      "oscal-version": "1.0.0",
+      "version": "20210507",
+      "oscal-version": "1.2.2",
       "roles": [{
         "id": "provider",
         "title": "Provider"
@@ -188,8 +188,8 @@ component-definition:
   metadata:
     title: MongoDB Component Definition Example
     last-modified: '2001-12-17T09:30:47Z'
-    version: 20210507
-    oscal-version: 1.0.0
+    version: '20210507'
+    oscal-version: '1.2.2'
     roles:
     - id: provider
       title: Provider
@@ -254,7 +254,7 @@ The optional `<responsible-role>` element can be used to reference one or more r
       "purpose": "Provides a NoSQL database service",
       "responsible-roles": [{
         "role-id": "provider",
-        "party-uuid": "ef7c799a-c50e-49ab-83e0-515e989e6df1"
+        "party-uuids": ["ef7c799a-c50e-49ab-83e0-515e989e6df1"]
       }],
       "protocols": [{}],
       "control-implementations": [{}]
@@ -288,7 +288,8 @@ component-definition:
     purpose: Provides a NoSQL database service
     responsible-roles:
     - role-id: provider
-      party-uuid: ef7c799a-c50e-49ab-83e0-515e989e6df1
+      party-uuids:
+      - ef7c799a-c50e-49ab-83e0-515e989e6df1
     protocols: ~
     control-implementations: ~
 {{< /highlight >}}
@@ -475,16 +476,11 @@ In the example above, we demonstrated how to use OSCAL to document the MongoDB s
       "control-implementations": [{
         "uuid": "49f0b690-ed9f-4f32-aae0-625b77aa6d27",
         "source": "https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json",
-        "description": "MongoDB control implementations for NIST SP 800-53
-          revision 5.",
-        "implemented-requirements" [{
+        "description": "MongoDB control implementations for NIST SP 800-53 revision 5.",
+        "implemented-requirements": [{
           "uuid": "cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0",
           "control-id": "sc-8.1",
-          "description": "MongoDB supports TLS 1.x to encrypt data in transit,
-            preventing unauthorized disclosure or changes to information
-            during transmission. To implement TLS, set the PEMKeyFile option
-            in the configuration file /etc/mongod.conf to the certificate
-            file's path and restart the the component."
+          "description": "MongoDB supports TLS 1.x to encrypt data in transit, preventing unauthorized disclosure or changes to information during transmission. To implement TLS, set the PEMKeyFile option in the configuration file /etc/mongod.conf to the certificate file's path and restart the the component."
         }]
       }]
     }]
@@ -502,7 +498,7 @@ In the example above, we demonstrated how to use OSCAL to document the MongoDB s
 ---
 
 component-definition:
-  uuid: a7ba800c-a432-44cd-9075-0862cd66da6b,
+  uuid: a7ba800c-a432-44cd-9075-0862cd66da6b
   components:
   - uuid: 91f646c5-b1b6-4786-9ec3-2305a044e217
     type: software
@@ -510,7 +506,8 @@ component-definition:
     - uuid: 49f0b690-ed9f-4f32-aae0-625b77aa6d27
       source: <https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json>
       description: >-
-        MongoDB control implementations for NIST SP 800-53rev5.
+        MongoDB control implementations for NIST SP 800-53
+        revision 5.
       implemented-requirements:
       - uuid: cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0
         control-id: sc-8.1
@@ -547,7 +544,7 @@ and [YAML]({{< param "contentRepoPath" >}}/examples/component-definition/yaml/ex
     <title>MongoDB Component Definition Example</title>
     <last-modified>2001-08-26T23:11:47Z</last-modified>
     <version>20210826</version>
-    <oscal-version>1.0.0</oscal-version>
+    <oscal-version>1.2.2</oscal-version>
     <role id="provider">
       <title>Provider</title>
     </role>
@@ -599,7 +596,7 @@ and [YAML]({{< param "contentRepoPath" >}}/examples/component-definition/yaml/ex
         </description>
       </implemented-requirement>
       <implemented-requirement
-          uuid="cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0"
+          uuid="d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a"
           control-id="sa-4.9">
         <description>
           <p>Must ensure that MongoDB only listens for network
@@ -622,17 +619,20 @@ and [YAML]({{< param "contentRepoPath" >}}/examples/component-definition/yaml/ex
     "metadata": {
       "title": "MongoDB Component Definition Example",
       "last-modified": "2001-12-17T09:30:47Z",
-      "version": 20210507,
-      "oscal-version": "1.0.0",
+      "version": "20210507",
+      "oscal-version": "1.2.2",
       "roles": [{
-      "id": "supplier",
-      "title": "Supplier"
+      "id": "provider",
+      "title": "Provider"
       }],
       "parties": [{
       "uuid": "ef7c799a-c50e-49ab-83e0-515e989e6df1",
       "type": "organization",
       "name": "MongoDB",
-      "links": "https://www.mongodb.com"
+      "links": [{
+        "href": "https://www.mongodb.com",
+        "rel": "website"
+      }]
       }]
     },
     "components": [{
@@ -643,7 +643,7 @@ and [YAML]({{< param "contentRepoPath" >}}/examples/component-definition/yaml/ex
       "purpose": "Provides a NoSQL database service",
       "responsible-roles": [{
         "role-id": "provider",
-        "party-uuid": "ef7c799a-c50e-49ab-83e0-515e989e6df1"
+        "party-uuids": ["ef7c799a-c50e-49ab-83e0-515e989e6df1"]
       }],
       "protocols": [{
         "uuid": "2b4a1b3a-cbc5-4cc8-bde6-7437c28c4e54",
@@ -678,16 +678,16 @@ and [YAML]({{< param "contentRepoPath" >}}/examples/component-definition/yaml/ex
       "control-implementations": [{
         "uuid": "49f0b690-ed9f-4f32-aae0-625b77aa6d27",
         "source": "https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json",
-        "description": "MongoDB control implementations for NIST SP 800-53
-          revision 5.",
-        "implemented-requirements" [{
+        "description": "MongoDB control implementations for NIST SP 800-53 revision 5.",
+        "implemented-requirements": [{
           "uuid": "cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0",
           "control-id": "sc-8.1",
-          "description": "MongoDB supports TLS 1.x to encrypt data in transit,
-            preventing unauthorized disclosure or changes to information
-            during transmission. To implement TLS, set the PEMKeyFile option
-            in the configuration file /etc/mongod.conf to the certificate
-            file's path and restart the the component."
+          "description": "MongoDB supports TLS 1.x to encrypt data in transit, preventing unauthorized disclosure or changes to information during transmission. To implement TLS, set the PEMKeyFile option in the configuration file /etc/mongod.conf to the certificate file's path and restart the the component."
+        },
+        {
+          "uuid": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+          "control-id": "sa-4.9",
+          "description": "Must ensure that MongoDB only listens for network connections on authorized interfaces by configuring the MongoDB configuration file to limit the services exposure to only the network interfaces on which MongoDB instances should listen for incoming connections."
         }]
       }]
     }]
@@ -703,8 +703,8 @@ component-definition:
   metadata:
     title: MongoDB Component Definition Example
     last-modified: '2001-12-17T09:30:47Z'
-    version: 20210507
-    oscal-version: 1.0.0
+    version: '20210507'
+    oscal-version: '1.2.2'
     roles:
     - id: provider
       title: Provider
@@ -726,7 +726,8 @@ component-definition:
     purpose: Provides a NoSQL database service
     responsible-roles:
     - role-id: provider
-      party-uuid: ef7c799a-c50e-49ab-83e0-515e989e6df1
+      party-uuids:
+      - ef7c799a-c50e-49ab-83e0-515e989e6df1
     protocols:
     - uuid: 2b4a1b3a-cbc5-4cc8-bde6-7437c28c4e54
       name: mongodb
@@ -753,7 +754,8 @@ component-definition:
     - uuid: 49f0b690-ed9f-4f32-aae0-625b77aa6d27
       source: <https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json>
       description: >-
-        MongoDB control implementations for NIST SP 800-53rev5.
+        MongoDB control implementations for NIST SP 800-53
+        revision 5.
       implemented-requirements:
       - uuid: cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0
         control-id: sc-8.1
@@ -763,6 +765,14 @@ component-definition:
           transmission. To implement TLS, set the PEMKeyFile option in the
           configuration file /etc/mongod.conf to the certificate file's path
           and restart the the component.
+      - uuid: d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a
+        control-id: sa-4.9
+        description: >-
+          Must ensure that MongoDB only listens for network connections on
+          authorized interfaces by configuring the MongoDB configuration
+          file to limit the services exposure to only the network
+          interfaces on which MongoDB instances should listen for incoming
+          connections.
 {{< /highlight >}}
 {{% /tab %}}
 {{% /tabs %}}
@@ -777,4 +787,4 @@ This concludes the tutorial.  You should now be familiar with:
 - How to use the protocol elements in a component.
 - How to specify the control implementation for a component.
 
-For more information, you can review the OSCAL component definition model [documentation](/concepts/layer/implementation/component-definition/).
+For more information, you can review the OSCAL component definition model [documentation](/concepts/layer/implementation/component-definition/). To see other component-definition use cases, check out the [Creating a Policy Component](/learn/tutorials/implementation/policy-component-definition/) and [Modeling a Capability Component](/learn/tutorials/implementation/capability-component-definition/) tutorials.
