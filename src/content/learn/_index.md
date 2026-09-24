@@ -29,6 +29,8 @@ The [tutorials](./tutorials/) section provides step-by-step walk-throughs explai
 
 - [implementation layer tutorials](./tutorials/implementation/)
   - [Creating a Basic Component Definition](./tutorials/implementation/simple-component-definition/): Teaches how to create a component-definition using the OSCAL [component definition](/concepts/layer/implementation/component-definition/) model.
+  - [Creating a Policy Component](./tutorials/implementation/policy-component-definition/): Explains how to represent an organizational policy as a `type="policy"` component definition.
+  - [Modeling a Capability Component](./tutorials/implementation/capability-component-definition/): Explores an emerging, proposed pattern for representing a capability as a `type="capability"` component definition.
   - [Representing proof of compliance or test validation information](./tutorials/implementation/validation-modeling/): Describes how to represent test validation information (e.g., FIPS-140-2) using a component in an OSCAL [component definition](/concepts/layer/implementation/component-definition/) or [system security plan](/concepts/layer/implementation/ssp/). 
 
 ### Events and Presentations

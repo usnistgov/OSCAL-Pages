@@ -70,6 +70,16 @@ This page serves as the central hub for all OSCAL tutorials. Learn how to build,
             <strong><a href="implementation/validation-modeling/" style="color: #4d8055;">Representing Test Validation Information</a></strong><br>
             Capture test validation results (e.g., FIPS 140-2) in a component definition or system security plan</a>.
         </div>
+    <!-- Subsection: "Creating a Policy Component" Box -->
+        <div style="flex: 1 1 280px; background-color: #ecf3ec; padding: 1em; border-radius: 6px; border-left: 4px solid #4d8055;">
+            <strong><a href="implementation/policy-component-definition/" style="color: #4d8055;">Creating a Policy Component</a></strong><br>
+            Represent an organizational policy as a <code>type="policy"</code> component definition.
+        </div>
+    <!-- Subsection: "Modeling a Capability Component" Box -->
+        <div style="flex: 1 1 280px; background-color: #ecf3ec; padding: 1em; border-radius: 6px; border-left: 4px solid #4d8055;">
+            <strong><a href="implementation/capability-component-definition/" style="color: #4d8055;">Modeling a Capability Component</a></strong><br>
+            Explore a proposed pattern for representing a capability as a <code>type="capability"</code> component.
+        </div>
     </div>
   </div>
 </div>
