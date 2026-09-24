@@ -104,6 +104,7 @@ menu:
 
 <div class="jump-to-section">
   <div class="label">Jump to:</div>
+  <a href="#from-voting-systems-to-structured-data-with-oscal">From Voting Systems to Structured Data with OSCAL</a>
   <a href="#oscal-v1.2.3-patch-release">OSCAL v1.2.3 Patch Release</a>
   <a href="#how-the-continuous-compliance-framework-simplifies-compliance">How the Continuous Compliance Framework Simplifies Compliance</a>
   <a href="#making-ato-smarter-assysts-approach-to-oscal-and-ai">Making ATO Smarter: ASSYST's Approach to OSCAL and AI</a>
@@ -114,6 +115,47 @@ menu:
 <br>
 
 <br>
+<div class="usa-card-group">
+    <div class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="blog-metadata">
+                <h2 class="usa-card__heading" id="from-voting-systems-to-structured-data-with-oscal"><span style="color:#4d80d1">From Voting Systems to Structured Data with OSCAL</span></h2>
+                <div>
+                    <p><strong>September 23, 2026</strong></p>
+                    <p><strong>Presented By: </strong></p>
+                    <p>
+                        <ul style="margin-top: 0;">
+                            <li><strong>John Dziurlaj</strong>, Senior Solutions Architect, The Turnout
+                        </ul>
+                    </p>
+                    <p><strong>By: Marilyn Nguyen </strong> (IT Cybersecurity Specialist, NIST) <a href="mailto:marilyn.nguyen@nist.gov">marilyn.nguyen@nist.gov</a></p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <p>
+                At the recent September OSCAL workshop, John Dziurlaj from The Turnout discussed how OSCAL can be used to improve the way requirements and compliance are managed in critical infrastructure. Although much of the discussion focused on election and voting technology, the ideas could apply to other areas as well. One of the main issues discussed was how much critical infrastructure still relies on documents, spreadsheets, and separate systems to manage requirements. In elections, requirements can cover a wide range of areas, including cybersecurity, physical hardware, accessibility, and system functionality. When all of this information is kept in separate "document silos," it can be difficult to see how a specific requirement connects to a system component, test, or piece of evidence.
+                </p>
+                <p>
+                The workshop presented OSCAL as one way to address this problem. Instead of treating requirements as static text in a document, OSCAL gives them stable identifiers and structured information that can be processed by computers. This could make it easier to trace a requirement from where it was originally defined, through implementation and testing, to the assessment results associated with it.
+                </p>
+                <p>
+                The workshop also discussed how OSCAL related to other tools, such as ReqIF and SysML. ReqIF can be used to exchange requirements between organizations, while SysML is useful for modeling system architecture. OSCAL is not necessarily meant to replace either of these tools. Instead, it can serve as a way to connect requirements with system models, testing, and assessment evidence.
+                </p>
+                <p>
+                Another point that stood out was that OSCAL does not have to be limited to cybersecurity. The workshop showed how similar structures could be used for accessibility requirements, physical hardware specifications, and operational testing. This makes the idea of a common, machine-readable framework relevant to more than just one area of critical infrastructure.
+                </p>
+                <p>
+                Overall, the workshop provided a different way of thinking about requirements management. Turning requirements into structured data might sound like a technical challenge, but it can have some practical benefits. It could make it easier to see what has changed, determine what needs to be tested, and identify where supporting evidence comes from. Giving requirements and system components stable identifiers could also make it easier to connect the different parts of the process, from requirements and implementation to testing and compliance.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+
+
 <div class="usa-card-group">
     <div class="usa-card tablet:grid-col">
         <div class="usa-card__container">
