@@ -54,7 +54,7 @@ There are many tools to validate documents using schema formats.
 
 Here are some Internet resources to help you find a tool.
 
-- [JSON Schema validator](https://json-schema.org/implementations.html#validators)
+- [JSON Schema validator](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false&supportsBowtie=false#validator)
 - [XML Schema validators](https://www.w3.org/XML/Schema#Tools)
 
 **Note: These lists are not exhaustive and NIST does not endorse any of these tools.**
